@@ -1,26 +1,147 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand: navy scale */
+  --color-navy-900: #030f2b;
+  --color-navy-800: #041d41;
+  --color-navy-700: #0b2853;
+  --color-navy-600: #021636;
+  --color-navy-ink: #1c2229;
+
+  /* Brand: gold scale */
+  --color-gold-600: #bc8012;
+  --color-gold-500: #dda62e;
+  --color-gold-400: #dea830;
+  --color-gold-300: #fbc647;
+  --color-gold-200: #fbcf5d;
+
+  /* Accents */
+  --color-accent-orange: #ed5024;
+  --color-accent-green: #13b565;
+
+  /* Neutrals */
+  --color-section: #f5f5f5;
+  --color-muted: #666666;
+  --color-heading: #111827;
+  --color-body: #4a5568;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-800: var(--color-navy-800);
+  --color-navy-700: var(--color-navy-700);
+  --color-navy-600: var(--color-navy-600);
+  --color-navy-ink: var(--color-navy-ink);
+
+  --color-gold-600: var(--color-gold-600);
+  --color-gold-500: var(--color-gold-500);
+  --color-gold-400: var(--color-gold-400);
+  --color-gold-300: var(--color-gold-300);
+  --color-gold-200: var(--color-gold-200);
+
+  --color-accent-orange: var(--color-accent-orange);
+  --color-accent-green: var(--color-accent-green);
+
+  --color-section: var(--color-section);
+  --color-muted: var(--color-muted);
+  --color-heading: var(--color-heading);
+  --color-body: var(--color-body);
+
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@utility bg-gold-gradient {
+  background-image: linear-gradient(
+    45deg,
+    var(--color-gold-500) 0%,
+    var(--color-gold-200) 50%,
+    var(--color-gold-500) 100%
+  );
+}
+
+@layer base {
+  body {
+    color: var(--color-body);
+    font-family: var(--font-sans), sans-serif;
+    background: #fff;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: var(--color-heading);
+    font-weight: 700;
+  }
+
+  h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: 800;
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+  h6 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  @media (min-width: 1024px) {
+    h1 {
+      font-size: 52px;
+      line-height: 62px;
+    }
+    h2 {
+      font-size: 38px;
+      line-height: 48px;
+    }
+    h3 {
+      font-size: 40px;
+      line-height: 50px;
+    }
+    h4 {
+      font-size: 26px;
+      line-height: 36px;
+    }
+    h5 {
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 28px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
