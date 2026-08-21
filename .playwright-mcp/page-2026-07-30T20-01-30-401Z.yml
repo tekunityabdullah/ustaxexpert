@@ -1,0 +1,61 @@
+- generic [ref=f98e3]:
+  - link "Skip to content" [ref=f98e4] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f98e5]:
+    - navigation [ref=f98e7]:
+      - list [ref=f98e10]:
+        - listitem [ref=f98e11]:
+          - link "Home" [ref=f98e12] [cursor=pointer]:
+            - /url: https://supersymmetry.com/
+        - listitem [ref=f98e13]:
+          - link "About Us" [ref=f98e14] [cursor=pointer]:
+            - /url: https://supersymmetry.com/about-us/
+        - listitem [ref=f98e15]:
+          - link "How “Proto” Works" [ref=f98e16] [cursor=pointer]:
+            - /url: https://supersymmetry.com/how-proto-works/
+      - link [ref=f98e18] [cursor=pointer]:
+        - /url: https://supersymmetry.com/
+        - img "Super Symmetry" [ref=f98e19]
+      - list [ref=f98e22]:
+        - listitem [ref=f98e23]:
+          - link "Audio Book" [ref=f98e24] [cursor=pointer]:
+            - /url: https://www.amazon.com/Payloads-Electrical-Driving-Eccentric-Rotation/dp/B0GXLZY1R7/ref=tmm_aud_swatch_0
+        - listitem [ref=f98e25]:
+          - link "Book" [ref=f98e26] [cursor=pointer]:
+            - /url: https://www.amazon.com/dp/B0FJVDDLDZ
+        - listitem [ref=f98e27]:
+          - link "Mission & Values" [ref=f98e28] [cursor=pointer]:
+            - /url: https://supersymmetry.com/mission-and-values/
+        - listitem [ref=f98e29]:
+          - link "FAQs" [ref=f98e30] [cursor=pointer]:
+            - /url: https://supersymmetry.com/faqs/
+        - listitem [ref=f98e31]:
+          - link "He3 Lunar Mining" [ref=f98e32] [cursor=pointer]:
+            - /url: https://supersymmetry.com/he3-lunar-mining/
+  - heading "Space Time Diagram" [level=1] [ref=f98e35]
+  - generic [ref=f98e37]:
+    - generic [ref=f98e38]:
+      - main [ref=f98e40]:
+        - article [ref=f98e41]:
+          - img "Super Symmetry" [ref=f98e43]
+          - heading "Space Time Diagram" [level=1] [ref=f98e45]
+          - paragraph [ref=f98e47]:
+            - text: Space Time Diagram with the horizontal plane “Space in Feet” at the bottom of page and the “Time in Seconds” on the vertical axis, for the Battery powered Total System video on the surface tension of water where you see the front end of my truck and the water below in my driveway. The website displays many systems moving the earth’s gravitational field, on a flat level tabletop in that system weights 65 pounds moving from eccentric mass load in a direction that is constant. Emmy Nother’s Conservation of Angular Momentum Law is for symmetrical operations “only” about a center axis of rotation. The patents on
+            - link "https://supersymmetry.com/web" [ref=f98e48] [cursor=pointer]:
+              - /url: https://supersymmetry.com/web
+            - text: move in a direction that is constant from supersymmetric rotor armatures implementation of 4-Phase Motor Generator Device. Emmy Noether’s Conservation of Angular Momentum is out of date as she did not have the opportunity to examine
+            - link "https://supersymmetry.com/web" [ref=f98e49] [cursor=pointer]:
+              - /url: https://supersymmetry.com/web
+        - navigation "Posts" [ref=f98e50]:
+          - heading "Post navigation" [level=2] [ref=f98e51]
+          - link "←Effects of the Higgs" [ref=f98e53] [cursor=pointer]:
+            - /url: https://supersymmetry.com/services/effects-of-the-higgs/
+      - separator
+      - contentinfo [ref=f98e54]:
+        - paragraph [ref=f98e55]:
+          - text: Super Symmetry is proudly powered by
+          - link "WordPress" [ref=f98e56] [cursor=pointer]:
+            - /url: https://wordpress.org/
+    - generic [ref=f98e60] [cursor=pointer]:
+      - img "en" [ref=f98e61]
+      - text: en

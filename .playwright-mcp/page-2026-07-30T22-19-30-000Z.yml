@@ -1,0 +1,95 @@
+- generic [active] [ref=f113e1]:
+  - generic [ref=f113e2]:
+    - banner [ref=f113e3]:
+      - navigation [ref=f113e4]:
+        - list [ref=f113e5]:
+          - listitem [ref=f113e6]:
+            - link "Home" [ref=f113e7] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f113e8]:
+            - link "About Us" [ref=f113e9] [cursor=pointer]:
+              - /url: /about-us
+          - listitem [ref=f113e10]:
+            - link "How \"Proto\" Works" [ref=f113e11] [cursor=pointer]:
+              - /url: /how-proto-works
+        - link [ref=f113e12] [cursor=pointer]:
+          - /url: /
+          - img "Super Symmetry" [ref=f113e13]
+        - list [ref=f113e14]:
+          - listitem [ref=f113e15]:
+            - link "Audio Book" [ref=f113e16] [cursor=pointer]:
+              - /url: https://www.amazon.com/Payloads-Electrical-Driving-Eccentric-Rotation/dp/B0GXLZY1R7/ref=tmm_aud_swatch_0
+          - listitem [ref=f113e17]:
+            - link "Book" [ref=f113e18] [cursor=pointer]:
+              - /url: https://www.amazon.com/dp/B0FJVDDLDZ
+          - listitem [ref=f113e19]:
+            - link "Mission & Values" [ref=f113e20] [cursor=pointer]:
+              - /url: /mission-and-values
+          - listitem [ref=f113e21]:
+            - link "FAQs" [ref=f113e22] [cursor=pointer]:
+              - /url: /faqs
+          - listitem [ref=f113e23]:
+            - link "He3 Lunar Mining" [ref=f113e24] [cursor=pointer]:
+              - /url: /he3-lunar-mining
+    - main [ref=f113e25]:
+      - generic [ref=f113e26]:
+        - heading "Mission & Values" [level=1] [ref=f113e27]
+        - generic [ref=f113e28]:
+          - paragraph [ref=f113e29]: 4-Phase Generator Device With 4-Phase Eccentric Mass Load Systems
+          - generic [ref=f113e30]:
+            - heading "Cross Reference to Related Applications" [level=2] [ref=f113e31]
+            - paragraph [ref=f113e32]: "[1] The present application is a Continuation-In-Part of Patent Application 18/301,764, Which was filed on April 17, 2023, and which claims priority to, and the benefits of, U.S."
+            - paragraph [ref=f113e33]: Provisional Application No, 63/419,373, which was filed on October 26, 2022, and is incorporated herein by reference in its entirety. and United States Patent Navarro 5,473,957. United States Patent Navarro 5,150,626.
+          - generic [ref=f113e34]:
+            - heading "Field of the Invention" [level=2] [ref=f113e35]
+            - paragraph [ref=f113e36]: "[2] The present invention relates generally to the field of electric generators. More specifically, the present invention, in one embodiment, relates to a novel 4-phase electric generator and eccentric mass load subsystems. The device features a stator wall with eight stator slots and four pole groups, enabling the generation of electrical energy with increased efficiency compared to conventional generators. These generators provide 8 output voltages, and the current provides electric power for the dual eccentric mass load systems. Accordingly, the present disclosure makes specific reference thereto. Nonetheless, it is to be appreciated that aspects of the present invention are also equally applicable to others, like applications, devices, and methods of manufacturing."
+            - paragraph [ref=f113e37]: "[3] The subject matter disclosed and claimed herein, in one embodiment thereof, comprises 4-phase generator and eccentric mass load subsystems. The device further comprising a stator wall having a circular or cylindrical shape, eight stator slots disposed in the stator wall, the eight stator slots are divided into four pole groups of two opposing stator slots, each slot of the two opposing stator slots are connected via coils, the coils also connects to an output and to a neutral point, one slot of the two opposing stator slots having North polarity (N stator slot) and the other slot having South polarity (S stator slot), four of the stator slots on one side of the stator wall correspond to the other four of the stator slots on an opposing side of the stator wall, a permanent magnetic (four North Poles and four South poles) armature, and the device is further configured to alternate activation between N stator slots and S stator slots of the four pole groups in response to rotation of the armature, wherein eight poles are actively coupled in any given configuration and permanent magnetic material with North and South polarities."
+          - generic [ref=f113e38]:
+            - heading "Summary of the Invention" [level=2] [ref=f113e39]
+            - paragraph [ref=f113e40]: "[4] The following presents a simplified summary to provide a basic understanding of some aspects of the disclosed innovation. This summary is not an extensive overview, and it is not intended to identify key/critical elements or to delineate the scope thereof. Its sole purpose is to present some general concepts in a simplified form as a prelude to the more detailed description that is presented later."
+            - paragraph [ref=f113e41]: "[5] The subject matter disclosed and claimed herein, in one embodiment thereof, comprises of 4-phase generator and eccentric mass load subsystems. The device further comprising a stator wall having a circular or cylindrical shape, eight stator slots disposed in the stator wall, the eight stator slots are divided into eight groups of two opposing stator slots, one slot of the two opposing stator slots having North polarity and the other slot having South polarity, the eight groups forming the four eight groups, wherein four of the stator slots on one side of the stator wall correspond to the other four of the stator slots on an opposing side of the stator wall, a permanent magnetic material armature with four north poles and four south poles opposite each other, and the device is further configured to alternate activation between N stator slots and S stator slots of the eight pole groups in response to rotation of the armature, wherein eight poles are actively coupled in any given configuration."
+            - paragraph [ref=f113e42]: "[6] The subject matter disclosed and claimed herein, in one embodiment thereof, comprises a method of operating a 4-Phase Generator and eccentric load mass subsystems. The method comprising the steps of rotating an armature along a stator wall, the stator wall having a circular or cylindrical shape, eight stator slots divided into eight pole groups, each pole group has a N stator slot and a S stator slot, wherein four of the stator slots on one side of the stator wall correspond to the other four of the stator slots on an opposing side of the stator wall; alternating activation between N stator slots and S stator slots of the four pole groups in response to the rotation of the armature, wherein eight poles are actively coupled in any given configuration."
+            - paragraph [ref=f113e43]: "[7] The activation of the pole groups results in magnetic fields within the stator wall."
+            - paragraph [ref=f113e44]: "[8] In another aspect of the present invention, the stator slots are arranged in a symmetrical pattern around the stator wall."
+            - paragraph [ref=f113e45]: "[9] The stator wall is made of magnetic iron lamination material with copper coils output and ground neutral connections."
+          - generic [ref=f113e46]:
+            - heading "Supersymmetric Rotors — Breaking the Rules of Physics" [level=2] [ref=f113e47]
+            - paragraph [ref=f113e48]: "[10] A 4-phase eccentric mass load subsystem, a stator wall and armatures are disclosed. The stator wall having eight phases of functional operation and a circular or cylindrical shape with eight stator slots divided into four pole groups, each pole group having a N stator pole and a S stator pole, an eccentric load mass diagram, including eccentric load, located at specific distances from the center axis of rotation of the stator wall, wherein the subsystems of eccentric load or rotor mass diagram enables the generator to operate efficiently and generate power while compensating for the eccentric load masses subsystems."
+            - paragraph [ref=f113e49]: "[11] The 4-phase motor and generator device of the present invention is easily and efficiently manufactured, marketed, and available to consumers in a cost-effective manner. It is easily used by users for generating power in numerous ways, like powering eccentric load subsystems these systems can be used in the HIGGS Field in outer space for Satellite Maintenance, Space Junk problems, Asteroid Mining, and assisting with moving payloads from the moon of Helium 3 back to Earth."
+            - paragraph [ref=f113e50]: "[12] The 4-Phase Generator has eight outputs of current. That provides input power for the 4-Phase stator wall from the armature's permanent magnetic poles for rotation inside its stator wall with electrical conductor segments from a control panel, with the Lithium battery bank support. The output from the 4-Phase Generator has a voltage regulator to stop charging the Lithium batteries. Solar Panels will be used in systems that operate in outer space, and charge the Lithium batteries, with voltage regulator controls in the control panel can resume charging the Lithium batteries when required to provide power from the Lithium battery bank for the 4-Phase Armatures and stator wall from eight of the outputs of the 4-Phase Generator. Also included is the Solar Panel distribution arrangement."
+          - generic [ref=f113e51]:
+            - heading "Symmetry Versus Asymmetry" [level=2] [ref=f113e52]
+            - paragraph [ref=f113e53]: From left to right Invariance Symmetry that displays distance from center axis, this is a representation of Emmy Noether's Law Conservation of Angular Momentum as distance “a” being the same distance from the center axis of rotation.
+            - paragraph [ref=f113e54]: The next 2nd drawing in the center of the page on the top is X=X is symmetry, Amplitude and frequency are equal symmetrical operation, below drawing is X>Y where X is a greater distance than Y thus Amplitude and frequency are not equal, and this is a Asymmetrical operation.
+            - paragraph [ref=f113e55]: To the right of the page is Axis of rotation of system and the four armatures display the eccentric mass load of each armature on the right side of the center axis of rotation, and the eccentric mass load that displays the Force arrow and the direction this system travels in a direction that is constant.
+            - paragraph [ref=f113e56]: "[13] The permanent magnets in the main armature induce a current in the stator wall as the main armature revolves around the center axis of rotation."
+          - generic [ref=f113e57]:
+            - heading "Detailed Description of the Drawings" [level=2] [ref=f113e58]
+            - paragraph [ref=f113e59]: "[14] Numerous benefits and advantages of this invention will become apparent to those skilled in the art to which it pertains upon reading and understanding the following detailed specifications."
+            - paragraph [ref=f113e60]: "[15] To the accomplishment of the foregoing and related ends, certain illustrative aspects of the disclosed innovation are described herein in connection with the following description and the annexed drawings."
+            - paragraph [ref=f113e61]: "[16] The description refers to the drawings provided in which similar reference characters refer to similar parts throughout the different views, and in which:"
+            - paragraph [ref=f113e62]: "[17] FIG. 1 is a drawing illustrating an internal view of one potential embodiment of a 4-phase generator with eight electrical load outputs of the present invention by the disclosed architecture."
+            - paragraph [ref=f113e63]: "[18] FIG.2 and FIG.3 drawings illustrate four Armature rotations inside the Stator Wall, which receives power from the eight electrical load outputs from FIG.1 drawing of the present invention by the disclosed architecture. FIG.4 is the drawing where the details of four armatures are labeled 31 on the left and 31 on the right subsystems 14 as four of the armatures rotate clockwise in one subsystem 14 and the other four armatures rotate counterclockwise, in the other subsystem 14."
+            - paragraph [ref=f113e64]: "[19] FIG. 4 drawing illustrates item 10 of the present invention by the disclosed architecture, with a Control Panel and two direct current motors labeled 36 that rotate these two 4-Phase Generators. 46 is the Lithium battery bank. 45 is the Solar Panel distribution arrangement."
+            - paragraph [ref=f113e65]: "[20] FIG. 5 drawing illustrates the armatures “A” and “C” phase relationship with the stator walls “A” and “C” phases and the armatures “B” and “D” phase relationship with the stator wall “B” and “D”."
+            - paragraph [ref=f113e66]: "[21] FIG. 6 and FIG.7 drawings illustrate eccentric mass loads G, H, I and J sharing the same center axis of rotation “0”."
+            - paragraph [ref=f113e67]: "[22] FIG. 8 Timing Gears 44 see location on FIG.4 drawing location at bottom of 10."
+          - generic [ref=f113e68]:
+            - heading "Claims of the Invention" [level=2] [ref=f113e69]
+            - paragraph [ref=f113e70]: "[55] The present invention, in one exemplary embodiment, is a method of operating 4-Phase Generator and eccentric mass load subsystems. A solar powered panel system will provide power for the Lithium battery bank will provide the electric power, to rotate the current to the direct current motor, to provide a method of rotating permanent magnetic armature with four north poles and 4 south poles inside a stator wall, the stator wall having a circular or cylindrical shape, with eight stator slots divided into four pole groups, each pole group has a N stator slot and a S stator slot, wherein four of the stator slots on one side of the stator wall correspond to the other four of the stator slots on an opposing side of the stator wall as described in the drawings. The permanent magnetic armature will generate eight outputs of power from the Stator wall to the control panel."
+            - paragraph [ref=f113e71]: "[56] This will provide electric power for two systems each containing four armatures, each armature has eight poles two A poles, two B poles, two C poles, two D poles opposite each other. These four armatures are inside an eight-pole stator wall, as a result the stator wall eight stator slots also have two A magnetic slots, two B magnetic slots, two C magnetic slots and two D magnetic slots that receive their power for the Lithium battery bank regulated from the Control panel."
+            - paragraph [ref=f113e72]: "[57] The armatures inside the stator wall will have an eccentric mass load on each armature that is mechanically attached to each armature, as illustrated in the drawings."
+            - paragraph [ref=f113e73]: "[58] As described in the drawings, one eccentric mass load system will rotate clockwise, and the other eccentric mass load system will rotate counterclockwise. These eccentric mass load systems will be mounted on decks and a timing gear will keep the synchronized to distribute the eccentric mass load in one direction that is constant as defined in the drawings."
+            - paragraph [ref=f113e74]: "[59] This application of eccentric load mass systems presents unique technical objectives and challenges, fundamentally altering the dynamics of current angular momentum conservation laws. In systems with eccentric mass load configurations, the distribution of mass around the axis of rotation is non-uniform, leading to deviations from traditional Conservation Laws Principles. The result is the eccentric mass load systems of the 4-Phase Motor Generator Device move in a direction that is constant where the mass is furthest out from the center axis of rotation, in the direction of Earth's gravitational field, and/or in HIGGS Fields in outer space."
+          - generic [ref=f113e75]:
+            - heading "Abstract" [level=2] [ref=f113e76]
+            - paragraph [ref=f113e77]: The invention relates to a novel 4-phase motor and generator device with increased efficiency for generating electrical energy. The device features a stator wall with eight stator slots and four pole groups, and an armature of permanent magnetic material with four north poles and four south poles, rotatable within the stator wall. The permanent magnetic armatures rotating the magnetic field within the stator wall, resulting in eight direct currents outputs. Solar powered panel system will provide power for the Lithium battery bank the will provide the power for the direct current motor that rotates the permanent magnetic armature and as the eight pole permanent magnetic armature fields inside the eight-pole stator wall current will be induced into the eight-pole stator wall for direct current output power to a control panel for power distribution to other devices within this patent application as defined in the drawings and claims.
+    - contentinfo [ref=f113e78]:
+      - paragraph [ref=f113e79]:
+        - text: Super Symmetry is proudly powered by
+        - link "WordPress" [ref=f113e80] [cursor=pointer]:
+          - /url: https://wordpress.org/
+    - generic [ref=f113e81]:
+      - generic [ref=f113e82]: 🇺🇸
+      - generic [ref=f113e83]: EN
+  - button "Open Next.js Dev Tools" [ref=f113e91] [cursor=pointer]

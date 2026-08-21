@@ -3,7 +3,8 @@ import type { ReactNode } from "react";
 
 type BaseProps = {
   children: ReactNode;
-  variant?: "solid" | "outline";
+  variant?: "solid" | "outline" | "outline-navy";
+  size?: "md" | "sm";
   className?: string;
 };
 
@@ -16,15 +17,23 @@ type ButtonProps = BaseProps & {
   href?: never;
   type: "button" | "submit";
   disabled?: boolean;
+  onClick?: () => void;
 };
 
 const base =
-  "group relative inline-flex items-center justify-center overflow-hidden px-7 py-3.5 text-sm font-semibold uppercase tracking-wide transition-transform duration-300 hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60";
+  "group relative inline-flex shrink-0 items-center justify-center overflow-hidden whitespace-nowrap text-sm font-semibold uppercase tracking-wide transition-transform duration-300 hover:-translate-y-0.5 disabled:cursor-not-allowed disabled:opacity-60";
+
+const sizes = {
+  md: "px-7 py-3.5",
+  sm: "px-4 py-2.5",
+};
 
 const variants = {
-  solid: "bg-gold-gradient text-navy-ink shadow-[0_8px_20px_rgba(221,166,46,0.25)] hover:shadow-[0_8px_20px_rgba(221,166,46,0.4)]",
+  solid: "bg-gold-gradient text-navy-ink shadow-[0_8px_20px_rgba(199,154,0,0.25)] hover:shadow-[0_8px_20px_rgba(199,154,0,0.4)]",
   outline:
     "border border-white/70 text-white hover:bg-white hover:text-navy-900",
+  "outline-navy":
+    "border border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white",
 };
 
 function Shine() {
@@ -37,10 +46,26 @@ function Shine() {
 }
 
 export default function CtaButton(props: LinkProps | ButtonProps) {
-  const { children, variant = "solid", className = "" } = props;
-  const classes = `${base} ${variants[variant]} ${className}`;
+  const { children, variant = "solid", size = "md", className = "" } = props;
+  const classes = `${base} ${sizes[size]} ${variants[variant]} ${className}`;
 
   if ("href" in props && props.href) {
+    const isExternal = /^https?:\/\//.test(props.href);
+
+    if (isExternal) {
+      return (
+        <a
+          href={props.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes}
+        >
+          <span className="relative z-10">{children}</span>
+          <Shine />
+        </a>
+      );
+    }
+
     return (
       <Link href={props.href} className={classes}>
         <span className="relative z-10">{children}</span>
@@ -49,9 +74,9 @@ export default function CtaButton(props: LinkProps | ButtonProps) {
     );
   }
 
-  const { type, disabled } = props as ButtonProps;
+  const { type, disabled, onClick } = props as ButtonProps;
   return (
-    <button type={type} disabled={disabled} className={classes}>
+    <button type={type} disabled={disabled} onClick={onClick} className={classes}>
       <span className="relative z-10">{children}</span>
       <Shine />
     </button>

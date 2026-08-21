@@ -1,0 +1,58 @@
+- generic [ref=f97e3]:
+  - link "Skip to content" [ref=f97e4] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f97e5]:
+    - navigation [ref=f97e7]:
+      - list [ref=f97e10]:
+        - listitem [ref=f97e11]:
+          - link "Home" [ref=f97e12] [cursor=pointer]:
+            - /url: https://supersymmetry.com/
+        - listitem [ref=f97e13]:
+          - link "About Us" [ref=f97e14] [cursor=pointer]:
+            - /url: https://supersymmetry.com/about-us/
+        - listitem [ref=f97e15]:
+          - link "How “Proto” Works" [ref=f97e16] [cursor=pointer]:
+            - /url: https://supersymmetry.com/how-proto-works/
+      - link [ref=f97e18] [cursor=pointer]:
+        - /url: https://supersymmetry.com/
+        - img "Super Symmetry" [ref=f97e19]
+      - list [ref=f97e22]:
+        - listitem [ref=f97e23]:
+          - link "Audio Book" [ref=f97e24] [cursor=pointer]:
+            - /url: https://www.amazon.com/Payloads-Electrical-Driving-Eccentric-Rotation/dp/B0GXLZY1R7/ref=tmm_aud_swatch_0
+        - listitem [ref=f97e25]:
+          - link "Book" [ref=f97e26] [cursor=pointer]:
+            - /url: https://www.amazon.com/dp/B0FJVDDLDZ
+        - listitem [ref=f97e27]:
+          - link "Mission & Values" [ref=f97e28] [cursor=pointer]:
+            - /url: https://supersymmetry.com/mission-and-values/
+        - listitem [ref=f97e29]:
+          - link "FAQs" [ref=f97e30] [cursor=pointer]:
+            - /url: https://supersymmetry.com/faqs/
+        - listitem [ref=f97e31]:
+          - link "He3 Lunar Mining" [ref=f97e32] [cursor=pointer]:
+            - /url: https://supersymmetry.com/he3-lunar-mining/
+  - heading "Translational Force Generator" [level=1] [ref=f97e35]
+  - generic [ref=f97e37]:
+    - generic [ref=f97e38]:
+      - main [ref=f97e40]:
+        - article [ref=f97e41]:
+          - img "Super Symmetry" [ref=f97e43]
+          - heading "Translational Force Generator" [level=1] [ref=f97e45]
+          - paragraph [ref=f97e47]: Translational Force Generator-Direct Current system. FIG.1 displays 2 each eccentric mass load systems direct current Quadrupole Systems. FIG.2 displays the polarity on the stator wall and the polarity on each Armature. FIG-3 is the timing gears to keep the eccentric mass loads timed together as one is rotating clockwise and the other eccentric mass load system counterclockwise to keep the eccentric mass load in this drawing to the right in this drawing. FIG.8 is an electrical wiring diagram that is a 12-lead delta Y for the Stator Walls. The square box on the bottom left area of this page displays the eccentric mass load upon the center axis of rotation mathematically.
+        - navigation "Posts" [ref=f97e48]:
+          - heading "Post navigation" [level=2] [ref=f97e49]
+          - generic:
+            - link "←Symmetry Versus Asymmetry" [ref=f97e51] [cursor=pointer]:
+              - /url: https://supersymmetry.com/services/symmetry-versus-asymmetry/
+            - link "Effects of the Higgs →" [ref=f97e53] [cursor=pointer]:
+              - /url: https://supersymmetry.com/services/effects-of-the-higgs/
+      - separator
+      - contentinfo [ref=f97e54]:
+        - paragraph [ref=f97e55]:
+          - text: Super Symmetry is proudly powered by
+          - link "WordPress" [ref=f97e56] [cursor=pointer]:
+            - /url: https://wordpress.org/
+    - generic [ref=f97e60] [cursor=pointer]:
+      - img "en" [ref=f97e61]
+      - text: en

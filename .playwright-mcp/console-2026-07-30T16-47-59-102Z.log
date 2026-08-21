@@ -1,0 +1,32 @@
+[     576ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[     689ms] [LOG] [HMR] connected @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[   22906ms] [WARNING] Image with src "/images/hero/slide-4.webp" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2172712ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2172790ms] [LOG] [Fast Refresh] done in 185ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2173958ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2173992ms] [LOG] [Fast Refresh] done in 135ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2382343ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2382373ms] [LOG] [Fast Refresh] done in 138ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2391650ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://img.youtube.com/vi/ncnDFbGnj3k/hqdefault.jpg:0
+[ 2391663ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://img.youtube.com/vi/RvJQiEBb3ak/hqdefault.jpg:0
+[ 2465020ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2468221ms] [LOG] [Fast Refresh] done in 3265ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2468468ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2468478ms] [LOG] [Fast Refresh] done in 118ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2531469ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2532127ms] [LOG] [Fast Refresh] done in 760ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2594614ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2594738ms] [LOG] [Fast Refresh] done in 229ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2624779ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2624795ms] [LOG] [Fast Refresh] done in 124ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2669041ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2669105ms] [LOG] [Fast Refresh] done in 168ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2669209ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2669262ms] [LOG] [Fast Refresh] done in 157ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2673184ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2673228ms] [LOG] [Fast Refresh] done in 148ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2680272ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2680468ms] [LOG] [Fast Refresh] done in 252ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2680583ms] [LOG] [Fast Refresh] rebuilding @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489
+[ 2680881ms] [LOG] [Fast Refresh] done in 411ms @ http://localhost:3001/_next/static/chunks/node_modules_next_dist_1ybzpk2._.js:2489

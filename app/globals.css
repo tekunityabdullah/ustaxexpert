@@ -1,23 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand: navy scale */
-  --color-navy-900: #030f2b;
-  --color-navy-800: #041d41;
-  --color-navy-700: #0b2853;
-  --color-navy-600: #021636;
-  --color-navy-ink: #1c2229;
+  /* Brand: blue scale — #0716f9 is the exact logo blue, used at full
+     strength throughout. Other steps are tints/shades of it for hierarchy
+     (large surfaces, hover states). */
+  --color-navy-900: #0716f9; /* logo blue — primary surfaces & text */
+  --color-navy-800: #2c39fa; /* lighter tint — TopBar, tab/hover fills */
+  --color-navy-700: #4550fa; /* lighter still — hover states */
+  --color-navy-600: #0612c7; /* darker shade — hover overlays */
+  --color-navy-ink: #0716f9; /* logo blue — CTA button text on gold */
 
-  /* Brand: gold scale */
-  --color-gold-600: #bc8012;
-  --color-gold-500: #dda62e;
-  --color-gold-400: #dea830;
-  --color-gold-300: #fbc647;
-  --color-gold-200: #fbcf5d;
+  /* Brand: gold/yellow scale — #ffff01 is the exact logo yellow, used at
+     full strength for the gradient peak. Darker steps exist because pure
+     #ffff01 has ~1:1 contrast on white and can't be used as legible text;
+     gold-600 is the darkest, WCAG-AA-safe step for text/icons on white. */
+  --color-gold-600: #8a6d00; /* text-safe deep gold (~4.9:1 on white) */
+  --color-gold-500: #c79a00; /* CTA gradient stop, borders */
+  --color-gold-400: #e6b800; /* mid accents */
+  --color-gold-300: #ffe066; /* bright — text/icons on dark navy */
+  --color-gold-200: #ffff01; /* logo yellow — gradient peak */
 
-  /* Accents */
-  --color-accent-orange: #ed5024;
-  --color-accent-green: #13b565;
+  /* Accents (repointed to the two logo colors instead of orange/green) */
+  --color-accent-orange: #8a6d00; /* nav active state — deep gold, matches gold-600 */
+  --color-accent-green: #ffff01; /* hover highlight on dark navy — logo yellow */
 
   /* Neutrals */
   --color-section: #f5f5f5;
@@ -51,12 +56,8 @@
 }
 
 @utility bg-gold-gradient {
-  background-image: linear-gradient(
-    45deg,
-    var(--color-gold-500) 0%,
-    var(--color-gold-200) 50%,
-    var(--color-gold-500) 100%
-  );
+  background-image: none;
+  background-color: #ffeb3b;
 }
 
 @layer base {
@@ -133,6 +134,87 @@
     font-size: 16px;
     line-height: 28px;
   }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--color-gold-500);
+    outline-offset: 2px;
+  }
+}
+
+/* Rich text content — shared by the admin blog editor (components/admin/blog/
+   RichTextEditor) and the public blog post page, so what an author sees while
+   writing matches what visitors see. Kept outside @layer base so it doesn't
+   clash with Tailwind's own element resets, and deliberately smaller than the
+   h1-h6 rules above (those are sized for full-page section headings, not
+   in-article subheadings). */
+.rich-content h2,
+.rich-content h3 {
+  color: var(--color-heading);
+  font-weight: 700;
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+  line-height: 1.3;
+}
+.rich-content h2 {
+  font-size: 24px;
+}
+.rich-content h3 {
+  font-size: 20px;
+}
+.rich-content p {
+  margin-top: 1em;
+  line-height: 1.75;
+}
+.rich-content p:first-child,
+.rich-content h2:first-child,
+.rich-content h3:first-child {
+  margin-top: 0;
+}
+.rich-content ul,
+.rich-content ol {
+  margin-top: 1em;
+  padding-left: 1.4em;
+}
+.rich-content ul {
+  list-style: disc;
+}
+.rich-content ol {
+  list-style: decimal;
+}
+.rich-content li {
+  margin-top: 0.4em;
+}
+.rich-content blockquote {
+  margin-top: 1.2em;
+  padding: 0.2em 0 0.2em 1.1em;
+  border-left: 3px solid var(--color-gold-500);
+  color: var(--color-muted);
+  font-style: italic;
+}
+.rich-content a {
+  color: var(--color-navy-900);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.rich-content strong {
+  font-weight: 700;
+}
+
+/* Placeholder text for the empty rich text editor (TipTap's Placeholder
+   extension renders this via a data attribute + ::before, not real DOM). */
+.rich-content.is-editor-empty:first-child::before,
+.rich-content p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  color: var(--color-muted);
+  opacity: 0.7;
+  pointer-events: none;
 }
 
 @keyframes fadeIn {

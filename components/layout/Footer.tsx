@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Phone } from "lucide-react";
+import { MapPin, Phone, ShieldCheck } from "lucide-react";
 import { NAV_LINKS } from "@/lib/nav";
-import { siteConfig } from "@/lib/site-config";
+import { siteConfig, BASE_PATH } from "@/lib/site-config";
 import Container from "@/components/ui/Container";
 import { FacebookIcon, InstagramIcon, YoutubeIcon } from "@/components/ui/SocialIcons";
 
@@ -21,10 +21,10 @@ export default function Footer() {
             <div>
               <div className="mb-5 inline-block rounded-md bg-white p-2">
                 <Image
-                  src="/images/Group-34806.png"
+                  src={`${BASE_PATH}/images/logo-cropped.png`}
                   alt="U.S. Tax Experts"
-                  width={250}
-                  height={84}
+                  width={1086}
+                  height={291}
                   className="h-14 w-auto"
                 />
               </div>
@@ -62,9 +62,12 @@ export default function Footer() {
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-white/85 transition-colors hover:text-accent-green"
+                      className="group flex items-center gap-1.5 text-white/85 transition-colors hover:text-white"
                     >
-                      {link.label}
+                      <span className="bg-gold-gradient h-1 w-1 shrink-0 rounded-full opacity-0 transition-opacity duration-200 group-hover:opacity-100" />
+                      <span className="transition-transform duration-200 group-hover:translate-x-0.5">
+                        {link.label}
+                      </span>
                     </Link>
                   </li>
                 ))}
@@ -98,14 +101,24 @@ export default function Footer() {
         <Container>
           <div className="flex flex-col items-center gap-3 py-5 text-[15px] text-white/80 md:flex-row md:justify-between">
             <p>2026 &copy; All Rights Reserved By U.S. Tax Experts</p>
+            <p className="flex items-center gap-2 text-[13px] text-white/70">
+              <ShieldCheck size={15} className="shrink-0 text-gold-300" />
+              Your information is protected with bank-level encryption
+            </p>
             <ul className="flex gap-5">
               <li>
-                <Link href="#" className="hover:text-white">
+                <Link
+                  href="/privacy-policy"
+                  className="relative pb-0.5 transition-colors hover:text-white after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-center after:scale-x-0 after:bg-white/60 after:transition-transform after:duration-200 hover:after:scale-x-100"
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-white">
+                <Link
+                  href="/terms-conditions"
+                  className="relative pb-0.5 transition-colors hover:text-white after:absolute after:inset-x-0 after:-bottom-0.5 after:h-px after:origin-center after:scale-x-0 after:bg-white/60 after:transition-transform after:duration-200 hover:after:scale-x-100"
+                >
                   Terms &amp; Conditions
                 </Link>
               </li>

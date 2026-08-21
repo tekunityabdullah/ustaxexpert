@@ -1,0 +1,55 @@
+- generic [ref=f99e3]:
+  - link "Skip to content" [ref=f99e4] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f99e5]:
+    - navigation [ref=f99e7]:
+      - list [ref=f99e10]:
+        - listitem [ref=f99e11]:
+          - link "Home" [ref=f99e12] [cursor=pointer]:
+            - /url: https://supersymmetry.com/
+        - listitem [ref=f99e13]:
+          - link "About Us" [ref=f99e14] [cursor=pointer]:
+            - /url: https://supersymmetry.com/about-us/
+        - listitem [ref=f99e15]:
+          - link "How “Proto” Works" [ref=f99e16] [cursor=pointer]:
+            - /url: https://supersymmetry.com/how-proto-works/
+      - link [ref=f99e18] [cursor=pointer]:
+        - /url: https://supersymmetry.com/
+        - img "Super Symmetry" [ref=f99e19]
+      - list [ref=f99e22]:
+        - listitem [ref=f99e23]:
+          - link "Audio Book" [ref=f99e24] [cursor=pointer]:
+            - /url: https://www.amazon.com/Payloads-Electrical-Driving-Eccentric-Rotation/dp/B0GXLZY1R7/ref=tmm_aud_swatch_0
+        - listitem [ref=f99e25]:
+          - link "Book" [ref=f99e26] [cursor=pointer]:
+            - /url: https://www.amazon.com/dp/B0FJVDDLDZ
+        - listitem [ref=f99e27]:
+          - link "Mission & Values" [ref=f99e28] [cursor=pointer]:
+            - /url: https://supersymmetry.com/mission-and-values/
+        - listitem [ref=f99e29]:
+          - link "FAQs" [ref=f99e30] [cursor=pointer]:
+            - /url: https://supersymmetry.com/faqs/
+        - listitem [ref=f99e31]:
+          - link "He3 Lunar Mining" [ref=f99e32] [cursor=pointer]:
+            - /url: https://supersymmetry.com/he3-lunar-mining/
+  - heading "Introduction" [level=1] [ref=f99e35]
+  - generic [ref=f99e37]:
+    - generic [ref=f99e38]:
+      - main [ref=f99e40]:
+        - article [ref=f99e41]:
+          - generic [ref=f99e50]:
+            - paragraph [ref=f99e51]: Through Force Equals Mass Times Acceleration, Mr. Thomas L. Navarro developed the 4-Phase Motor Generator. Still further, there is a long-felt need for the means for an electric generator that compensates for the earth’s gravitational field or the HIGGS Field, where the electric generator comprises eccentric mass loads revolving about a center axis of rotation. For example, in 2012 the HIGGS Field was discovered that encompasses the entire universe. The HIGGS boson is important because it implies the existence of a HIGGS field, an otherwise invisible field of energy which pervades the entire universe. Without the HIGGS field, the elementary particles that make up you and me and the entire visible universe would have no mass. Without the HIGGS field, mass could not be constructed. Using the “HIGGS Field” to move payloads in outer space is possible with electrical energy driven by the 4-Phase Motor Generator’s eccentric mass loads about a center axis of rotation.
+            - paragraph [ref=f99e52]: This application of SUPERSYMMETRIC eccentric load mass systems presents unique technical objectives and challenges, fundamentally altering the dynamics of current angular momentum conservation laws. In systems with eccentric mass load configurations, the distribution of mass around the axis of rotation is non-uniform, leading to deviations from traditional “Conservation Laws Principles”. The angular momentum of the system is intricately tied to the mass, its radial distance from the axis, and the angular velocity. As a result, the angular momentum varies throughout the rotation cycle, peaking at points where the mass is furthest out center axis of rotation, and diminishing when closer to the center axis of rotation. The result is the eccentric mass load systems of the 4-Phase Motor Generator Device move in a direction that is constant where the mass is furthest out center axis of rotation, in the earth’s gravitational field and in the HIGGS field in outer space.
+            - paragraph [ref=f99e53]: Yet still further, there is a long-felt need to develop an electric generator that can work in the HIGGS Fields in outer space and in the earth’s gravitational field, for moving of these systems in a direction that is constant. Leveraging the unique characteristics of eccentric mass loads in SUPERSYMMETRIC systems, offers the potential to generate greater forces for moving payloads in space using electrical energy. Other uses of the present disclosure of the 4-Phase Motor Generator Device include assistance with asteroid mining; satellite maintenance and repositioning, work on space junk problems, also to assist with He3 Lunar Mining, to transport helium 3 back to earth. Eccentric load mass systems dynamics necessitates addressing the complexities of resources of moving payloads in the HIGGS Field in outer space with electrical energy. The controls in the Control panel will allow direct current to be regulated and stored in Lithium batteries to provide power for the DC motor that rotates the 4-Phase Motor Generator Device. The Control panel can also regulate the amount of power to the DC motor that rotates the 4-Phase motor Generator Device, manually or through a automation control sequence of electric devices in the Control Panel.
+            - paragraph [ref=f99e54]: "The 4-Phase Motor Generator Device, the present application is a continuation-in-part of patent application 18/301,764 which was filed on April 17, 2023, and which claims priority to, and the benefit of, U.S. Provisional Application No. 63/419,373, which was filed on October 26,2022. Application # 19/012,398, Receipt Date/Time 01/07/2025 04:35 PM ET, Attorney Docket #30239.0002. Mr. Navarro has worked with his patent attorney and finalized his patent and enhanced its capabilities. His 4-Phase Motor Generator Systems will facilitate movement of systems in the earth’s gravitational field or the HIGGS fields in outer space and generate power via a control panel that regulates the voltage generated by the copper coils eccentric mass load."
+            - paragraph [ref=f99e55]: Mr. Navarro’s commitment to addressing global warming is a beacon of hope for the future. He aims to focus on this pressing issue by transitioning away from fossil fuels currently used in today’s Electric Power Plants. His 4-Phase Motor Generator Device, with its greater powerhouse efficiency, will play a significant role for this transition. A surplus of powerhouses, no longer in use due to their reliance on coal or fossil fuels, oil, can be retrofitted. These existing electric power plants can then be retrofitted to Helium 3 Fusion reactors and upgrade these power plants to 4-Phase Motor Generator electrical wiring as 4-Phase is more efficient than the current 3-Phase Generators used today in power plants. Making use of the helium 3 from He3 Lunar mining. Eventually all the existing fossil fuel power plants can all be retrofitted to Helium 3 Fusion reactors, as well as 4-Phase electric power distribution.
+            - paragraph [ref=f99e56]: I want to mention that my son Zachary J Navarro, Master Electrician and daughter Tiffany J Navarro Editor Assistant are Co-Inventors on this Patent.
+      - separator
+      - contentinfo [ref=f99e57]:
+        - paragraph [ref=f99e58]:
+          - text: Super Symmetry is proudly powered by
+          - link "WordPress" [ref=f99e59] [cursor=pointer]:
+            - /url: https://wordpress.org/
+    - generic [ref=f99e63] [cursor=pointer]:
+      - img "en" [ref=f99e64]
+      - text: en

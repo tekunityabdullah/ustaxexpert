@@ -1,60 +1,59 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { testimonials } from "@/lib/testimonials";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper/modules";
+import type { Swiper as SwiperType } from "swiper/types";
+import type { Testimonial } from "@/lib/testimonials";
 import TestimonialCard from "@/components/home/TestimonialCard";
 
-export default function Testimonials() {
-  const trackRef = useRef<HTMLDivElement>(null);
+import "swiper/css";
+import "swiper/css/navigation";
 
-  function scrollByCard(direction: 1 | -1) {
-    const track = trackRef.current;
-    if (!track) return;
-    const cardWidth = track.firstElementChild?.clientWidth ?? track.clientWidth;
-    const atEnd =
-      direction === 1 &&
-      track.scrollLeft + track.clientWidth >= track.scrollWidth - 10;
-    const atStart = direction === -1 && track.scrollLeft <= 10;
+export default function Testimonials({ testimonials }: { testimonials: Testimonial[] }) {
+  if (testimonials.length === 0) return null;
 
-    if (atEnd) {
-      track.scrollTo({ left: 0, behavior: "smooth" });
-    } else if (atStart) {
-      track.scrollTo({ left: track.scrollWidth, behavior: "smooth" });
-    } else {
-      track.scrollBy({ left: direction * cardWidth, behavior: "smooth" });
-    }
-  }
-
-  useEffect(() => {
-    const interval = setInterval(() => scrollByCard(1), 5000);
-    return () => clearInterval(interval);
-  }, []);
+  const swiperRef = useRef<SwiperType | null>(null);
 
   return (
     <div>
-      <div
-        ref={trackRef}
-        className="flex snap-x snap-mandatory gap-0 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+      <Swiper
+        modules={[Autoplay, Navigation]}
+        onSwiper={(swiper) => {
+          swiperRef.current = swiper;
+        }}
+        spaceBetween={24}
+        slidesPerView={1}
+        breakpoints={{
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+        }}
+        autoplay={{ delay: 4500, disableOnInteraction: false }}
+        grabCursor
+        rewind
+        className="items-stretch pb-2 [&_.swiper-wrapper]:items-stretch"
       >
         {testimonials.map((testimonial) => (
-          <TestimonialCard key={testimonial.name} {...testimonial} />
+          <SwiperSlide key={testimonial.name} className="h-auto">
+            <TestimonialCard {...testimonial} />
+          </SwiperSlide>
         ))}
-      </div>
-      <div className="mt-6 flex justify-center gap-4">
+      </Swiper>
+      <div className="mt-8 flex justify-center gap-3">
         <button
           type="button"
-          onClick={() => scrollByCard(-1)}
+          onClick={() => swiperRef.current?.slidePrev()}
           aria-label="Previous testimonial"
-          className="flex h-11 w-11 items-center justify-center rounded-full border border-navy-900/15 text-navy-900 transition-colors hover:bg-navy-900 hover:text-white"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-navy-900/15 text-navy-900 transition-all duration-200 hover:-translate-y-0.5 hover:border-navy-900 hover:bg-navy-900 hover:text-white"
         >
           <ChevronLeft size={20} />
         </button>
         <button
           type="button"
-          onClick={() => scrollByCard(1)}
+          onClick={() => swiperRef.current?.slideNext()}
           aria-label="Next testimonial"
-          className="flex h-11 w-11 items-center justify-center rounded-full border border-navy-900/15 text-navy-900 transition-colors hover:bg-navy-900 hover:text-white"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-navy-900/15 text-navy-900 transition-all duration-200 hover:-translate-y-0.5 hover:border-navy-900 hover:bg-navy-900 hover:text-white"
         >
           <ChevronRight size={20} />
         </button>

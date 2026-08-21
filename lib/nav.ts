@@ -10,4 +10,5 @@ export const NAV_LINKS: NavLink[] = [
   { label: "FAQs", href: "/faqs" },
   { label: "Resource Center", href: "/resource-center" },
   { label: "Client Hub", href: "/client-hub" },
+  { label: "Make a Payment", href: "/make-a-payment" },
 ];

@@ -1,0 +1,245 @@
+- generic [active] [ref=f34e1]:
+  - banner [ref=f34e2]:
+    - generic [ref=f34e3]:
+      - link "Travel Madly home" [ref=f34e4] [cursor=pointer]:
+        - /url: /
+        - img "Travel Madly" [ref=f34e5]
+      - navigation "Primary" [ref=f34e6]:
+        - list [ref=f34e7]:
+          - listitem [ref=f34e8]:
+            - link "Home" [ref=f34e9] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f34e10]:
+            - link "About Us" [ref=f34e11] [cursor=pointer]:
+              - /url: /about-us
+          - listitem [ref=f34e12]:
+            - link "Testimonials" [ref=f34e13] [cursor=pointer]:
+              - /url: /testimonial
+          - listitem [ref=f34e14]:
+            - link "Referrals" [ref=f34e15] [cursor=pointer]:
+              - /url: /referrals
+          - listitem [ref=f34e16]:
+            - link "Travel Insurance" [ref=f34e17] [cursor=pointer]:
+              - /url: /travel-insurance
+          - listitem [ref=f34e18]:
+            - link "Contract Agreement" [ref=f34e19] [cursor=pointer]:
+              - /url: /contract-agreement
+        - link "Contact Us" [ref=f34e20] [cursor=pointer]:
+          - /url: /contact-us
+  - main [ref=f34e21]:
+    - generic [ref=f34e25]:
+      - heading "Travel Madly. Live Fully. It's Time." [level=1] [ref=f34e26]
+      - paragraph [ref=f34e27]: Travel-Madly turns trip planning into a breeze—fun, fearless, and fabulously easy! With trusted service, thrilling options, and personal travel support that makes you feel like a VIP. We strive to make your journey seamless, stress-free and packed with memory making adventures.
+      - link "Book a Trip Now" [ref=f34e28] [cursor=pointer]:
+        - /url: /travel-booking
+    - generic [ref=f34e30]:
+      - generic [ref=f34e31]:
+        - heading "About Me" [level=2] [ref=f34e32]
+        - heading "I'm Martina Davies, And I'm So Glad You're Here At Travel-Madly!" [level=3] [ref=f34e33]
+        - paragraph [ref=f34e34]: I know what it's like to dream of travel but not know where to start. I grew up in a small Texas suburb, surrounded by a big, loving family. For us, travel meant weekend road trips and family reunions, not international adventures. That changed when I met my husband Phillip, a proud Welshman with a love for the open world.
+        - list [ref=f34e35]:
+          - listitem [ref=f34e36]:
+            - generic [ref=f34e37]: "1"
+            - generic [ref=f34e38]:
+              - strong [ref=f34e39]: Custom Plans
+              - text: We create travel plans that match your interests, budget, and the way you like to explore.
+          - listitem [ref=f34e40]:
+            - generic [ref=f34e41]: "2"
+            - generic [ref=f34e42]:
+              - strong [ref=f34e43]: Easy Booking
+              - text: From hotels to excursions, everything is planned for you so there's nothing to worry about.
+          - listitem [ref=f34e44]:
+            - generic [ref=f34e45]: "3"
+            - generic [ref=f34e46]:
+              - strong [ref=f34e47]: Trusted Partners
+              - text: We partner with top travel experts to deliver seamless planning and unforgettable journeys.
+          - listitem [ref=f34e48]:
+            - generic [ref=f34e49]: "4"
+            - generic [ref=f34e50]:
+              - strong [ref=f34e51]: Cruise Fun
+              - text: Make your cruise even better with shore trips that let you see and do more at every stop.
+        - link "Discover More" [ref=f34e52] [cursor=pointer]:
+          - /url: /about-us
+      - img "Martina Davies, founder of Travel Madly" [ref=f34e53]
+    - generic [ref=f34e55]:
+      - heading "Big Adventures Small Price Tags" [level=3] [ref=f34e56]
+      - paragraph [ref=f34e57]: Travel far and wide without breaking your travel budget.
+      - paragraph [ref=f34e58]:
+        - strong [ref=f34e59]: "Disclaimer:"
+        - text: Pricing is not guaranteed. All cruise and travel quotes are subject to change without notice at the suppliers discretion and/or the initial deposit or required financial obligations have been paid to the supplier and the reservation is officially booked.
+    - generic [ref=f34e61]:
+      - generic [ref=f34e62]:
+        - heading "Cruise with Unforgettable Shore Excursions!" [level=3] [ref=f34e63]
+        - paragraph [ref=f34e64]: Don't miss the chance to explore more at every port. Book thrilling, reliable, and affordable adventures with our trusted partner.
+        - link "VIEW EXCURSIONS HERE" [ref=f34e65] [cursor=pointer]:
+          - /url: https://www.shoreexcursionsgroup.com/
+      - generic [ref=f34e66]:
+        - heading "Viator Experiences" [level=3] [ref=f34e67]
+        - paragraph [ref=f34e68]: Dive into exhilarating adventures, breathtaking landscapes, and immersive cultural experiences! Whether you're chasing high-energy thrills, exploring hidden gems, soaking in awe-inspiring scenery, or unwinding on a pristine beach, these excursions offer unforgettable moments. From heart-pounding escapades to enriching journeys, each experience is crafted to ignite your sense of wonder and create stories worth sharing!
+        - link "VIEW EXCURSIONS HERE" [ref=f34e69] [cursor=pointer]:
+          - /url: https://www.viator.com/
+      - generic [ref=f34e70]:
+        - heading "Resort for a Day" [level=3] [ref=f34e71]
+        - paragraph [ref=f34e72]: Indulge in a day of pure bliss at a luxurious resort, where sun-kissed beaches, endless relaxation, and all-inclusive indulgence await! Savor gourmet cuisine, sip refreshing cocktails, and soak in breathtaking ocean views as you unwind in paradise. Whether you're lounging by the shore, enjoying world-class amenities, or diving into tropical adventures, this experience promises a perfect blend of luxury, leisure, and FUN!
+        - link "BOOK YOUR RESORT DAY PASS NOW" [ref=f34e73] [cursor=pointer]:
+          - /url: https://www.resortforaday.com/
+    - generic [ref=f34e74]:
+      - generic [ref=f34e75]:
+        - generic [ref=f34e76]:
+          - heading "Travel Insurance Protection" [level=3] [ref=f34e77]
+          - paragraph [ref=f34e78]: Stay safe during your trip with coverage for delays, emergencies, and unexpected issues that could ruin your vacation.
+          - paragraph [ref=f34e79]:
+            - strong [ref=f34e80]: "Please note:"
+            - text: I can help you explore travel insurance options, but I do not offer licensed insurance advice.
+        - link "Read More" [ref=f34e81] [cursor=pointer]:
+          - /url: /travel-insurance
+      - generic [ref=f34e82]:
+        - generic [ref=f34e85]:
+          - heading "Lost Luggage Protection" [level=2] [ref=f34e86]
+          - paragraph [ref=f34e87]: If your bags go missing or arrive late, insurance pays for clothes, toiletries, and important personal items.
+        - generic [ref=f34e90]:
+          - heading "Trip Delay Coverage" [level=2] [ref=f34e91]
+          - paragraph [ref=f34e92]: If your flight is canceled or delayed, insurance can help with hotels, meals, and rebooking costs.
+        - generic [ref=f34e95]:
+          - heading "Emergency Medical Coverage" [level=2] [ref=f34e96]
+          - paragraph [ref=f34e97]: Get help with hospital bills, doctor visits, and medications if you get sick or injured while traveling abroad.
+    - generic [ref=f34e101]:
+      - heading "What Travel-Madly can do for you..." [level=2] [ref=f34e102]
+      - generic [ref=f34e103]:
+        - paragraph [ref=f34e105]: Every Day, New Journeys Begin with Travel-Madly
+        - paragraph [ref=f34e107]: Curated Travel Deals, for the Inspired Explorer
+        - paragraph [ref=f34e109]: Happy Travelers. Lifelong Clients. Endless Memories
+        - paragraph [ref=f34e111]: Adventure Is Calling-It's Time!
+      - paragraph [ref=f34e112]:
+        - link "Why work with a Travel Agent?" [ref=f34e113] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=f34e114]:
+      - heading "What Our Happy Travelers Say" [level=3] [ref=f34e115]
+      - paragraph [ref=f34e116]: Our clients love the stress-free planning, personal care, and fun experiences. Read what real travelers say about their amazing journeys.
+      - generic [ref=f34e118]:
+        - generic [ref=f34e120]:
+          - generic [ref=f34e122]:
+            - heading "Rick A" [level=3] [ref=f34e123]
+            - generic "5 out of 5 stars" [ref=f34e124]
+            - paragraph [ref=f34e136]: Our family vacation to Galveston in July was wonderful! The beachfront hotel was in the perfect location—close to everything, with beach views that made our stay even more special. Everything was arranged so smoothly that traveling with my children and grandson was completely stress-free. Travel-Madly even sent me links to explore and choose activities at my own pace, which was so convenient. Thanks to Travel-Madly, all we had to do was relax, enjoy the beach, and make unforgettable memories together.
+            - img "Rick A" [ref=f34e138]
+          - generic [ref=f34e140]:
+            - heading "Phill D" [level=3] [ref=f34e141]
+            - generic "5 out of 5 stars" [ref=f34e142]
+            - paragraph [ref=f34e154]: Our family cruise to the Caribbean was incredible, and Martina at Travel-Madly made it completely stress-free. She handled everything—tickets, excursions, and great activity recommendations. Top-notch service from start to finish. Definitely a 5-star experience! We will definitely be using them again.
+            - img "Phill D" [ref=f34e156]
+          - generic [ref=f34e158]:
+            - heading "Will T" [level=3] [ref=f34e159]
+            - generic "5 out of 5 stars" [ref=f34e160]
+            - paragraph [ref=f34e172]: We've worked with Martina at Travel-Madly a couple of times now, and she always delivers. She got my mom a great deal on flights and hotel for my cousin's wedding in Philadelphia this past June, and more recently helped us with our August cruise. Even though we had already booked the cruise ourselves, she still came through with excellent excursion deals, parking recommendations, and even made sure my mom was covered with travel insurance. The service from Martina and her team has been top-notch, and we'll definitely keep using Travel-Madly for all our future trips.
+            - img "Will T" [ref=f34e174]
+          - generic [ref=f34e176]:
+            - heading "Mary M" [level=3] [ref=f34e177]
+            - generic "5 out of 5 stars" [ref=f34e178]
+            - generic [ref=f34e189]:
+              - paragraph [ref=f34e190]: We had the absolute best experience working with Martina Davies to plan our Caribbean cruise with Carnival! From start to finish, Martina made everything so easy — from booking the cruise to organizing our amazing excursions in Costa Maya, Belize, and Cancun. Her attention to detail, friendly guidance, and expert recommendations helped us create an unforgettable trip filled with wonderful memories. Every part of our journey ran smoothly, and we could truly relax and enjoy every moment knowing everything was taken care of.
+              - paragraph [ref=f34e191]: If you're thinking about booking a cruise, I can't recommend Martina Davies highly enough! She made the entire process seamless, and thanks to her, we had a fantastic time exploring the Caribbean.
+            - img "Mary M" [ref=f34e193]
+          - generic [ref=f34e195]:
+            - heading "Teresa V." [level=3] [ref=f34e196]
+            - generic "5 out of 5 stars" [ref=f34e197]
+            - paragraph [ref=f34e209]: I was a first-time cruiser and felt a little nervous at first, but Martina put me completely at ease. She took care of everything and patiently answered all of my questions. I sailed on the Carnival Dream, and once I was onboard, all my worries disappeared—it turned out to be one of the best vacations I've ever had! The excursions Martina recommended were fantastic and exceeded my expectations. Thanks to her guidance, I enjoyed six days of total relaxation and fun without a single worry. I'm already looking forward to planning my next cruise with Travel-Madly!
+            - img "Teresa V." [ref=f34e211]
+          - generic [ref=f34e213]:
+            - heading "Stefani R" [level=3] [ref=f34e214]
+            - generic "5 out of 5 stars" [ref=f34e215]
+            - generic [ref=f34e226]:
+              - paragraph [ref=f34e227]: Booked my very first cruise with Travel-Madly, and it was everything I hoped for and more! We sailed on the Carnival Liberty out of New Orleans with stops in Jamaica, Grand Cayman, and Cozumel.
+              - paragraph [ref=f34e228]: Martina not only found us a fantastic deal with Carnival, but she also provided great recommendations for excursions outside of the cruise line options. Her friendly reminders about important deadlines, check-in details, and first-time cruiser tips made the whole experience stress-free.
+              - paragraph [ref=f34e229]: We had such an amazing time and will definitely be booking another cruise—and without a doubt, we'll be using Travel-Madly again. Thank you, Martina & Travel-Madly, for making our trip so unforgettable!
+            - img "Stefani R" [ref=f34e231]
+          - generic [ref=f34e233]:
+            - heading "Cruz A" [level=3] [ref=f34e234]
+            - generic "5 out of 5 stars" [ref=f34e235]
+            - generic [ref=f34e246]:
+              - paragraph [ref=f34e247]: We booked our most recent cruise with Travel-Madly. The cruise started in Galveston and stopped in Costa Maya, Belize, and Cozumel. I'm not the best planner so I appreciated the reminders she sent us about key deadlines and check-in details. It was the smoothest cruise experience I've ever had. This was my 10th cruise so that's saying a lot!
+              - paragraph [ref=f34e248]: Martina went well beyond the call of duty for us! She found us an AirBnB for the night before departure, a parking venue for the week, and booked all our excursions for us. If you have ever been on a cruise, you know what a painful experience it is to do all this yourself! We are so blown away by the world class service we received, and we're already working with Travel-Madly to book our next cruise on the Sky Princes departing out of Orlando!
+              - paragraph [ref=f34e249]: A big thanks to Martina and the Travel-Madly team for making our vacation so stress free!
+            - img "Cruz A" [ref=f34e251]
+        - generic [ref=f34e252]:
+          - button "Previous testimonials" [ref=f34e253]
+          - button "Next testimonials" [ref=f34e256]
+    - generic [ref=f34e261]:
+      - heading "Say Yes to Travel Made for You" [level=2] [ref=f34e262]
+      - paragraph [ref=f34e264]: Enjoy personalized travel experiences that match your style, budget, and dreams. Your perfect vacation starts with one simple step.
+      - link "START YOUR BOOKING NOW" [ref=f34e265] [cursor=pointer]:
+        - /url: /contact-us
+  - contentinfo [ref=f34e266]:
+    - generic [ref=f34e267]:
+      - generic [ref=f34e268]:
+        - generic [ref=f34e269]:
+          - img "Travel Madly" [ref=f34e270]
+          - paragraph [ref=f34e271]: Travel-Madly helps you plan fun, easy and stress-free trips with trusted service, exciting options and personal travel support.
+        - generic [ref=f34e272]:
+          - heading "Quick Links" [level=3] [ref=f34e273]
+          - list [ref=f34e274]:
+            - listitem [ref=f34e275]:
+              - link "Home" [ref=f34e276] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f34e277]:
+              - link "About Us" [ref=f34e278] [cursor=pointer]:
+                - /url: /about-us
+            - listitem [ref=f34e279]:
+              - link "Testimonials" [ref=f34e280] [cursor=pointer]:
+                - /url: /testimonial
+            - listitem [ref=f34e281]:
+              - link "Referrals" [ref=f34e282] [cursor=pointer]:
+                - /url: /referrals
+            - listitem [ref=f34e283]:
+              - link "Travel Insurance" [ref=f34e284] [cursor=pointer]:
+                - /url: /travel-insurance
+            - listitem [ref=f34e285]:
+              - link "Contract Agreement" [ref=f34e286] [cursor=pointer]:
+                - /url: /contract-agreement
+        - generic [ref=f34e287]:
+          - heading "Contact Us" [level=3] [ref=f34e288]
+          - list [ref=f34e289]:
+            - listitem [ref=f34e290]:
+              - generic [ref=f34e293]: Garland, Texas 75043 USA
+            - listitem [ref=f34e294]:
+              - link "972 968 9803" [ref=f34e297] [cursor=pointer]:
+                - /url: tel:+19729689803
+            - listitem [ref=f34e298]:
+              - link "info@travel-madly.com" [ref=f34e301] [cursor=pointer]:
+                - /url: mailto:info@travel-madly.com
+        - generic [ref=f34e302]:
+          - heading "Your Next Escape Awaits" [level=3] [ref=f34e303]
+          - generic [ref=f34e304]:
+            - generic [ref=f34e305]:
+              - textbox "First Name" [ref=f34e306]:
+                - /placeholder: First Name*
+              - textbox "Last Name" [ref=f34e307]:
+                - /placeholder: Last Name*
+            - generic [ref=f34e308]:
+              - textbox "Email" [ref=f34e309]:
+                - /placeholder: Email*
+              - textbox "Phone Number" [ref=f34e310]:
+                - /placeholder: Phone Number*
+            - textbox "Message" [ref=f34e311]:
+              - /placeholder: Message*
+            - button "Refer a Friend" [ref=f34e312] [cursor=pointer]
+      - generic [ref=f34e313]:
+        - generic [ref=f34e314]:
+          - heading "get In TOuch" [level=3] [ref=f34e315]
+          - generic [ref=f34e316]:
+            - link "facebook" [ref=f34e317] [cursor=pointer]:
+              - /url: "#"
+            - link "youtube" [ref=f34e320] [cursor=pointer]:
+              - /url: "#"
+            - link "instagram" [ref=f34e323] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=f34e326]:
+          - heading "Newsletter" [level=3] [ref=f34e327]
+          - generic [ref=f34e328]:
+            - generic [ref=f34e329]: Email
+            - textbox "Email" [ref=f34e330]:
+              - /placeholder: Enter your Email
+            - button "Subscribe Now" [ref=f34e331] [cursor=pointer]
+      - paragraph [ref=f34e333]: © 2025 Travel Madly - It's Time– All rights reserved
+  - button "Open Next.js Dev Tools" [ref=f34e339] [cursor=pointer]
+  - alert [ref=f34e343]

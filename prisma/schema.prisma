@@ -1,0 +1,188 @@
+// Prisma schema — MySQL backend for the admin panel / CMS.
+// Connect by setting DATABASE_URL in your server environment, e.g.:
+//   DATABASE_URL="mysql://user:password@host:3306/database_name"
+// Then run: npx prisma migrate deploy (or `migrate dev` locally).
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+}
+
+// --- Admin & Auth -----------------------------------------------------
+
+enum AdminRole {
+  SUPER_ADMIN
+  ADMIN
+  EDITOR
+}
+
+model AdminUser {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  passwordHash String
+  name         String
+  role         AdminRole @default(ADMIN)
+  active       Boolean   @default(true)
+  lastLoginAt  DateTime?
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
+
+  media    Media[]
+  activity ActivityLog[]
+
+  @@map("admin_users")
+}
+
+model ActivityLog {
+  id          String   @id @default(cuid())
+  action      String // e.g. "created", "updated", "deleted", "logged in"
+  entityType  String // e.g. "Service", "BlogPost", "Payment"
+  entityLabel String // human-readable label, e.g. the title/name affected
+  createdAt   DateTime @default(now())
+
+  adminUser   AdminUser? @relation(fields: [adminUserId], references: [id], onDelete: SetNull)
+  adminUserId String?
+
+  @@index([createdAt])
+  @@map("activity_log")
+}
+
+// --- Payments (populated by the Stripe webhook) ------------------------
+
+enum PaymentStatus {
+  PENDING
+  PAID
+  FAILED
+  REFUNDED
+}
+
+model Payment {
+  id                    String        @id @default(cuid())
+  stripeSessionId       String        @unique
+  stripePaymentIntentId String?
+  customerName          String
+  customerEmail         String
+  serviceSlug           String
+  serviceTitle          String
+  amount                Int // cents
+  currency              String        @default("usd")
+  status                PaymentStatus @default(PENDING)
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+
+  @@index([status])
+  @@index([createdAt])
+  @@index([customerEmail])
+  @@map("payments")
+}
+
+// --- Content: Services --------------------------------------------------
+
+model Service {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  title       String
+  excerpt     String   @db.Text
+  description Json // string[] of paragraphs
+  image       String
+  imageWidth  Int      @default(1200)
+  imageHeight Int      @default(675)
+  included    Json // string[]
+  benefits    Json // string[]
+  paymentLink String?
+  order       Int      @default(0)
+  published   Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([order])
+  @@map("services")
+}
+
+// --- Content: Blog --------------------------------------------------
+
+model BlogPost {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  title     String
+  excerpt   String   @db.Text
+  content   Json // BlogContentBlock[]
+  image     String?
+  category  String
+  icon      String   @default("Mail")
+  readTime  String   @default("3 min read")
+  date      DateTime @default(now())
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([date])
+  @@map("blog_posts")
+}
+
+// --- Content: FAQs --------------------------------------------------
+
+model Faq {
+  id        String   @id @default(cuid())
+  question  String
+  answer    String   @db.Text
+  category  String
+  order     Int      @default(0)
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([order])
+  @@map("faqs")
+}
+
+// --- Content: Testimonials --------------------------------------------------
+
+model Testimonial {
+  id        String   @id @default(cuid())
+  name      String
+  quote     String   @db.Text
+  order     Int      @default(0)
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([order])
+  @@map("testimonials")
+}
+
+// --- Media Library --------------------------------------------------
+
+model Media {
+  id         String   @id @default(cuid())
+  filename   String
+  url        String
+  mimeType   String
+  size       Int // bytes
+  width      Int?
+  height     Int?
+  uploadedAt DateTime @default(now())
+
+  uploadedBy   AdminUser? @relation(fields: [uploadedById], references: [id], onDelete: SetNull)
+  uploadedById String?
+
+  @@map("media")
+}
+
+// --- Site Settings (singleton) --------------------------------------------------
+
+model SiteSettings {
+  id          Int      @id @default(1)
+  name        String   @default("U.S. Tax Experts")
+  tagline     String   @default("Your Top Source for IRS Tax Debt Relief")
+  description String   @db.Text
+  address     String
+  phones      Json // { label, href, type }[]
+  social      Json // { label, href, icon }[]
+  updatedAt   DateTime @updatedAt
+
+  @@map("site_settings")
+}

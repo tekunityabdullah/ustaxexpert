@@ -1,0 +1,172 @@
+- generic [ref=f70e3]:
+  - link "Skip to content" [ref=f70e4] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f70e5]:
+    - navigation [ref=f70e7]:
+      - list [ref=f70e10]:
+        - listitem [ref=f70e11]:
+          - link "Home" [ref=f70e12] [cursor=pointer]:
+            - /url: https://supersymmetry.com/
+        - listitem [ref=f70e13]:
+          - link "About Us" [ref=f70e14] [cursor=pointer]:
+            - /url: https://supersymmetry.com/about-us/
+        - listitem [ref=f70e15]:
+          - link "How “Proto” Works" [ref=f70e16] [cursor=pointer]:
+            - /url: https://supersymmetry.com/how-proto-works/
+      - link [ref=f70e18] [cursor=pointer]:
+        - /url: https://supersymmetry.com/
+        - img "Super Symmetry" [ref=f70e19]
+      - list [ref=f70e22]:
+        - listitem [ref=f70e23]:
+          - link "Audio Book" [ref=f70e24] [cursor=pointer]:
+            - /url: https://www.amazon.com/Payloads-Electrical-Driving-Eccentric-Rotation/dp/B0GXLZY1R7/ref=tmm_aud_swatch_0
+        - listitem [ref=f70e25]:
+          - link "Book" [ref=f70e26] [cursor=pointer]:
+            - /url: https://www.amazon.com/dp/B0FJVDDLDZ
+        - listitem [ref=f70e27]:
+          - link "Mission & Values" [ref=f70e28] [cursor=pointer]:
+            - /url: https://supersymmetry.com/mission-and-values/
+        - listitem [ref=f70e29]:
+          - link "FAQs" [ref=f70e30] [cursor=pointer]:
+            - /url: https://supersymmetry.com/faqs/
+        - listitem [ref=f70e31]:
+          - link "He3 Lunar Mining" [ref=f70e32] [cursor=pointer]:
+            - /url: https://supersymmetry.com/he3-lunar-mining/
+  - heading "About Us" [level=1] [ref=f70e35]
+  - generic [ref=f70e37]:
+    - generic [ref=f70e38]:
+      - main [ref=f70e40]:
+        - article [ref=f70e41]:
+          - generic [ref=f70e43]:
+            - generic [ref=f70e51]:
+              - figure [ref=f70e53]:
+                - img "Scan_20250710 (2)" [ref=f70e55]
+              - heading "Thomas L Navarro" [level=2] [ref=f70e56]
+              - paragraph [ref=f70e59]: I, Thomas L Navarro would like to assist Karman Plus with moving payloads in space using the systems that move payloads in the earth’s gravitational field, tabletop, surface tension of water, submarine in water, please in this website to observe many systems moving from eccentric mass load about a center axis of rotation. These systems can move payloads in space as the entire universe lives in the Higgs field that gives mass its properties. Karman Plus is setting up in Colorado and plans to start Asteroid mining for Presious metals and alloys, and my new patent systems would be very useful to move payloads in space with electrical energy instead of rocket propulsion.
+              - paragraph [ref=f70e62]: We need funding for work to start so I can set up a meeting with Local Electrical Motor Generator Shops to get an approximation of how much funding and fabrication of Patent No. 18/301,764.
+              - paragraph [ref=f70e65]: "Total Program Cost $35,647.50, Invoice Number: ZG12385, Location of Test Flight, Space Coast Regional Airport-Titusville, FL. This prototype system could just barely climb out of the plum in the earth’s gravitational field. The next Zero Gravity Test Flight will have the prototype system that floats on the surface tension of water video on the website."
+              - generic [ref=f70e67]:
+                - paragraph [ref=f70e68]:
+                  - strong [ref=f70e69]: Zachary Navarro
+                - paragraph [ref=f70e70]: He’s a Colorado Master Electrician, and we collaborated together to fine-tune the 4-Phase Motor Generator Device Patent.
+                - paragraph [ref=f70e71]:
+                  - strong [ref=f70e72]: Tiffany Navarro
+                - paragraph [ref=f70e73]: Tiffany was extremely helpful in exchanging ideas and collaborating on the 4-Phase Motor Generator Device Patent.
+                - list [ref=f70e74]:
+                  - listitem [ref=f70e75]:
+                    - link "Review School Of Thoughts" [ref=f70e76] [cursor=pointer]:
+                      - /url: https://supersymmetry.com/web/wp-content/uploads/2024/12/School-of-Thoughts.pdf
+                - paragraph [ref=f70e77]: Zachary and Tiffany are also Co-Inventors on the 4-Phase Motor Generator Device Patent
+                - paragraph [ref=f70e78]:
+                  - strong [ref=f70e79]: "Sage Marlof’s Biography:"
+                - paragraph [ref=f70e80]: Associate Maintenance Manager at Land O Lakes. April 2024 to present.
+                - paragraph [ref=f70e81]: Maintenance Foremen, May 2016 to April 2024.
+                - paragraph [ref=f70e82]: Student, San Joaquin Valley College 2015 to March 2024.
+                - paragraph [ref=f70e83]: Student, University of Phoenix, Jan 2023- Jan 2015.
+                - paragraph [ref=f70e84]: US Navy 11 years 11 months. Aviation Technician Supervisor, Nov 200-3 Sep 2007.
+                - paragraph [ref=f70e85]: Aviation Electronic Technician Supervisor, Nov 202- Sep 2007. Aviation Electronic Technician, Nov 2000 – Nov 2003.
+                - paragraph [ref=f70e86]: Supported the Navy’s Atlantic and Pacific Fleet Force Attack Aircraft and Joint Inter-Agency Corporation.
+                - paragraph [ref=f70e87]: The Key F-14 AWG-9 radar electronic technician for the advanced radar component.
+                - paragraph [ref=f70e88]:
+                  - strong [ref=f70e89]: James D Isaacson
+                - list [ref=f70e90]:
+                  - listitem [ref=f70e91]:
+                    - link "Check Resume" [ref=f70e92] [cursor=pointer]:
+                      - /url: https://supersymmetry.com/web/wp-content/uploads/2024/12/Jim_Isaacson_Resume_2024.pdf
+                  - listitem [ref=f70e93]:
+                    - link "Check Equations" [ref=f70e94] [cursor=pointer]:
+                      - /url: https://supersymmetry.com/web/wp-content/uploads/2024/12/2024-09-22_182239-2.pdf
+                - paragraph [ref=f70e95]:
+                  - strong [ref=f70e96]: Kevin Larson
+                  - text: Master In Refrigeration, Master in Lathe and Bridge Port Machining Operations
+                - paragraph [ref=f70e97]:
+                  - strong [ref=f70e98]: Joseph Alen DiPentino MS
+                  - text: Director of Executive and Corporate Acquisitions Assistant Director to Thomas L. Navarro VP Program Management and Project Systems Analysis
+              - heading "Credentials:" [level=2] [ref=f70e99]
+              - generic [ref=f70e101]:
+                - paragraph [ref=f70e102]: Webster University Master of Science – Space Systems Operations Acquisitions and Program Management Graduated May 2004
+                - paragraph [ref=f70e103]: Metropolitan State University Bachelors of Science – Aerospace Science – Aviation Technology Professional, Commercial Pilot and Ground Instructor
+              - heading "BIOGRAPHICAL SKETCH" [level=2] [ref=f70e104]
+              - generic [ref=f70e106]:
+                - paragraph [ref=f70e107]: Bibliography
+                - paragraph [ref=f70e108]: "PERSONAL DATA:"
+                - paragraph [ref=f70e109]: Thomas L. Navarro
+                - paragraph [ref=f70e110]: Owner/ Principal Investigator FORCE EQUALS MASS TIMES ACCELERATION INC.
+                - paragraph [ref=f70e111]: "License/Registration Number: 12628"
+                - paragraph [ref=f70e112]: "Expiration Date: 04/30/2027"
+                - paragraph [ref=f70e113]: "License Type: REFRIGERATION A"
+                - paragraph [ref=f70e114]: Refrigeration A Supervisor
+                - paragraph [ref=f70e115]: CERT1013557
+                - paragraph [ref=f70e116]: "Expiration Date: 08/31/2026"
+                - paragraph [ref=f70e117]: Steam Fitter Journeyman
+                - paragraph [ref=f70e118]: CERT2012180
+                - paragraph [ref=f70e119]: "Expiration Date: 11/30/2026"
+                - paragraph [ref=f70e120]:
+                  - link "http://www.denvergov.org/Contractor_Licensing" [ref=f70e122] [cursor=pointer]:
+                    - /url: http://www.denvergov.org/Contractor_Licensing
+              - heading "SKILLS/QUALIFIERS:" [level=2] [ref=f70e123]
+              - generic [ref=f70e125]:
+                - paragraph [ref=f70e126]: "Automation Control Contractor:"
+                - paragraph [ref=f70e127]: Alternative Air Temperature Controls, Owner 1985 to 2001
+                - paragraph [ref=f70e128]: President/PI Force Equals Mass Times Acceleration Inc. Owner 2002 thru 2024.
+                - paragraph [ref=f70e129]: Zero Gravity Corporation, Research Flight Program November 19th and 20th 2011.
+                - paragraph [ref=f70e130]:
+                  - text: "Total Program Cost $35,647.50, Invoice Number: ZG12385, Location of Test Flight, Space Coast Regional Airport-Titusville, FL. This prototype system could just barely climb out of the plum in the earth’s gravitational field. The next Zero Gravity Test Flight will have the prototype system that floating on the surface tension of water video on the website."
+                  - link "https://supersymmetry.com" [ref=f70e132] [cursor=pointer]:
+                    - /url: https://supersymmetry.com
+                  - text: .
+              - heading "PROFESSIONAL EXPERIENCE:" [level=2] [ref=f70e133]
+              - generic [ref=f70e135]:
+                - paragraph [ref=f70e136]: Managed and Supervised Digital/Analog Automation Controls of Fire, Life, Safety Heating, Ventilation, Chiller Automation Controls for locations listed below as crew Supervisor or Automation Control Contractor or Building Specialist.
+                - paragraph [ref=f70e137]: United Bank, now Wells Fargo Bank, 53 story high rise building, 17th and Lincoln, Denver, CO. The Tabor Center occupies 16th and 17th street and between Larimer Street and Arapahoe Street, Denver, CO with a 19 story Westin Hotel, Retail Gallery, Parking Garage and a 30 story Office Tower building.
+                - paragraph [ref=f70e138]: The Denver Post newspaper facility I-70 and I-25 installation fabrication of Control Panels and devices for this facility.
+                - paragraph [ref=f70e139]: Park Place, 13 Story Luxury Retirement Complex on Emmerson Street and Speer Blvd. Denver, CO.
+                - paragraph [ref=f70e140]: COBE Cardiovascular, now Gambro Health Care manufacturer site, with state-of-the-art clean rooms for manufacturing heart lung machines devices.
+                - paragraph [ref=f70e141]: Y-2 Upgrade of Building Automation at 54 Story Office Complex at 1801 California Street, Denver, CO.
+                - paragraph [ref=f70e142]: Upgrade of Building Automation at 1005 17th Street, 17 Story Office Complex, Denver, CO.
+                - paragraph [ref=f70e143]: Employed by US West December of 1995 as Building Specialist, changed to Qwest Communications, then Century Link Communications, then to Lumen Technology.
+                - paragraph [ref=f70e144]: Worked at the Main Data Center at 5325 Zuni Street, Denver CO, and this facility operates 24 hours a day 7days a week. My main duties include Automation Controls, Maintenance for 13 backup Generators, in the Generator Building. When the Xcel Power Outage occurs the Cyber X unites in the core of each of the 7 floors of the Internet computer automation systems would transfer the Global Internet electrical load, (in the computer cores on each floors) to back up batteries within a 60th of a second the Generators would then synchronize to load and transfer off of the 720 lead cell batteries to Generators per Switch Boards that can load up to 2000 KW. Once Xcel Electric Power was available then I would manually transfer the average 1000 KW load off Generator Power back to Xcel Electric Power gradually. I worked over 19 years in this Generator Power Building and maintained the Generators, Automation Controls, Battery backup systems and Exercised the Generators under load for an hour each month and documented all the loads per switch board on each Generator Control Panels.
+              - heading "Education/Military Duty:" [level=2] [ref=f70e145]
+              - generic [ref=f70e147]:
+                - paragraph [ref=f70e148]: Honorably Discharged United States Army, Rnak SP5 Field Radio Mechanic, 14 August 1969 to 15 March 1970, served over a year inside the DMZ in North Korea.
+                - paragraph [ref=f70e149]: Attended Metropolitan State College and Community College.
+                - paragraph [ref=f70e150]: Certificate of Completion of Apprenticeship Denver Pipefitters Joint Apprenticeship 11 January 1978.
+              - heading "Training Programs:" [level=2] [ref=f70e151]
+              - generic [ref=f70e153]:
+                - paragraph [ref=f70e154]: Ferris State University Refrigerant Transition and Recovery Certification.
+                - paragraph [ref=f70e155]: Refrigeration Journeyman Training Certificate.
+                - paragraph [ref=f70e156]: Electric Journeyman Training Certificate.
+                - paragraph [ref=f70e157]: Electric Journeyman Training Certificate Advanced.
+                - paragraph [ref=f70e158]: TRACER 1000 Systems Complete Programming.
+                - paragraph [ref=f70e159]: "Insight for PC Programming #5-202."
+                - paragraph [ref=f70e160]: APOGEE Introduction to Programming 5-630.
+                - paragraph [ref=f70e161]: LICENCES/CERTIFIATE/REGRISTRATION
+                - paragraph [ref=f70e162]: FORCE EQUALS MASS TIMES ACCELERATION INC.
+                - paragraph [ref=f70e163]: Duns:106758936
+                - paragraph [ref=f70e164]: "Cage Code: 1X3J8"
+                - paragraph [ref=f70e165]: Colorado Secretary of State
+                - paragraph [ref=f70e166]: FORCE EQUALS MASS TIME ACCELERATION INC.
+                - paragraph [ref=f70e167]: ID Number 200221092100
+                - paragraph [ref=f70e168]: DETAILS OF MANUFACTRING PROCESS
+                - paragraph [ref=f70e169]: "United States Patent numbers: 5,473,957, 5,150,626 and Application Number 18/301,764, Receipt Date/Time 04/17/2023 05:13:48 PM ET Attorney Docket # 30239.0001"
+                - paragraph [ref=f70e170]:
+                  - link "http://www.uspto.gov" [ref=f70e172] [cursor=pointer]:
+                    - /url: http://www.uspto.gov/
+            - generic [ref=f70e177]:
+              - generic [ref=f70e180]:
+                - generic [ref=f70e181]:
+                  - figure [ref=f70e186]
+                  - figure [ref=f70e192]
+                - generic [ref=f70e194]:
+                  - figure [ref=f70e199]
+                  - figure [ref=f70e205]
+              - figure [ref=f70e211]
+      - separator
+      - contentinfo [ref=f70e213]:
+        - paragraph [ref=f70e214]:
+          - text: Super Symmetry is proudly powered by
+          - link "WordPress" [ref=f70e215] [cursor=pointer]:
+            - /url: https://wordpress.org/
+    - generic [ref=f70e219] [cursor=pointer]:
+      - img "en" [ref=f70e220]
+      - text: en

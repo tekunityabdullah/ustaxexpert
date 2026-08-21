@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# admin CMS: user-uploaded media (written to disk at runtime, not source)
+/public/uploads/
+
+# prisma
+/prisma/generated/

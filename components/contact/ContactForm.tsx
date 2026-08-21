@@ -1,8 +1,23 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
-import { services } from "@/lib/services";
+import { useEffect, useRef, useState, type FormEvent } from "react";
+import Script from "next/script";
+import type { Service } from "@/lib/services";
+import { integrations } from "@/lib/site-config";
 import CtaButton from "@/components/ui/CtaButton";
+
+declare global {
+  interface Window {
+    grecaptcha?: {
+      render: (
+        container: HTMLElement,
+        params: { sitekey: string; callback: (token: string) => void; "expired-callback": () => void }
+      ) => number;
+      reset: (widgetId?: number) => void;
+      getResponse: (widgetId?: number) => string;
+    };
+  }
+}
 
 type FormState = {
   name: string;
@@ -26,20 +41,47 @@ function isValidEmail(value: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
-export default function ContactForm() {
+// reCAPTCHA only renders once NEXT_PUBLIC_RECAPTCHA_SITE_KEY is set (see
+// .env.example) — no fake/placeholder checkbox is shown before then.
+const RECAPTCHA_ENABLED = Boolean(integrations.recaptchaSiteKey);
+
+export default function ContactForm({ services }: { services: Service[] }) {
   const [form, setForm] = useState<FormState>(initialState);
-  const [errors, setErrors] = useState<Partial<Record<keyof FormState, string>>>({});
+  const [errors, setErrors] = useState<
+    Partial<Record<keyof FormState, string>> & { recaptcha?: string }
+  >({});
   const [status, setStatus] = useState<Status>("idle");
+  const [recaptchaToken, setRecaptchaToken] = useState("");
+  const [recaptchaReady, setRecaptchaReady] = useState(false);
+  const recaptchaRef = useRef<HTMLDivElement>(null);
+  const widgetId = useRef<number | null>(null);
+
+  useEffect(() => {
+    if (!RECAPTCHA_ENABLED || !recaptchaReady || !recaptchaRef.current) return;
+    if (widgetId.current !== null) return;
+    if (!window.grecaptcha) return;
+
+    widgetId.current = window.grecaptcha.render(recaptchaRef.current, {
+      sitekey: integrations.recaptchaSiteKey,
+      callback: (token) => setRecaptchaToken(token),
+      "expired-callback": () => setRecaptchaToken(""),
+    });
+  }, [recaptchaReady]);
 
   function updateField<K extends keyof FormState>(key: K, value: FormState[K]) {
     setForm((prev) => ({ ...prev, [key]: value }));
   }
 
   function validate(): boolean {
-    const nextErrors: Partial<Record<keyof FormState, string>> = {};
+    const nextErrors: Partial<Record<keyof FormState, string>> & { recaptcha?: string } = {};
     if (!form.name.trim()) nextErrors.name = "Please enter your name.";
     if (!isValidEmail(form.email)) nextErrors.email = "Please enter a valid email address.";
     if (!form.message.trim()) nextErrors.message = "Please tell us a bit about your situation.";
+
+    if (RECAPTCHA_ENABLED && !recaptchaToken) {
+      nextErrors.recaptcha = "Please complete the reCAPTCHA verification.";
+    }
+
     setErrors(nextErrors);
     return Object.keys(nextErrors).length === 0;
   }
@@ -49,15 +91,37 @@ export default function ContactForm() {
     if (!validate()) return;
 
     setStatus("submitting");
+
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-      if (!res.ok) throw new Error("Request failed");
+      if (integrations.formEndpoint) {
+        const payload = new FormData();
+        payload.set("name", form.name);
+        payload.set("email", form.email);
+        payload.set("phone", form.phone);
+        payload.set("service", form.service);
+        payload.set("message", form.message);
+        if (RECAPTCHA_ENABLED) payload.set("g-recaptcha-response", recaptchaToken);
+
+        const res = await fetch(integrations.formEndpoint, {
+          method: "POST",
+          headers: { Accept: "application/json" },
+          body: payload,
+        });
+        if (!res.ok) throw new Error(`Form submission failed with status ${res.status}`);
+      } else {
+        // NEXT_PUBLIC_FORM_ENDPOINT isn't configured yet — see .env.example.
+        // Submission is not sent anywhere until a form-backend URL is set.
+        console.warn(
+          "ContactForm: NEXT_PUBLIC_FORM_ENDPOINT is not set, so this submission was not sent anywhere."
+        );
+      }
+
       setStatus("success");
       setForm(initialState);
+      setRecaptchaToken("");
+      if (RECAPTCHA_ENABLED && window.grecaptcha && widgetId.current !== null) {
+        window.grecaptcha.reset(widgetId.current);
+      }
     } catch {
       setStatus("error");
     }
@@ -77,6 +141,14 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-5">
+      {RECAPTCHA_ENABLED && (
+        <Script
+          src="https://www.google.com/recaptcha/api.js?render=explicit"
+          strategy="lazyOnload"
+          onReady={() => setRecaptchaReady(true)}
+        />
+      )}
+
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="mb-1.5 block text-sm font-semibold text-heading">
@@ -155,6 +227,13 @@ export default function ContactForm() {
         />
         {errors.message && <p className="mt-1 text-sm text-red-600">{errors.message}</p>}
       </div>
+
+      {RECAPTCHA_ENABLED && (
+        <div>
+          <div ref={recaptchaRef} />
+          {errors.recaptcha && <p className="mt-1 text-sm text-red-600">{errors.recaptcha}</p>}
+        </div>
+      )}
 
       {status === "error" && (
         <p className="text-sm text-red-600">

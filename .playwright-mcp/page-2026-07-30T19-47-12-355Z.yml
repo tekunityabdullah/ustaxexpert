@@ -1,0 +1,174 @@
+- generic [ref=f91e2]:
+  - link "Skip to content" [ref=f91e3] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f91e4]:
+    - navigation [ref=f91e6]:
+      - list [ref=f91e9]:
+        - listitem [ref=f91e10]:
+          - link "Home" [ref=f91e11] [cursor=pointer]:
+            - /url: https://supersymmetry.com/
+        - listitem [ref=f91e12]:
+          - link "About Us" [ref=f91e13] [cursor=pointer]:
+            - /url: https://supersymmetry.com/about-us/
+        - listitem [ref=f91e14]:
+          - link "How “Proto” Works" [ref=f91e15] [cursor=pointer]:
+            - /url: https://supersymmetry.com/how-proto-works/
+      - link [ref=f91e17] [cursor=pointer]:
+        - /url: https://supersymmetry.com/
+        - img "Super Symmetry" [ref=f91e18]
+      - list [ref=f91e21]:
+        - listitem [ref=f91e22]:
+          - link "Audio Book" [ref=f91e23] [cursor=pointer]:
+            - /url: https://www.amazon.com/Payloads-Electrical-Driving-Eccentric-Rotation/dp/B0GXLZY1R7/ref=tmm_aud_swatch_0
+        - listitem [ref=f91e24]:
+          - link "Book" [ref=f91e25] [cursor=pointer]:
+            - /url: https://www.amazon.com/dp/B0FJVDDLDZ
+        - listitem [ref=f91e26]:
+          - link "Mission & Values" [ref=f91e27] [cursor=pointer]:
+            - /url: https://supersymmetry.com/mission-and-values/
+        - listitem [ref=f91e28]:
+          - link "FAQs" [ref=f91e29] [cursor=pointer]:
+            - /url: https://supersymmetry.com/faqs/
+        - listitem [ref=f91e30]:
+          - link "He3 Lunar Mining" [ref=f91e31] [cursor=pointer]:
+            - /url: https://supersymmetry.com/he3-lunar-mining/
+  - heading "He3 Lunar Mining" [level=1] [ref=f91e34]
+  - generic [ref=f91e36]:
+    - generic [ref=f91e37]:
+      - main [ref=f91e39]:
+        - article [ref=f91e40]:
+          - generic [ref=f91e43]:
+            - generic [ref=f91e50]:
+              - heading [level=3] [ref=f91e51]:
+                - strong [ref=f91e52]: The “4-Phase Motor Generator Device” can assist with moving payloads in the HIGGS field in space.
+              - paragraph [ref=f91e53]
+              - paragraph [ref=f91e54]: "China is now leading the world into an industrial and scientific revolution, the sheer scale of which will of necessity soon require an entirely new form of energy, never before mastered on Earth: controlled thermonuclear fusion power, using helium-3 (He-3) as its fuel. The He-3 isotope is extremely rare on Earth, but exists in abundance on the Moon, and the Chinese leadership has already begun an ambitious program to acquire it. About three-fourths of China’s energy is now produced by coal-fired power plants, but a typical coal train of more than a kilometer long, carrying 5,000 tons of coal, would be replaced by just 40 grams of He-3, dramatically reducing transportation costs. Just eight tones of He-3 in fusion reactors would provide the equivalent energy of one billion tons of coal, burned in power stations. China’s plan to bring back He-3 from the Moon will benefit not only the Chinese, but all mankind, just as any scientific breakthrough anywhere in the world has always done. Moreover, China is not alone in needing huge new supplies of energy. Human civilization now and in the foreseeable future already requires orders of magnitude more energy, while per capita energy consumption must also rise dramatically, if we are to eliminate poverty and transform industry, agriculture, transportation, and water management everywhere."
+              - paragraph [ref=f91e55]:
+                - text: Professor Ouyang Ziyuan, the chief scientist of the
+                - link "Chinese Lunar Exploration Program (CLEP)" [ref=f91e56] [cursor=pointer]:
+                  - /url: https://en.wikipedia.org/wiki/Chinese_Lunar_Exploration_Program
+                - text: ", has said that the Moon is so rich in He-3, that this could “solve humanity’s energy demand for around 10,000 years at least.” While talking about the Moon’s reserves of iron and other metals, Ziyuan particularly drew attention to He-3, which he called “an ideal fuel for nuclear fusion power, the next generation of nuclear power.” He added, “It is estimated that reserves of helium-3 across Earth amount to just 15 tons, while 100 tons of helium-3 will be needed each year if nuclear fusion technology is applied to meet global energy demands. The Moon, on the other hand, has reserves estimated at between one and five million tons.” There are two stable isotopes of helium on earth, He-3 and He-4. The nucleus of each has two protons, but He-3 is lighter because it has only one neutron, while He-4 has two. He-3 accounts for just 0.000137 per cent of Earth’s helium, while the rest is He-4. He-3 is emitted from the Sun and carried throughout the Solar System by the solar winds, but is repelled by the Earth’s magnetic field, with only a tiny amount penetrating the atmosphere in cosmic dust. On the Moon, however, which has a weak magnetic field and no atmosphere, He-3 over the eons has been deposited in significant quantities. In recent years China has launched a remarkable plan not only to land on the Moon in the near future, but to industrialize it. At the center of this program lies the intent to mine He-3 and bring it back to Earth. The long-term perspective, emphasize by Ouyang Ziyuan, is shared by the famous Apollo 17 astronaut and former U.S. Senator Harrison Schmitt. Following the December 2013 landing of China’s Yutu (Jade Rabbit) lunar rover, Schmitt observed, “China has made no secret of their interest in lunar helium-3 fusion resources…. In fact, I would assume that this mission is both a geopolitical statement and a test of some hardware and software related to mining and processing of the lunar regolith.” Schmitt has numerous papers and books on the prospect of lunar development and helium-3 mining, and has worked closely with the group at the University of Wisconsin which is developing helium-3."
+            - generic [ref=f91e64]:
+              - heading "Helium-3 has been proposed." [level=3] [ref=f91e65]
+              - paragraph [ref=f91e66]:
+                - link "Helium-3 and deuterium can be used as fuels in “aneutronic” fusion reactors, which create normal helium and a proton when they fuse, wasting less energy and being easier to contain" [ref=f91e67] [cursor=pointer]:
+                  - /url: https://explainingthefuture.com/helium3.html
+                - link [ref=f91e68] [cursor=pointer]:
+                  - /url: https://explainingthefuture.com/helium3.html
+                  - strong [ref=f91e69]:
+                    - superscript [ref=f91e70]: "1"
+                - text: .
+                - link "The fuel is non-radioactive, the process produces no radioactivity, and the residue produces no radioactivity" [ref=f91e71] [cursor=pointer]:
+                  - /url: https://www.nuenergy.org/helium-3-fusion-energy/
+                - link [ref=f91e72] [cursor=pointer]:
+                  - /url: https://www.nuenergy.org/helium-3-fusion-energy/
+                  - strong [ref=f91e73]:
+                    - superscript [ref=f91e74]: "2"
+                - text: .
+                - link "Helium-3 propulsion could also be used to power spacecraft by fusing helium-3 with deuterium in a reactor, which would release energy and expel propellant out the back of the spacecraft" [ref=f91e75] [cursor=pointer]:
+                  - /url: https://en.wikipedia.org/wiki/Fusion_rocket
+                - link [ref=f91e76] [cursor=pointer]:
+                  - /url: https://en.wikipedia.org/wiki/Fusion_rocket
+                  - strong [ref=f91e77]:
+                    - superscript [ref=f91e78]: "3"
+                - text: .
+              - paragraph [ref=f91e79]: "Certainly! Helium-3 (³He) has been proposed as a potential fuel for fusion reactors, and it offers some interesting advantages. Let me explain:"
+              - list [ref=f91e80]:
+                - listitem [ref=f91e81]:
+                  - strong [ref=f91e82]:
+                    - strong [ref=f91e83]:
+                      - strong [ref=f91e84]: "Fusion Reactions with Helium-3:"
+                  - list [ref=f91e85]:
+                    - listitem [ref=f91e86]:
+                      - text: "In a fusion reactor, helium-3 can be fused with deuterium (D) to produce energy. The reactions involved are as follows:"
+                      - list [ref=f91e87]:
+                        - listitem [ref=f91e88]:
+                          - strong [ref=f91e89]: D + ³He
+                          - strong [ref=f91e90]: →
+                          - strong [ref=f91e91]: p (14.68 MeV) +
+                          - strong [ref=f91e92]: ⁴
+                          - strong [ref=f91e93]: He (3.67 MeV)
+                        - listitem [ref=f91e94]:
+                          - strong [ref=f91e95]: ³He + ³He
+                          - strong [ref=f91e96]: →
+                          - strong [ref=f91e97]: 2p +
+                          - strong [ref=f91e98]: ⁴
+                          - strong [ref=f91e99]: He (12.86 MeV)
+                    - listitem [ref=f91e100]: These reactions release energy in the form of protons and helium nuclei (alpha particles).
+                - listitem [ref=f91e101]:
+                  - strong [ref=f91e102]:
+                    - strong [ref=f91e103]:
+                      - strong [ref=f91e104]: "Advantages of Helium-3 Fusion:"
+                  - list [ref=f91e105]:
+                    - listitem [ref=f91e106]:
+                      - strong [ref=f91e107]: "Low Radioactivity:"
+                      - text: Unlike traditional nuclear fission reactors, helium-3 fusion reactors produce far fewer high-energy neutrons. As a result, there is a drastic reduction in radioactivity and minimal residual radioactive waste.
+                    - listitem [ref=f91e108]:
+                      - strong [ref=f91e109]: "Energy Conversion Efficiency:"
+                      - text: Fusion power plants using helium-3 reactions can potentially achieve higher energy conversion efficiency. The output power is carried through charged particles (protons and alpha particles) rather than high-energy neutrons, which simplifies energy extraction.
+                    - listitem [ref=f91e110]:
+                      - strong [ref=f91e111]: "Safety and Maintenance:"
+                      - text: Helium-3 reactors require less shielding and induce less radioactivity, making them safer and easier to maintain compared to deuterium-tritium (DT) reactors.
+                    - listitem [ref=f91e112]:
+                      - strong [ref=f91e113]: "Reduced Proliferation Risk:"
+                      - text: The lower neutron production in helium-3 reactors reduces the risk of nuclear proliferation.
+              - list [ref=f91e114]:
+                - listitem [ref=f91e115]:
+                  - strong [ref=f91e116]: "Availability:"
+              - list [ref=f91e117]:
+                - listitem [ref=f91e118]:
+                  - list [ref=f91e119]:
+                    - listitem [ref=f91e120]: Unfortunately, helium-3 is not abundant on Earth. Presently, there is only about 100 kg of ³He available on our planet.
+                    - listitem [ref=f91e121]: While this amount is sufficient for research and reactor development, it would not significantly impact global energy production.
+              - list [ref=f91e122]:
+                - listitem [ref=f91e123]:
+                  - strong [ref=f91e124]: "Lunar Helium-3:"
+              - list [ref=f91e125]:
+                - listitem [ref=f91e126]:
+                  - list [ref=f91e127]:
+                    - listitem [ref=f91e128]: Lunar samples brought back from Apollo missions and other lunar missions have shown that ³He is present in the lunar regolith due to solar wind bombardment over billions of years.
+                    - listitem [ref=f91e129]: Researchers estimate that there could be at least a million tonnes of ³He within the first 3 meters of the lunar surface.
+                    - listitem [ref=f91e130]: If we could extract and use lunar ³He, it could potentially fuel fusion reactors and generate clean and economical nuclear power.
+              - list [ref=f91e131]:
+                - listitem [ref=f91e132]:
+                  - strong [ref=f91e133]: Perfect Energy Source?
+              - list [ref=f91e134]:
+                - listitem [ref=f91e135]:
+                  - list [ref=f91e136]:
+                    - listitem [ref=f91e137]:
+                      - link "Some proponents consider helium-3 fusion as the “perfect” energy source because it is non-radioactive, produces no radioactivity during the fusion process, and leaves no radioactive residue" [ref=f91e138] [cursor=pointer]:
+                        - /url: https://ntrs.nasa.gov/api/citations/20210022801/downloads/AIAA%20ASCEND%202021%20Paper_211018.pdf
+                      - link [ref=f91e139] [cursor=pointer]:
+                        - /url: https://ntrs.nasa.gov/api/citations/20210022801/downloads/AIAA%20ASCEND%202021%20Paper_211018.pdf
+                        - superscript [ref=f91e140]: "1"
+                      - link [ref=f91e141] [cursor=pointer]:
+                        - /url: https://www.nuenergy.org/helium-3-fusion-energy/
+                        - superscript [ref=f91e142]: "2"
+                      - text: .
+              - paragraph [ref=f91e143]: In summary, while helium-3 fusion holds promise, its practical implementation depends on our ability to extract it from lunar sources or other locations.
+              - paragraph [ref=f91e144]:
+                - link "https://supersymmetry.com/web" [ref=f91e145] [cursor=pointer]:
+                  - /url: https://supersymmetry.com/web
+                - text: 4-Phase Motor Generator Device can assist with moving payloads in space.
+              - paragraph [ref=f91e146]:
+                - link "Massive piece of space junk crashes into village in Kenya and officials still have no idea where it came from" [ref=f91e147] [cursor=pointer]:
+                  - /url: https://www.livescience.com/space/massive-piece-of-space-junk-crashes-into-village-in-kenya-and-officials-still-have-no-idea-where-it-came-from
+            - figure [ref=f91e154]:
+              - link [ref=f91e155] [cursor=pointer]:
+                - /url: https://supersymmetry.com/web/wp-content/uploads/2024/12/unnamed-2-2-649x1024.jpg
+                - img "unnamed-2 (2)" [ref=f91e156]
+            - generic [ref=f91e163]:
+              - heading "China's Moon Mission - The Future of Energy with Helium-3" [level=2] [ref=f91e164]
+              - iframe [ref=f91e166]:
+                - generic [ref=f92e3]:
+                  - strong [ref=f92e4]: www.youtube.com
+                  - text: unexpectedly closed the connection.
+      - separator
+      - contentinfo [ref=f91e171]:
+        - paragraph [ref=f91e172]:
+          - text: Super Symmetry is proudly powered by
+          - link "WordPress" [ref=f91e173] [cursor=pointer]:
+            - /url: https://wordpress.org/
+    - generic [ref=f91e177] [cursor=pointer]:
+      - img "en" [ref=f91e178]
+      - text: en

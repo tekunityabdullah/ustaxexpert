@@ -18,6 +18,14 @@ export function InstagramIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function LinkedinIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M6.94 8.5H4V20h2.94V8.5zM5.47 4a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4zM20 13.3c0-3-1.6-4.4-3.75-4.4-1.73 0-2.5.95-2.94 1.62V8.5H10.4c.04.85 0 11.5 0 11.5h2.9v-6.43c0-.34.02-.68.12-.93.28-.68.9-1.39 1.96-1.39 1.38 0 1.93 1.05 1.93 2.6V20H20v-6.7z" />
+    </svg>
+  );
+}
+
 export function YoutubeIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>

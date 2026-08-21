@@ -1,0 +1,66 @@
+- generic [ref=f95e2]:
+  - link "Skip to content" [ref=f95e3] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f95e4]:
+    - navigation [ref=f95e6]:
+      - list [ref=f95e9]:
+        - listitem [ref=f95e10]:
+          - link "Home" [ref=f95e11] [cursor=pointer]:
+            - /url: https://supersymmetry.com/
+        - listitem [ref=f95e12]:
+          - link "About Us" [ref=f95e13] [cursor=pointer]:
+            - /url: https://supersymmetry.com/about-us/
+        - listitem [ref=f95e14]:
+          - link "How “Proto” Works" [ref=f95e15] [cursor=pointer]:
+            - /url: https://supersymmetry.com/how-proto-works/
+      - link [ref=f95e17] [cursor=pointer]:
+        - /url: https://supersymmetry.com/
+        - img "Super Symmetry" [ref=f95e18]
+      - list [ref=f95e21]:
+        - listitem [ref=f95e22]:
+          - link "Audio Book" [ref=f95e23] [cursor=pointer]:
+            - /url: https://www.amazon.com/Payloads-Electrical-Driving-Eccentric-Rotation/dp/B0GXLZY1R7/ref=tmm_aud_swatch_0
+        - listitem [ref=f95e24]:
+          - link "Book" [ref=f95e25] [cursor=pointer]:
+            - /url: https://www.amazon.com/dp/B0FJVDDLDZ
+        - listitem [ref=f95e26]:
+          - link "Mission & Values" [ref=f95e27] [cursor=pointer]:
+            - /url: https://supersymmetry.com/mission-and-values/
+        - listitem [ref=f95e28]:
+          - link "FAQs" [ref=f95e29] [cursor=pointer]:
+            - /url: https://supersymmetry.com/faqs/
+        - listitem [ref=f95e30]:
+          - link "He3 Lunar Mining" [ref=f95e31] [cursor=pointer]:
+            - /url: https://supersymmetry.com/he3-lunar-mining/
+  - heading "Effects of the Higgs" [level=1] [ref=f95e34]
+  - generic [ref=f95e36]:
+    - generic [ref=f95e37]:
+      - main [ref=f95e39]:
+        - article [ref=f95e40]:
+          - img "Super Symmetry" [ref=f95e42]
+          - heading "Effects of the Higgs" [level=1] [ref=f95e44]
+          - generic [ref=f95e45]:
+            - paragraph [ref=f95e46]: The Effects of the Higgs Field in Space with mass accelerating straight line or rotational. Circled 1 Rockets in space accelerating a room in space upwards with rocket propulsion; a motor rotating the Man in this room in space inside the center of the room with his arms outstretched with round weights in each hand, due to the rotation of the room an apple on a string is hanging diagonally from the center of the ceiling of this room, towards the wall as this room rotates. Circled 2 is a drawing of the man bringing one arm down resulting in the arm with the weight move the Man towards the outside wall of this room. Circled 3 displays apple still hanging at an angle due to rotation of the room and the man has his back on the exterior wall of the room, the room is no longer traveling straight line as the weight of the man no longer allows straight line acceleration upwards instead a wavy path upwards result in the HIGGS FIELD that the Universe lives in. Circle 4 the motor is shut off and the room is no longer rotating, the man in the room takes the weights off his hands that are now on the floor of the room and the apple is hanging straight down due to the rocket’s propulsion. Circle 5 displays the rockets propulsion are now shut off, without acceleration in the HIGGS FIELD in space, the apple, the man, and his weights float inside the room.
+            - generic [ref=f95e47]:
+              - heading "Higgs Field – Space Effects Explained!" [level=1] [ref=f95e48]
+              - paragraph [ref=f95e49]:
+                - iframe [ref=f95e50]:
+                  - generic [ref=f96e3]:
+                    - strong [ref=f96e4]: www.youtube.com
+                    - text: unexpectedly closed the connection.
+        - navigation "Posts" [ref=f95e51]:
+          - heading "Post navigation" [level=2] [ref=f95e52]
+          - generic:
+            - link "←Translational Force Generator" [ref=f95e54] [cursor=pointer]:
+              - /url: https://supersymmetry.com/services/translational-force-generator/
+            - link "Space Time Diagram →" [ref=f95e56] [cursor=pointer]:
+              - /url: https://supersymmetry.com/services/space-time-diagram/
+      - separator
+      - contentinfo [ref=f95e57]:
+        - paragraph [ref=f95e58]:
+          - text: Super Symmetry is proudly powered by
+          - link "WordPress" [ref=f95e59] [cursor=pointer]:
+            - /url: https://wordpress.org/
+    - generic [ref=f95e63] [cursor=pointer]:
+      - img "en" [ref=f95e64]
+      - text: en

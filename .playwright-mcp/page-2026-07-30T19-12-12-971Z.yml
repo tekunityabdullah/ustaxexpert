@@ -1,0 +1,270 @@
+- generic [active] [ref=f67e1]:
+  - generic [ref=f67e2]:
+    - banner [ref=f67e3]:
+      - navigation [ref=f67e4]:
+        - list [ref=f67e5]:
+          - listitem [ref=f67e6]:
+            - link "Home" [ref=f67e7] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f67e8]:
+            - link "About Us" [ref=f67e9] [cursor=pointer]:
+              - /url: /about-us
+          - listitem [ref=f67e10]:
+            - link "How \"Proto\" Works" [ref=f67e11] [cursor=pointer]:
+              - /url: /how-proto-works
+        - link [ref=f67e12] [cursor=pointer]:
+          - /url: /
+          - img "Super Symmetry" [ref=f67e13]
+        - list [ref=f67e14]:
+          - listitem [ref=f67e15]:
+            - link "Audio Book" [ref=f67e16] [cursor=pointer]:
+              - /url: https://www.amazon.com/Payloads-Electrical-Driving-Eccentric-Rotation/dp/B0GXLZY1R7/ref=tmm_aud_swatch_0
+          - listitem [ref=f67e17]:
+            - link "Book" [ref=f67e18] [cursor=pointer]:
+              - /url: https://www.amazon.com/dp/B0FJVDDLDZ
+          - listitem [ref=f67e19]:
+            - link "Mission & Values" [ref=f67e20] [cursor=pointer]:
+              - /url: /mission-and-values
+          - listitem [ref=f67e21]:
+            - link "FAQs" [ref=f67e22] [cursor=pointer]:
+              - /url: /faqs
+          - listitem [ref=f67e23]:
+            - link "He3 Lunar Mining" [ref=f67e24] [cursor=pointer]:
+              - /url: /he3-lunar-mining
+    - main [ref=f67e25]:
+      - generic [ref=f67e26]:
+        - generic [ref=f67e30]:
+          - link "The Laws Of Physics" [ref=f67e31] [cursor=pointer]:
+            - /url: https://supersymmetry.com/web/wp-content/uploads/2026/02/Asymmetric-Momentum.pdf
+          - link "Supersymmetric Rotor" [ref=f67e32] [cursor=pointer]:
+            - /url: /supersymmetric-rotor-propulsion-claims
+        - generic [ref=f67e33]:
+          - heading "The Law Of Conservation Of Angular" [level=1] [ref=f67e34]:
+            - generic [ref=f67e35]: The Law
+            - generic [ref=f67e36]: Of Conservation
+            - generic [ref=f67e37]:
+              - generic: Of Angular
+              - text: Of Angular
+          - generic [ref=f67e38]:
+            - generic [ref=f67e39]: Momentum
+            - link "Artificial Intelligence" [ref=f67e40] [cursor=pointer]:
+              - /url: /web/explore
+          - generic [ref=f67e41]: He3 Lunar Mining
+      - generic [ref=f67e43]:
+        - heading "supersymmetry" [level=2] [ref=f67e44]
+        - generic [ref=f67e45]:
+          - paragraph [ref=f67e46]: This website is about a specific type of system called a supersymmetric rotor. In a supersymmetric rotor, the mass is distributed eccentrically around the axis of rotation. This means that the total angular momentum of the rotor is not conserved.
+          - paragraph [ref=f67e47]: The reason for this is that the laws of physics are not symmetrical under rotations in the supersymmetric rotor. This is because the mass distribution is not symmetrical. As a result, the total angular momentum of the rotor can change as it rotates. The result is the systems moving in a direction that is constant, in the video you can observe many systems moving from the supersymmetric rotor.
+          - link "View More" [ref=f67e48] [cursor=pointer]:
+            - /url: /web/introduction
+        - generic [ref=f67e51]:
+          - iframe [ref=f67e53]:
+            - generic [ref=f68e3]:
+              - strong [ref=f68e4]: www.youtube.com
+              - text: unexpectedly closed the connection.
+          - paragraph [ref=f67e54]: This is the system on a level tabletop it weighs 65 pounds and moves in a direction that is constant and the end of this video you can see in slow motion the eccentric mass load in slow motion one eccentric mass load rotating clockwise and the other eccentric mass load rotating counterclockwise.
+      - generic [ref=f67e57]:
+        - generic [ref=f67e59]:
+          - paragraph [ref=f67e64]: The Higgs boson is important in the Standard Model because it implies the existence of a Higgs field, an otherwise invisible field of energy which pervades the entire universe. Without the Higgs field, the elementary particles that make up you, me, and the visible universe would have no mass. Without the Higgs field mass could not be constructed and nothing could be.
+          - paragraph [ref=f67e77]: The Pseudo Gravity is Einstein's Equivalence Principle where the effects of gravitation are indistinguishable to the effects of acceleration. The clockwise displays eccentric mass load system, the reason for the two systems one clockwise and the other counterclockwise is to end up with the eccentric mass load systems is for straight line motion of this system.
+          - paragraph [ref=f67e80]: The second 0=180 degrees demonstrates the "eccentric load" of mass accelerating clock wise to the 180 degree area with the "eccentric load" of mass furthest from the center axis, as illustrated by distance "B"
+        - generic [ref=f67e81]:
+          - button "Previous slide" [ref=f67e82]
+          - generic [ref=f67e85]:
+            - button "Go to slide 1" [ref=f67e86]
+            - button "Go to slide 2" [ref=f67e87]
+            - button "Go to slide 3" [ref=f67e88]
+            - button "Go to slide 4" [ref=f67e89]
+            - button "Go to slide 5" [ref=f67e90]
+            - button "Go to slide 6" [ref=f67e91]
+            - button "Go to slide 7" [ref=f67e92]
+            - button "Go to slide 8" [ref=f67e93]
+            - button "Go to slide 9" [ref=f67e94]
+          - button "Next slide" [ref=f67e95]
+      - generic [ref=f67e99]:
+        - heading "The Motion of the Eccentric Load Mass Systems about their Center Axis of Rotation Clockwise, the other Counterclockwise." [level=2] [ref=f67e100]
+        - paragraph [ref=f67e101]: Take the time to observe in the videos of the eccentric load mass systems moving in a direction that is constant; there are two axes of rotation for each of the eccentric mass load systems, one rotating clockwise and the other eccentric load systems rotating counterclockwise, the eccentric mass loads of the clockwise and counterclockwise systems are at the greatest distance from the each of the center axis of rotation in unison at one hundred eighty degrees, and as the eccentric load mass systems rotate are closest to their center axis of rotation at zero degrees, the result is the eccentric load mass systems move in the direction of one hundred eighty-degrees. When the eccentric mass load systems are at ninety degrees, and two hundred seventy degrees are the same distance from the center axis of rotation. The purpose of one system rotating clockwise and the other counterclockwise is to have each eccentric load mass peak to the greatest distance from the center axis of rotation at the same time, the result is the movement of the clockwise and counterclockwise systems moving in the direction of one hundred eighty degrees, the Conservation of Angular Momentum is not conserved, and the result is the eccentric mass load systems are moving in a direction that is constant. Emmy Noether’s theorem is strictly for symmetrical operations only due to Symmetries in her outdated conservation laws. This opens up a new Chapter in physics where the Conservation of Angular Momentum is not conserved
+        - generic [ref=f67e102]:
+          - generic [ref=f67e103]:
+            - img "Symmetry Versus Asymmetry diagram" [ref=f67e105]
+            - generic [ref=f67e106]:
+              - heading "Symmetry Versus Asymmetry" [level=3] [ref=f67e107]
+              - paragraph [ref=f67e108]: From left to right Invariance Symmetry that displays distance from center axis, this is a representation of Emmy Noether’s Law Conservation of Angular Momentum as distance “a” being the same distance from the center axis of rotation.
+              - link "Read More" [ref=f67e109] [cursor=pointer]:
+                - /url: /services/symmetry-versus-asymmetry
+          - generic [ref=f67e112]:
+            - img "Translational Force Generator diagram" [ref=f67e114]
+            - generic [ref=f67e115]:
+              - heading "Translational Force Generator" [level=3] [ref=f67e116]
+              - paragraph [ref=f67e117]: Translational Force Generator-Direct Current system. FIG.1 displays 2 each eccentric mass load systems direct current Quadrupole Systems. FIG.2 displays the polarity on the stator wall and the polarity on each Armature. FIG-3 is the timing gears to keep the eccentric mass loads timed together as one is rotating clockwise and the other eccentric mass load system counterclockwise to keep the eccentric mass load in this drawing to the right in this drawing. FIG.8 is an electrical wiring diagram that is a 12-lead delta Y for the Stator Walls. The square box on the bottom left area of this page displays the eccentric mass load upon the center axis of rotation mathematically.
+              - link "Read More" [ref=f67e118] [cursor=pointer]:
+                - /url: /services/translational-force-generator
+          - generic [ref=f67e121]:
+            - img "Effects of the Higgs diagram" [ref=f67e123]
+            - generic [ref=f67e124]:
+              - heading "Effects of the Higgs" [level=3] [ref=f67e125]
+              - paragraph [ref=f67e126]: The Effects of the Higgs Field in Space with mass accelerating straight line or rotational. Circled 1 Rockets in space accelerating a room in space upwards with rocket propulsion; a motor rotating the Man in this room in space inside the center of the room with his arms outstretched with round weights in each hand, due to the rotation of the room an apple on a string is hanging diagonally from the center of the ceiling of this room, towards the wall as this room rotates.
+              - link "Read More" [ref=f67e127] [cursor=pointer]:
+                - /url: /services/effects-of-the-higgs
+          - generic [ref=f67e130]:
+            - img "Space Time Diagram" [ref=f67e132]
+            - generic [ref=f67e133]:
+              - heading "Space Time Diagram" [level=3] [ref=f67e134]
+              - paragraph [ref=f67e135]: Space Time Diagram with the horizontal plane “Space in Feet” at the bottom of page and the “Time in Seconds” on the vertical axis, for the Battery powered Total System video on the surface tension of water where you see the front end of my truck and the water below in my driveway. The website displays many systems moving the earth’s gravitational field, on a flat level tabletop in that system weights 65 pounds moving from eccentric mass load in a direction that is constant.
+              - link "Read More" [ref=f67e136] [cursor=pointer]:
+                - /url: /services/space-time-diagram
+      - generic [ref=f67e142]:
+        - generic [ref=f67e144]:
+          - generic [ref=f67e146]:
+            - heading "Featured Story" [level=4] [ref=f67e147]
+            - paragraph [ref=f67e148]: The intent and function of my systems moving forward in a direction that is constant using electrical energy rather than rocket propulsion in space within this email is Bard Googles Artificial Intelligence stating. The website is about a specific type of system called a supersymmetric rotor. In a supersymmetric rotor, the mass is distributed eccentrically around the axis of rotation. This means that the total angular momentum of the rotor is not conserved.
+          - generic [ref=f67e150]:
+            - heading "Featured Story" [level=4] [ref=f67e151]
+            - paragraph [ref=f67e152]: Solving the Space Junk Problem. Asteroid Mining is taking place for set up in Colorado. Main goal is He3 Lunar Mining.
+          - generic [ref=f67e154]:
+            - heading "Featured Story" [level=4] [ref=f67e155]
+            - paragraph [ref=f67e156]: We are looking to Save Mother Earth from Global Warming and have a 4-Phase Motor Generator Device that is more efficient that 3-Phase Motor, 2-Phase Motor and Single-phase motor.
+        - generic [ref=f67e157]:
+          - button "Previous slide" [ref=f67e158]
+          - generic [ref=f67e161]:
+            - button "Go to slide 1" [ref=f67e162]
+            - button "Go to slide 2" [ref=f67e163]
+            - button "Go to slide 3" [ref=f67e164]
+          - button "Next slide" [ref=f67e165]
+      - generic [ref=f67e169]:
+        - generic [ref=f67e170]:
+          - heading "Einstein’s accuracy in Unified Field Theory is guiding our actions." [level=2] [ref=f67e171]
+          - paragraph [ref=f67e172]: (Einstein 1944, Einstein and Bargmann 1944).
+          - paragraph [ref=f67e173]: The starting point now was to keep the four-dimensionality of the theory and also the requirement of general covariance, but to give up the postulate that a generalized theory of gravitation should necessarily be based on the existence of a Riemannian metric. What Einstein and Bargmann proposed instead was, in effect, an attempt at a non-local relativistic theory of gravitation…
+          - link "Read More" [ref=f67e174] [cursor=pointer]:
+            - /url: https://acrobat.adobe.com/id/urn:aaid:sc:va6c2:0305d56e-7dc9-4d68-8d7b-ec657e81a2f2
+        - img "Einstein unified field theory figure" [ref=f67e178]
+      - generic [ref=f67e180]:
+        - generic [ref=f67e181]:
+          - heading "Inventions" [level=2] [ref=f67e182]
+          - link "Explore all" [ref=f67e183] [cursor=pointer]:
+            - /url: "#!"
+        - generic [ref=f67e187]:
+          - generic [ref=f67e189]:
+            - generic [ref=f67e191]:
+              - img "Direct Current Quadrupole Armature" [ref=f67e192]
+              - generic [ref=f67e193]:
+                - heading "Direct Current Quadrupole Armature" [level=4] [ref=f67e194]
+                - paragraph [ref=f67e195]: This is the Direct Current Translational Force Generation System with motor drive on top, Armatures with yellow cooling fins and stator quadrupole wall, My other Patent Number 5,150,626 labeled Translational Force Generation System.
+            - generic [ref=f67e197]:
+              - img "Electric Power Consumption" [ref=f67e198]
+              - generic [ref=f67e199]:
+                - heading "Electric Power Consumption" [level=4] [ref=f67e200]
+                - paragraph [ref=f67e201]: By way of background, electric power consumption is necessary for a quality life.
+            - generic [ref=f67e203]:
+              - img "Electric Power Consumption" [ref=f67e204]
+              - generic [ref=f67e205]:
+                - heading "Electric Power Consumption" [level=4] [ref=f67e206]
+                - paragraph [ref=f67e207]: By way of background, electric power consumption is necessary for a quality life.
+          - generic [ref=f67e208]:
+            - button "Previous slide" [ref=f67e209]
+            - generic [ref=f67e212]:
+              - button "Go to slide 1" [ref=f67e213]
+              - button "Go to slide 2" [ref=f67e214]
+              - button "Go to slide 3" [ref=f67e215]
+            - button "Next slide" [ref=f67e216]
+      - generic [ref=f67e219]:
+        - generic [ref=f67e220]:
+          - paragraph [ref=f67e221]: On the surface tension of water takes 19 seconds to find its center of gravity then moves forward in a constant direction until it hits the end of the water tank, open with web app.
+          - iframe [ref=f67e223]
+        - generic [ref=f67e226]:
+          - generic [ref=f67e227]: 4-Phase Motor Generator Device Patent
+          - generic [ref=f67e228]: supersymmetry
+          - generic [ref=f67e229]: 4-Phase Motor Generator Device Patent
+          - generic [ref=f67e230]: supersymmetry
+      - generic [ref=f67e232]:
+        - generic [ref=f67e233]:
+          - heading "Video" [level=2] [ref=f67e234]
+          - link "Explore all" [ref=f67e235] [cursor=pointer]:
+            - /url: "#!"
+        - generic [ref=f67e238]:
+          - generic [ref=f67e240]:
+            - generic [ref=f67e242]:
+              - button "Play System floating on water moving from rotational energy" [ref=f67e244]:
+                - img "System floating on water moving from rotational energy" [ref=f67e245]
+              - paragraph [ref=f67e250]: System floating on water moving from rotational energy
+            - generic [ref=f67e252]:
+              - button "Play Conservation of Angular Momentum Violation" [ref=f67e254]:
+                - img "Conservation of Angular Momentum Violation" [ref=f67e255]
+              - paragraph [ref=f67e260]: Conservation of Angular Momentum Violation
+            - generic [ref=f67e262]:
+              - button "Play (Part 1) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e264]:
+                - img "(Part 1) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e265]
+              - paragraph [ref=f67e270]: (Part 1) Prototype Test on microgravity flight by Zero Gravity Corporation
+            - generic [ref=f67e272]:
+              - button "Play (Part 2) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e274]:
+                - img "(Part 2) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e275]
+              - paragraph [ref=f67e280]: (Part 2) Prototype Test on microgravity flight by Zero Gravity Corporation
+            - generic [ref=f67e282]:
+              - button "Play (Part 3) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e284]:
+                - img "(Part 3) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e285]
+              - paragraph [ref=f67e290]: (Part 3) Prototype Test on microgravity flight by Zero Gravity Corporation
+            - generic [ref=f67e292]:
+              - button "Play (Part 4) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e294]:
+                - img "(Part 4) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e295]
+              - paragraph [ref=f67e300]: (Part 4) Prototype Test on microgravity flight by Zero Gravity Corporation
+            - generic [ref=f67e302]:
+              - button "Play (Part 5) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e304]:
+                - img "(Part 5) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e305]
+              - paragraph [ref=f67e310]: (Part 5) Prototype Test on microgravity flight by Zero Gravity Corporation
+            - generic [ref=f67e312]:
+              - button "Play (Part 6) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e314]:
+                - img "(Part 6) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e315]
+              - paragraph [ref=f67e320]: (Part 6) Prototype Test on microgravity flight by Zero Gravity Corporation
+            - generic [ref=f67e322]:
+              - button "Play (Part 8) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e324]:
+                - img "(Part 8) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e325]
+              - paragraph [ref=f67e330]: (Part 8) Prototype Test on microgravity flight by Zero Gravity Corporation
+            - generic [ref=f67e332]:
+              - button "Play (Part 7) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e334]:
+                - img "(Part 7) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e335]
+              - paragraph [ref=f67e340]: (Part 7) Prototype Test on microgravity flight by Zero Gravity Corporation
+            - generic [ref=f67e342]:
+              - button "Play (Part 9) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e344]:
+                - img "(Part 9) Prototype Test on microgravity flight by Zero Gravity Corporation" [ref=f67e345]
+              - paragraph [ref=f67e350]: (Part 9) Prototype Test on microgravity flight by Zero Gravity Corporation
+            - generic [ref=f67e352]:
+              - button "Play Electromagnetic Quadrupole System in Operation" [ref=f67e354]:
+                - img "Electromagnetic Quadrupole System in Operation" [ref=f67e355]
+              - paragraph [ref=f67e360]: Electromagnetic Quadrupole System in Operation
+            - generic [ref=f67e362]:
+              - button "Play Asymmetric Mass System Moving in Water" [ref=f67e364]:
+                - img "Asymmetric Mass System Moving in Water" [ref=f67e365]
+              - paragraph [ref=f67e370]: Asymmetric Mass System Moving in Water
+            - generic [ref=f67e372]:
+              - button "Play Asymmetric Mass System Moving Across Tabletop" [ref=f67e374]:
+                - img "Asymmetric Mass System Moving Across Tabletop" [ref=f67e375]
+              - paragraph [ref=f67e380]: Asymmetric Mass System Moving Across Tabletop
+          - generic [ref=f67e381]:
+            - button "Previous slide" [ref=f67e382]
+            - generic [ref=f67e385]:
+              - button "Go to slide 1" [ref=f67e386]
+              - button "Go to slide 2" [ref=f67e387]
+              - button "Go to slide 3" [ref=f67e388]
+              - button "Go to slide 4" [ref=f67e389]
+              - button "Go to slide 5" [ref=f67e390]
+              - button "Go to slide 6" [ref=f67e391]
+              - button "Go to slide 7" [ref=f67e392]
+              - button "Go to slide 8" [ref=f67e393]
+              - button "Go to slide 9" [ref=f67e394]
+              - button "Go to slide 10" [ref=f67e395]
+              - button "Go to slide 11" [ref=f67e396]
+              - button "Go to slide 12" [ref=f67e397]
+              - button "Go to slide 13" [ref=f67e398]
+              - button "Go to slide 14" [ref=f67e399]
+            - button "Next slide" [ref=f67e400]
+    - contentinfo [ref=f67e403]:
+      - paragraph [ref=f67e404]:
+        - text: Super Symmetry is proudly powered by
+        - link "WordPress" [ref=f67e405] [cursor=pointer]:
+          - /url: https://wordpress.org/
+    - generic [ref=f67e406]:
+      - generic [ref=f67e407]: 🇺🇸
+      - generic [ref=f67e408]: EN
+  - button "Open Next.js Dev Tools" [ref=f67e416] [cursor=pointer]
+  - alert [ref=f67e420]

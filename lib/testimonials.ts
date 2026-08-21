@@ -1,3 +1,6 @@
+import { prisma } from "@/lib/db";
+import type { Testimonial as PrismaTestimonial } from "@prisma/client";
+
 export type Testimonial = {
   name: string;
   quote: string;
@@ -19,4 +22,37 @@ export const testimonials: Testimonial[] = [
     quote:
       "The team at U.S. Tax Experts exceeded my expectations. They were responsive, thorough, and trustworthy, making sure my financial peace of mind was finally restored.",
   },
+  {
+    name: "David M.",
+    quote:
+      "I'd fallen behind on filings for years and dreaded dealing with the IRS. My specialist walked me through every step and negotiated a payment plan I could actually afford.",
+  },
+  {
+    name: "Priya K.",
+    quote:
+      "Switching our bookkeeping over to U.S. Tax Experts was the best decision we made for our small business. Our books are finally clean, current, and audit-ready.",
+  },
+  {
+    name: "Robert T.",
+    quote:
+      "A wage garnishment notice sent me into a panic. Within days they had it addressed and negotiated a settlement I never thought was possible. Truly grateful.",
+  },
 ];
+
+function toTestimonial(row: PrismaTestimonial): Testimonial {
+  return { name: row.name, quote: row.quote };
+}
+
+/** The live, CMS-managed testimonial list. Falls back to the static array
+ * above only if the database itself is unreachable. */
+export async function getTestimonials(): Promise<Testimonial[]> {
+  try {
+    const rows = await prisma.testimonial.findMany({
+      where: { published: true },
+      orderBy: { order: "asc" },
+    });
+    return rows.map(toTestimonial);
+  } catch {
+    return testimonials;
+  }
+}

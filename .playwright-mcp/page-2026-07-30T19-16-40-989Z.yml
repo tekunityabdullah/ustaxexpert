@@ -1,0 +1,143 @@
+- generic [ref=f71e2]:
+  - link "Skip to content" [ref=f71e3] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f71e4]:
+    - navigation [ref=f71e6]:
+      - list [ref=f71e9]:
+        - listitem [ref=f71e10]:
+          - link "Home" [ref=f71e11] [cursor=pointer]:
+            - /url: https://supersymmetry.com/
+        - listitem [ref=f71e12]:
+          - link "About Us" [ref=f71e13] [cursor=pointer]:
+            - /url: https://supersymmetry.com/about-us/
+        - listitem [ref=f71e14]:
+          - link "How “Proto” Works" [ref=f71e15] [cursor=pointer]:
+            - /url: https://supersymmetry.com/how-proto-works/
+      - link [ref=f71e17] [cursor=pointer]:
+        - /url: https://supersymmetry.com/
+        - img "Super Symmetry" [ref=f71e18]
+      - list [ref=f71e21]:
+        - listitem [ref=f71e22]:
+          - link "Audio Book" [ref=f71e23] [cursor=pointer]:
+            - /url: https://www.amazon.com/Payloads-Electrical-Driving-Eccentric-Rotation/dp/B0GXLZY1R7/ref=tmm_aud_swatch_0
+        - listitem [ref=f71e24]:
+          - link "Book" [ref=f71e25] [cursor=pointer]:
+            - /url: https://www.amazon.com/dp/B0FJVDDLDZ
+        - listitem [ref=f71e26]:
+          - link "Mission & Values" [ref=f71e27] [cursor=pointer]:
+            - /url: https://supersymmetry.com/mission-and-values/
+        - listitem [ref=f71e28]:
+          - link "FAQs" [ref=f71e29] [cursor=pointer]:
+            - /url: https://supersymmetry.com/faqs/
+        - listitem [ref=f71e30]:
+          - link "He3 Lunar Mining" [ref=f71e31] [cursor=pointer]:
+            - /url: https://supersymmetry.com/he3-lunar-mining/
+  - heading "How “Proto” Works" [level=1] [ref=f71e34]
+  - generic [ref=f71e36]:
+    - generic [ref=f71e37]:
+      - main [ref=f71e39]:
+        - article [ref=f71e40]:
+          - generic [ref=f71e43]:
+            - generic [ref=f71e48]:
+              - generic [ref=f71e50]:
+                - iframe [ref=f71e52]:
+                  - generic [ref=f72e1]:
+                    - generic "YouTube Video Player" [ref=f72e3]
+                    - generic [ref=f72e5]:
+                      - generic:
+                        - generic:
+                          - button "Play video" [ref=f72e10] [cursor=pointer]
+                          - button "Hide player controls" [ref=f72e14] [cursor=pointer]
+                          - generic [ref=f72e16]:
+                            - generic [ref=f72e21]:
+                              - generic [ref=f72e22]:
+                                - link "System floating on water moving from rotational energy" [ref=f72e23] [cursor=pointer]:
+                                  - /url: https://www.youtube.com/watch?v=ncnDFbGnj3k
+                                - link "SuperSupersymmetry" [ref=f72e24] [cursor=pointer]:
+                                  - /url: /channel/UCPk7nQ296PXTG9utvRZdG7w
+                              - generic [ref=f72e26]:
+                                - button [ref=f72e27] [cursor=pointer]
+                                - generic [ref=f72e29]:
+                                  - generic: SuperSupersymmetry
+                                  - generic: 6 subscribers
+                            - generic [ref=f72e30]:
+                              - button "Copy link" [ref=f72e33] [cursor=pointer]
+                              - link "Watch on YouTube" [ref=f72e44] [cursor=pointer]:
+                                - /url: https://www.youtube.com/watch?v=ncnDFbGnj3k
+                                - generic [ref=f72e45]: Watch on
+                - heading "System floating on water moving from rotational energy" [level=4] [ref=f71e54]
+              - generic [ref=f71e56]:
+                - iframe [ref=f71e58]:
+                  - generic [ref=f73e3]:
+                    - strong [ref=f73e4]: www.youtube.com
+                    - text: unexpectedly closed the connection.
+                - heading "Conservation of Angular Momentum Violation" [level=4] [ref=f71e60]
+              - generic [ref=f71e62]:
+                - iframe [ref=f71e64]:
+                  - generic [ref=f74e3]:
+                    - strong [ref=f74e4]: www.youtube.com
+                    - text: unexpectedly closed the connection.
+                - heading "(Part 1) Prototype Test on microgravity flight by Zero Gravity Corporation" [level=4] [ref=f71e66]
+              - generic [ref=f71e68]:
+                - iframe [ref=f71e70]:
+                  - generic [ref=f75e3]:
+                    - strong [ref=f75e4]: www.youtube.com
+                    - text: unexpectedly closed the connection.
+                - heading "(Part 2) Prototype Test on microgravity flight by Zero Gravity Corporation" [level=4] [ref=f71e72]
+              - generic [ref=f71e74]:
+                - iframe [ref=f71e76]:
+                  - generic [ref=f76e3]:
+                    - strong [ref=f76e4]: www.youtube.com
+                    - text: unexpectedly closed the connection.
+                - heading "(Part 3) Prototype Test on microgravity flight by Zero Gravity Corporation" [level=4] [ref=f71e78]
+              - generic [ref=f71e80]:
+                - iframe [ref=f71e82]:
+                  - generic [ref=f77e3]:
+                    - strong [ref=f77e4]: www.youtube.com
+                    - text: unexpectedly closed the connection.
+                - heading "(Part 4) Prototype Test on microgravity flight by Zero Gravity Corporation" [level=4] [ref=f71e84]
+              - generic [ref=f71e86]:
+                - iframe [ref=f71e88]
+                - heading "(Part 5) Prototype Test on microgravity flight by Zero Gravity Corporation" [level=4] [ref=f71e90]
+              - generic [ref=f71e92]:
+                - iframe [ref=f71e94]
+                - heading "(Part 6) Prototype Test on microgravity flight by Zero Gravity Corporation" [level=4] [ref=f71e96]
+              - generic [ref=f71e98]:
+                - iframe [ref=f71e100]
+                - heading "(Part 8) Prototype Test on microgravity flight by Zero Gravity Corporation" [level=4] [ref=f71e102]
+              - generic [ref=f71e104]:
+                - iframe [ref=f71e106]
+                - heading "(Part 7) Prototype Test on microgravity flight by Zero Gravity Corporation" [level=4] [ref=f71e108]
+              - generic [ref=f71e110]:
+                - iframe [ref=f71e112]
+                - heading "(Part 9) Prototype Test on microgravity flight by Zero Gravity Corporation" [level=4] [ref=f71e114]
+              - generic [ref=f71e116]:
+                - iframe [ref=f71e118]
+                - heading "Electromagnetic Quadrupole System in Operation" [level=4] [ref=f71e120]
+              - generic [ref=f71e122]:
+                - iframe [ref=f71e124]
+                - heading "Asymmetric Mass System Moving in Water" [level=4] [ref=f71e126]
+              - generic [ref=f71e128]:
+                - iframe [ref=f71e130]:
+                  - generic [ref=f85e3]:
+                    - strong [ref=f85e4]: www.youtube.com
+                    - text: unexpectedly closed the connection.
+                - heading "Asymmetric Mass System Moving Across Tabletop" [level=4] [ref=f71e132]
+            - generic [ref=f71e136]:
+              - heading "History of 1st and 2nd Patents" [level=2] [ref=f71e137]
+              - list [ref=f71e140]:
+                - listitem [ref=f71e141]:
+                  - link "1st Patents" [ref=f71e142] [cursor=pointer]:
+                    - /url: https://supersymmetry.com/web/wp-content/uploads/2024/12/1-st-patent.pdf
+                - listitem [ref=f71e143]:
+                  - link "2nd Patents" [ref=f71e144] [cursor=pointer]:
+                    - /url: https://supersymmetry.com/web/wp-content/uploads/2024/12/2nd-patent.pdf
+      - separator
+      - contentinfo [ref=f71e145]:
+        - paragraph [ref=f71e146]:
+          - text: Super Symmetry is proudly powered by
+          - link "WordPress" [ref=f71e147] [cursor=pointer]:
+            - /url: https://wordpress.org/
+    - generic [ref=f71e151] [cursor=pointer]:
+      - img "en" [ref=f71e152]
+      - text: en

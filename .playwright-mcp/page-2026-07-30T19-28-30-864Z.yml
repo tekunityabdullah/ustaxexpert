@@ -1,0 +1,1126 @@
+- generic [ref=f87e2]:
+  - link "Skip to content" [ref=f87e3] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f87e4]:
+    - navigation [ref=f87e6]:
+      - list [ref=f87e9]:
+        - listitem [ref=f87e10]:
+          - link "Home" [ref=f87e11] [cursor=pointer]:
+            - /url: https://supersymmetry.com/
+        - listitem [ref=f87e12]:
+          - link "About Us" [ref=f87e13] [cursor=pointer]:
+            - /url: https://supersymmetry.com/about-us/
+        - listitem [ref=f87e14]:
+          - link "How “Proto” Works" [ref=f87e15] [cursor=pointer]:
+            - /url: https://supersymmetry.com/how-proto-works/
+      - link [ref=f87e17] [cursor=pointer]:
+        - /url: https://supersymmetry.com/
+        - img "Super Symmetry" [ref=f87e18]
+      - list [ref=f87e21]:
+        - listitem [ref=f87e22]:
+          - link "Audio Book" [ref=f87e23] [cursor=pointer]:
+            - /url: https://www.amazon.com/Payloads-Electrical-Driving-Eccentric-Rotation/dp/B0GXLZY1R7/ref=tmm_aud_swatch_0
+        - listitem [ref=f87e24]:
+          - link "Book" [ref=f87e25] [cursor=pointer]:
+            - /url: https://www.amazon.com/dp/B0FJVDDLDZ
+        - listitem [ref=f87e26]:
+          - link "Mission & Values" [ref=f87e27] [cursor=pointer]:
+            - /url: https://supersymmetry.com/mission-and-values/
+        - listitem [ref=f87e28]:
+          - link "FAQs" [ref=f87e29] [cursor=pointer]:
+            - /url: https://supersymmetry.com/faqs/
+        - listitem [ref=f87e30]:
+          - link "He3 Lunar Mining" [ref=f87e31] [cursor=pointer]:
+            - /url: https://supersymmetry.com/he3-lunar-mining/
+  - heading "Mission & Values" [level=1] [ref=f87e34]
+  - generic [ref=f87e36]:
+    - generic [ref=f87e37]:
+      - main [ref=f87e39]:
+        - article [ref=f87e40]:
+          - generic [ref=f87e43]:
+            - generic [ref=f87e47]:
+              - heading "TITLE OF THE INVENTION" [level=4] [ref=f87e48]
+              - heading "4-PHASE GENERATOR DEVICE WITH 4-PHASE ECCENTRIC MASS LOAD SYSTEMS" [level=4] [ref=f87e49]
+              - heading "CROSS REFERENCE TO RELATED APPLICATIONS" [level=4] [ref=f87e50]
+              - generic [ref=f87e52]:
+                - paragraph [ref=f87e53]:
+                  - strong [ref=f87e54]: "[1]"
+                  - text: The present application is a Continuation-In-Part of Patent Application 18/301,764, Which was filed on April 17, 2023, and which claims prorityto, and the benefits of, U.S.
+                - paragraph [ref=f87e55]: Provisional Application No, 63/419,373, which was filed on October 26,2022, and is incorporated herein by reference in its entirety. and United States Patent Navarro 5,473,957. United States Patent Navarro 5,150,626.
+              - heading "FIELD OF THE INVENTION" [level=4] [ref=f87e56]
+              - paragraph [ref=f87e59]:
+                - strong [ref=f87e60]: "[2]"
+                - text: The present invention relates generally to the field of electric generators. More specifically, the present invention, in one embodiment, relates to a novel 4-phase electric generator and eccentric mass load subsystems. The device features a stator wall with eight stator slots and four pole groups, enabling the generation of electrical energy with increased efficiency compared to conventional generators. These generators provide 8 output voltages, and the current provides electric power for the dual eccentric mass load systems. Accordingly, the present disclosure makes specific reference thereto. Nonetheless, it is to be appreciated that aspects of the present invention are also equally applicable to others, like applications, devices, and methods of manufacturing.
+              - paragraph [ref=f87e63]:
+                - strong [ref=f87e64]: "[3]"
+                - text: The subject matter disclosed and claimed herein, in one embodiment thereof, comprises 4-phase generator and eccentric mass load subsystems. The device further comprising a stator wall having a circular or cylindrical shape, eight stator slots disposed in the stator wall, the eight stator slots are divided into four pole groups of two opposing stator slots, each slot of the two opposing stator slots are connected via coils, the coils also connects to an output and to a neutral point, one slot of the two opposing stator slots having North polarity (N (North) stator slot) and the other slot having South polarity (S (South) stator slot), four of the stator slots on one side of the stator wall correspond to the other four of the stator slots on an opposing side of the stator wall, an permeant magnetic (four North Poles and four South poles) armature, and the device is further configured to alternate activation between N (North) stator slots and S (South) stator slots of the four pole groups in response to rotation of the armature, wherein eight poles are actively coupled in any given configuration and permanent magnetic material with North and South polarities.
+              - heading "SUMMARY OF THE INVENTION" [level=4] [ref=f87e65]
+              - paragraph [ref=f87e68]:
+                - strong [ref=f87e69]: "[4]"
+                - text: The following presents a simplified summary to provide a basic understanding of some aspects of the disclosed innovation. This summary is not an extensive overview, and it is not intended to identify key/critical elements or to delineate the scope thereof. Its sole purpose is to present some general concepts in a simplified form as a prelude to the more detailed description that is presented later.
+              - paragraph [ref=f87e72]:
+                - strong [ref=f87e73]: "[5]"
+                - text: The subject matter disclosed and claimed herein, in one embodiment thereof, comprises of 4-phase generator and eccentric mass load subsystems. The device further comprising a stator wall having a circular or cylindrical shape, eight stator slots disposed in the stator wall, the eight stator slots are divided into eight groups of two opposing stator slots, one slot of the two opposing stator slots having North polarity (N (North) stator slot) and the other slot having South polarity (S (South) stator slot), the eight groups forming the four eight groups, wherein four of the stator slots on one side of the stator wall correspond to the other four of the stator slots on an opposing side of the stator wall, a permanent magnetic material armature with four north poles and four south poles opposite each other, and the device is further configured to alternate activation between N (North) stator slots and S (South) stator slots of the eight pole groups in response to rotation of the armature, wherein eight poles are actively coupled in any given configuration.
+              - paragraph [ref=f87e76]:
+                - strong [ref=f87e77]: "[6]"
+                - text: The subject matter disclosed and claimed herein, in one embodiment thereof, comprises a method of operating a 4-Phase Generator and eccentric load mass subsystems. The method comprising the steps of rotating an armature along a stator wall, the stator wall having a circular or cylindrical shape, eight stator slots divided into eight pole groups, each pole group has a N (North) stator slot and a S (South) stator slot, wherein four of the stator slots on one side of the stator wall correspond to the other four of the stator slots on an opposing side of the stator wall; alternating activation between N (North) stator slots and S (South) stator slots of the four pole groups in response to the rotation of the armature, wherein eight poles are actively coupled in any given configuration.
+              - paragraph [ref=f87e80]:
+                - strong [ref=f87e81]: "[7]"
+                - text: The activation of the pole groups results in magnetic fields within the stator wall.
+              - paragraph [ref=f87e84]:
+                - strong [ref=f87e85]: "[8]"
+                - text: In another aspect of the present invention, the stator slots are arranged in a symmetrical pattern around the stator wall.
+              - paragraph [ref=f87e88]:
+                - strong [ref=f87e89]: "[9]"
+                - text: The stator wall is made of magnetic iron lamination material with copper coils output and ground neutral connections.
+              - paragraph [ref=f87e92]:
+                - strong [ref=f87e93]: "[10]"
+                - text: A 4-phase eccentric mass load subsystem, a stator wall and armatures are disclosed. The stator wall having eight phases of functional operation and a circular or cylindrical shape with eight stator slots divided into four pole groups, each pole group having a N (North) stator pole and a S (South) stator pole, an eccentric load mass diagram, including eccentric load, located at specific distances from the center axis of rotation of the stator wall, wherein the subsystems of eccentric load or rotor mass diagram enables the generator to operate efficiently and generate power while compensating for the eccentric load masses subsystems.
+              - paragraph [ref=f87e96]:
+                - strong [ref=f87e97]: "[11]"
+                - text: The 4-phase motor and generator device of the present invention is easily and efficiently manufactured, marketed, and available to consumers in a cost-effective manner. It is easily used by users for generating power in numerous ways, like powering eccentric load subsystems these systems can be used in the HIGGS Field in outer space for Satellite Maintenance, Space Junk problems, Asteroid Mining, and assisting with moving payloads from the moon of Helium 3 back to Earth.
+              - paragraph [ref=f87e100]:
+                - strong [ref=f87e101]: "[12]"
+                - text: The4-Phase Generator has eight outputs of current. That provides input power for the 4-Phase stator wall from the armature’s permanent magnetic poles for rotation inside its stator wall with electrical conductor segments from a control panel, with the Lithium battery bank support. The output from the 4-Phase Generator has a voltage regulator to stop charging the Lithium batteries. Solar Panels will be used in systems that operate in outer space, and charge the Lithium batteries, with voltage regulator controls in the control panel can resume charging the Lithium batteries when required to provide power from the Lithium battery bank for the 4-Phase Armatures and stator wall from eight of the outputs of the 4-Phase Generator. Also included is the Solar Panel distribution arrangement.
+              - paragraph [ref=f87e104]:
+                - strong [ref=f87e105]: "[13]"
+                - text: The permanent magnets in the main armature induce a current in the stator wall as the main armature revolves around the center axis of rotation.
+              - paragraph [ref=f87e108]:
+                - strong [ref=f87e109]: "[14]"
+                - text: Numerous benefits and advantages of this invention will become apparent to those skilled in the art to which it pertains upon reading and understanding the following detailed specifications.
+              - paragraph [ref=f87e112]:
+                - strong [ref=f87e113]: "[15]"
+                - text: To the accomplishment of the foregoing and related ends, certain illustrative aspects of the disclosed innovation are described herein in connection with the following description and the annexed drawings.
+              - heading "DETAILED DESCRIPTION OF THE DRAWINGS" [level=4] [ref=f87e114]
+              - paragraph [ref=f87e117]:
+                - strong [ref=f87e118]: "[16]"
+                - text: "The description refers to the drawings provided in which similar reference characters refer to similar parts throughout the different views, and in which:"
+              - paragraph [ref=f87e121]:
+                - strong [ref=f87e122]: "[17]"
+                - text: FIG. 1 is a drawing illustrating an internal view of one potential embodiment of a 4-phase generator with eight electrical load outputs of the present invention by the disclosed architecture.
+              - paragraph [ref=f87e125]:
+                - strong [ref=f87e126]: "[18]"
+                - text: FIG.2 and FIG.3 drawings illustrate four Armature rotations inside the Stator Wall, which receives power from the eight electrical load outputs from FIG.1 drawing of the present invention by the disclosed architecture. FIG.4 is the drawing where the details of four armatures are labeled
+                - strong [ref=f87e127]: "31"
+                - text: on the left and
+                - strong [ref=f87e128]: "31"
+                - text: on the right subsystems
+                - strong [ref=f87e129]: "14"
+                - text: as four of the armatures rotate clockwise in one subsystem
+                - strong [ref=f87e130]: "14"
+                - text: and the other four armatures rotate counterclockwise, in the other subsystem
+                - strong [ref=f87e131]: "14."
+              - paragraph [ref=f87e134]:
+                - strong [ref=f87e135]: "[19]"
+                - text: FIG. 4 drawing illustrates item
+                - strong [ref=f87e136]: "10"
+                - text: of the present invention by the disclosed architecture of the present invention by the disclosed architecture, with a Control Panel and two direct current motors labeled
+                - strong [ref=f87e137]: "36"
+                - text: that rotate these two 4-Phase Generators.
+                - strong [ref=f87e138]: "46"
+                - text: is the Lithium battery bank.
+                - strong [ref=f87e139]: "45"
+                - text: is the Solar Panel distribution arrangement. The black lines with arrows are the conduit that the electrical wiring that connects from the Controls
+                - strong [ref=f87e140]: "40"
+                - text: conduit connections to generator motors
+                - strong [ref=f87e141]: "36"
+                - text: ", generators"
+                - strong [ref=f87e142]: "38"
+                - text: ", motors"
+                - strong [ref=f87e143]: "28"
+                - text: ", the flexible conduit connections to communications rings"
+                - strong [ref=f87e144]: "34"
+                - text: and
+                - strong [ref=f87e145]: 34 A
+                - text: are not illustrated in the dawning in FIG.4, however they do physically connect to Controls panel
+                - strong [ref=f87e146]: "40."
+              - paragraph [ref=f87e149]:
+                - strong [ref=f87e150]: "[20]"
+                - text: FIG. 5 drawing illustrates the armatures
+                - strong [ref=f87e151]: “A”
+                - text: and
+                - strong [ref=f87e152]: “C”
+                - text: phase relationship with the stator walls
+                - strong [ref=f87e153]: “A”
+                - text: and
+                - strong [ref=f87e154]: “C”
+                - text: phases and the armatures
+                - strong [ref=f87e155]: “B”
+                - text: and
+                - strong [ref=f87e156]: “D”
+                - text: phase relationship with the stator wall
+                - strong [ref=f87e157]: “B”
+                - text: and
+                - strong [ref=f87e158]: “D”.
+                - text: In FIG.2 and FIG.3, drawings revolve clockwise in one subsystem
+                - strong [ref=f87e159]: "14"
+                - text: or counterclockwise in the other subsystem
+                - strong [ref=f87e160]: "14"
+                - text: about the center axis of rotation of the present invention by the disclosed architecture.
+              - paragraph [ref=f87e163]:
+                - strong [ref=f87e164]: "[21]"
+                - text: FIG. 6 and FIG.7 drawings illustrate eccentric mass loads
+                - strong [ref=f87e165]: G
+                - text: ","
+                - strong [ref=f87e166]: H, I
+                - text: and
+                - strong [ref=f87e167]: J
+                - text: sharing the same center axis of rotation
+                - strong [ref=f87e168]: “0”.
+                - text: In these drawings, the stator wall and armatures maintain eccentric mass loads to maintain distance
+                - strong [ref=f87e169]: E
+                - text: and
+                - strong [ref=f87e170]: F
+                - text: from the center axis of rotation
+                - strong [ref=f87e171]: “0”
+                - text: of the present invention by the disclosed architecture.
+              - paragraph [ref=f87e174]:
+                - strong [ref=f87e175]: "[22]"
+                - text: FIG. 8 Timing Gears
+                - strong [ref=f87e176]: "44"
+                - text: see location on FIG.4 drawing location at bottom of
+                - strong [ref=f87e177]: "10"
+                - text: .
+              - paragraph [ref=f87e180]:
+                - strong [ref=f87e181]: "[23]"
+                - text: Referring to the drawing, and particularly to the drawing of FIG.4, there is illustrated a controlled translational force generating system, generally designated as
+                - strong [ref=f87e182]: 10,
+                - text: provided in accordance with the principles of the present invention. The controlled translational force generating system
+                - strong [ref=f87e183]: "10"
+                - text: includes a main frame
+                - strong [ref=f87e184]: 12,
+                - text: a first and second set of
+                - strong [ref=f87e185]: "14"
+                - text: subsystems mounted on the main frame
+                - strong [ref=f87e186]: 12,
+                - text: and operable to generate a set of translational forces, in the eccentric mass load items
+                - strong [ref=f87e187]: "33"
+                - strong [ref=f87e188]
+                - text: and
+                - strong [ref=f87e189]: "32."
+              - paragraph [ref=f87e192]:
+                - strong [ref=f87e193]: "[24]"
+                - text: Go to drawings FIG.6 and FIG.7 for details of the operations of the eccentric mass loads of subsystems mounted inside the main frame
+                - strong [ref=f87e194]: "12"
+                - text: located inside with subsystems
+                - strong [ref=f87e195]: "14"
+                - text: in drawing FIG.4. The eccentric mass loads all have the same mass weight.
+              - paragraph [ref=f87e198]:
+                - strong [ref=f87e199]: "[25]"
+                - text: In the drawing of FIG.4, it can operate in the Earth’s Gravitational Field or the HIGGS Field in outer space. The initial translational forces generated by both sets of
+                - strong [ref=f87e200]: "14"
+                - text: subsystems by interaction with the eccentric mass loads environment generated by the second set
+                - strong [ref=f87e201]: "33"
+                - text: and
+                - strong [ref=f87e202]: "32."
+                - text: Go to drawings FIG.6 and FIG.7 for eccentric mass load details of operation)
+                - strong [ref=f87e203]
+                - text: to view subsystems produce a steerable straight-line resultant translational force, which causes the system
+                - strong [ref=f87e204]: "10"
+                - text: to move in a constant direction. Back to drawing FIG.4, the rectangular boxes
+                - strong [ref=f87e205]: "36"
+                - text: are the direct current motors, and their shafts
+                - strong [ref=f87e206]: 36A
+                - text: connect mechanically to the permanent magnetic armature
+                - strong [ref=f87e207]: "108"
+                - text: in the drawing of FIG.1, of the 4-Phase Generator
+                - strong [ref=f87e208]: ","
+                - strong [ref=f87e209]
+                - text: which displays the permanent magnet armature
+                - strong [ref=f87e210]: "108"
+                - text: rotating inside the stator wall. In the drawing of FIG. 4, The
+                - strong [ref=f87e211]: "36"
+                - text: direct current motor rotates, and then the current is induced into the stator wall in FIG.1. Now look at drawing FIG.1 to view the
+                - strong [ref=f87e212]: "102"
+                - text: stator wall of system
+                - strong [ref=f87e213]: 100,
+                - text: resulting in output currents
+                - strong [ref=f87e214]: 1, 2, 3, 4, 5, 6,
+                - text: and
+                - strong [ref=f87e215]: "8"
+                - text: output electric loads, as a result of the permanent magnetic armature fields axial air gap creating current to flow into the windings of the stator wall slots
+                - strong [ref=f87e216]: 106a, 106b, 106c, 106d, 106e, 106f, 106g,
+                - text: and
+                - strong [ref=f87e217]: 106h.
+              - paragraph [ref=f87e220]:
+                - strong [ref=f87e221]: "[26]"
+                - text: In the drawing of FIG. 4, the result of variable adjusting the rotation per minute of the multiple parallel eccentric load mass
+                - strong [ref=f87e222]: "33."
+                - text: System
+                - strong [ref=f87e223]: "10"
+                - text: will move in a direction that is constant, as
+                - strong [ref=f87e224]: "33"
+                - text: eccentric mass loads
+                - strong [ref=f87e225]
+                - text: display an arrow of the direction of movement of system
+                - strong [ref=f87e226]: "10."
+                - text: See details of eccentric mass loads in the drawings of FIG.6 and the FIG.7 sequence of operation.
+              - paragraph [ref=f87e229]:
+                - strong [ref=f87e230]: "[27]"
+                - text: In the embodiment of the controlled translational force generating system
+                - strong [ref=f87e231]: "10"
+                - text: illustrated in drawing of FIG.4, the main frame
+                - strong [ref=f87e232]: "12"
+                - text: includes a plurality of upper, middle, and lower horizontal platforms
+                - strong [ref=f87e233]: 18, 20, 22
+                - text: and a plurality of vertical legs
+                - strong [ref=f87e234]: "24"
+                - text: supporting platforms
+                - strong [ref=f87e235]: 18, 20, 22
+                - text: in vertically spaced relation. Preferably, by way of illustration only and not by horizontal decks
+                - strong [ref=f87e236]: 18, 20, and 22
+                - text: are rectangularly shaped and the legs
+                - strong [ref=f87e237]: "24"
+                - text: being eight in number (only the four along one of a pair opposite sides of frame
+                - strong [ref=f87e238]: "12"
+                - text: is shown), are attached to and support the platforms
+                - strong [ref=f87e239]: 18, 20, 22
+                - text: at spaced locations along the perimeters thereof.
+              - paragraph [ref=f87e242]:
+                - strong [ref=f87e243]: "[28]"
+                - text: Each parallel eccentric mass load systems inside each of eccentric load mass sub systems 14 which is illustrated in drawings of FIGS. 4,5,6,and 7,which will be briefly described hereinafter, are substantially the same in construction and operations as the electromagnetic implementation of the translational force-generating apparatus illustrated and described in U.S. Pat. Navarro No. 5,150,626, and U.S. Pat. No. Navarro 5,473,957, the disclosure of which is incorporated herein by reference. As an alternative, each parallel eccentric mass load subsystem 14 employed herein could be the same as the mechanical implementations disclosed in a forecited U.S. Patent.
+              - paragraph [ref=f87e246]:
+                - strong [ref=f87e247]: "[29]"
+                - text: Referring to drawings in FIGS. 4
+                - strong [ref=f87e248]: ","
+                - strong [ref=f87e249]
+                - text: "6"
+                - strong [ref=f87e250]: ","
+                - strong [ref=f87e251]
+                - text: and 7, each of the parallel eccentric mass load subsystems
+                - strong [ref=f87e252]: "14"
+                - text: of the controlled translational force-generating systems
+                - strong [ref=f87e253]: "10"
+                - text: which generate the respective initial translational forces includes an auxiliary frame
+                - strong [ref=f87e254]: "26"
+                - text: ", a rotary drive motor"
+                - strong [ref=f87e255]: 28,
+                - text: an orbital frames
+                - strong [ref=f87e256]: 14,
+                - text: a plurality of orbital members
+                - strong [ref=f87e257]: "32"
+                - text: with multiple eccentric mass loads
+                - strong [ref=f87e258]: "33."
+                - text: The communications ring is die electric to shafts
+                - strong [ref=f87e259]: 28A
+                - text: ", is the carbon electric brush insulated from electrical contact and mounted on"
+                - strong [ref=f87e260]: deck
+                - strong [ref=f87e261]: "22"
+                - text: and deck
+                - strong [ref=f87e262]: "20."
+                - text: The rotary drive motors
+                - strong [ref=f87e263]: "28"
+                - text: are mounted to the auxiliary frame
+                - strong [ref=f87e264]: "26"
+                - text: and has a rotary output shaft
+                - strong [ref=f87e265]: 28A
+                - text: extending downwardly through the auxiliary frame
+                - strong [ref=f87e266]: "26."
+                - text: Orbital subsystems frames
+                - strong [ref=f87e267]: "14"
+                - text: is mounted to the legs
+                - strong [ref=f87e268]: "24"
+                - text: of the main frame
+                - strong [ref=f87e269]: "12"
+                - text: and attached to the rotary output drive shaft
+                - strong [ref=f87e270]: 28A
+                - text: from the rotary drive motors
+                - strong [ref=f87e271]: "28"
+                - text: for undergoing revolutions about a central axis
+                - strong [ref=f87e272]: C
+                - text: upon operation of the rotary drive motors
+                - strong [ref=f87e273]: "28."
+                - text: Orbital subsystems
+                - strong [ref=f87e274]: "14"
+                - text: is composed of upper and lower horizontal decks
+                - strong [ref=f87e275]: 30A, 30B,
+                - text: and a plurality of support shafts
+                - strong [ref=f87e276]: "35"
+                - text: extending between and journaled at opposite ends by bearings
+                - strong [ref=f87e277]: "39"
+                - text: to the upper and lower decks
+                - strong [ref=f87e278]: 30B,
+                - strong [ref=f87e279]: 30A
+                - text: and center shaft. The orbital members’ eccentric mass load devices are mounted on frames
+                - strong [ref=f87e280]: "30"
+                - text: to undergo revolutions with the orbital frame
+                - strong [ref=f87e281]: "30"
+                - text: about the central axis
+                - strong [ref=f87e282]: C.
+                - text: The eccentric mass loads orbital members
+                - strong [ref=f87e283]: "32"
+                - text: are also mounted to the orbital frame
+                - strong [ref=f87e284]: "30"
+                - text: for undergoing rotation about the orbital axis
+                - strong [ref=f87e285]: "0"
+                - text: in FIG.5, FIG.6 and FIG.7 as illustrated in the orbital frame
+                - strong [ref=f87e286]: "30."
+                - text: Each of the orbital members
+                - strong [ref=f87e287]: "32"
+                - text: supports eccentric mass load weights
+                - strong [ref=f87e288]: 33,
+                - text: defining the offset center of mass of the respective orbital members
+                - strong [ref=f87e289]: "32."
+                - text: Thus, the orbital members
+                - strong [ref=f87e290]: "32"
+                - text: have their centers of mass predisposed eccentric mass load in relation to a preset angular position relative to the respective orbital axes
+                - strong [ref=f87e291]: "0."
+                - text: The electrical coupling mechanism
+                - strong [ref=f87e292]: 34,
+                - text: which includes electrical brushes
+                - strong [ref=f87e293]: 34A
+                - text: and electrical conductors
+                - strong [ref=f87e294]: 34B,
+                - text: is electrically coupled to the orbital members
+                - strong [ref=f87e295]: "31"
+                - text: for providing appropriate levels of electrical power, producing rotation of the orbital members
+                - strong [ref=f87e296]: "31"
+                - text: in a first direction about their orbital axes
+                - strong [ref=f87e297]: "0"
+                - text: at the same frequency as the orbital members
+                - strong [ref=f87e298]: "32"
+                - text: undergo revolutions with the orbital frame
+                - strong [ref=f87e299]: "30"
+                - text: in a second opposite direction about the other central axis
+                - strong [ref=f87e300]: C.
+                - text: In such a manner, the center of eccentric mass loads of orbital members
+                - strong [ref=f87e301]: "32"
+                - text: are maintained at the respective preset angular position relative to orbital axis
+                - strong [ref=f87e302]: "0"
+                - text: and thereby the orbital members
+                - strong [ref=f87e303]: "33"
+                - text: are asymmetrically accelerated relative to the central axis
+                - strong [ref=f87e304]: C
+                - text: to impart a respective one of the initial translational forces to the main frame
+                - strong [ref=f87e305]: "12"
+                - text: of the system
+                - strong [ref=f87e306]: "10."
+                - text: In the electromagnetic implementation of the eccentric load mass subsystems
+                - strong [ref=f87e307]: 14,
+                - text: the orbital members
+                - strong [ref=f87e308]: "32"
+                - text: share the same shaft as orbital armatures
+                - strong [ref=f87e309]: "31"
+                - text: mounted to support shafts
+                - strong [ref=f87e310]: 35,
+                - text: and the rotation-producing coupling means an annular stator wall
+                - strong [ref=f87e311]: "37"
+                - text: the – and + are the conductor segments to the stator wall and again no black line with arrows however they do go to the control panel with flexible conduit and is not illustrated in the drawing. The stationary mounted to the legs
+                - strong [ref=f87e312]: "24"
+                - text: of the main frame
+                - strong [ref=f87e313]: "12"
+                - text: and surrounding the orbital armatures
+                - strong [ref=f87e314]: "31."
+                - text: Armatures
+                - strong [ref=f87e315]: "31"
+                - text: are preferably four in number and defined in the drawings of FIG. 2 and FIG.3, electromagnetic relationship with the stator wall. Direct current variable voltage power can be supplied to the stator wall
+                - strong [ref=f87e316]: "37"
+                - text: and orbital armatures
+                - strong [ref=f87e317]: "31."
+                - strong [ref=f87e318]
+                - text: Concerning the pair of parallel eccentric mass load subsystems,
+                - strong [ref=f87e319]: "14"
+                - text: of the controlled translational force generating system
+                - strong [ref=f87e320]: 10,
+                - text: the respective directions of rotation and revolutions of the orbital frames
+                - strong [ref=f87e321]: "30"
+                - text: and orbital members
+                - strong [ref=f87e322]: "32"
+                - text: of the one subsystem
+                - strong [ref=f87e323]: "14"
+                - text: are counter to the respective direction of rotation and revolutions of the orbital frame
+                - strong [ref=f87e324]: "30"
+                - text: and orbital members of
+                - strong [ref=f87e325]: "32"
+                - text: of the other subsystems
+                - strong [ref=f87e326]: "14."
+                - text: For instance, the orbital frame
+                - strong [ref=f87e327]: "30"
+                - text: of the right eccentric load mass subsystem
+                - strong [ref=f87e328]: "14"
+                - text: in FIG.4 rotates counterclockwise about its respective central axis
+                - strong [ref=f87e329]: C,
+                - text: whereas the orbital frame
+                - strong [ref=f87e330]: "30"
+                - text: of the left eccentric load mass subsystem
+                - strong [ref=f87e331]: "14"
+                - text: in drawings of FIG.4 rotates clockwise about its respective central axis
+                - strong [ref=f87e332]: C.
+                - text: Additionally, the orbital members
+                - strong [ref=f87e333]: "32"
+                - text: of the right orbital frame
+                - strong [ref=f87e334]: "30"
+                - text: rotate clockwise about their respective orbital axes
+                - strong [ref=f87e335]: 0,
+                - text: whereas the orbital members
+                - strong [ref=f87e336]: "32"
+                - text: of the left orbital frame
+                - strong [ref=f87e337]: "30"
+                - text: rotate counterclockwise about their respective orbital axes
+                - strong [ref=f87e338]: "0."
+                - text: The counter-rotational relationship of the respective components of the one subsystem
+                - strong [ref=f87e339]: "14"
+                - text: relative to the corresponding components of the other subsystem
+                - strong [ref=f87e340]: "14"
+                - text: and the parallel relationship of the central rotational axes
+                - strong [ref=f87e341]: C
+                - text: of the subsystem
+                - strong [ref=f87e342]: "14"
+                - text: are the features of the system
+                - strong [ref=f87e343]: "10"
+                - text: responsible for causing the generally straight-line motion orientation of the combined translational force which results from the initial translational force generated by the combined operation of the subsystems
+                - strong [ref=f87e344]: "14."
+              - paragraph [ref=f87e347]:
+                - strong [ref=f87e348]: "[30]"
+                - text: Referring again to the drawing of FIG.4, each of the parallel direct current motors
+                - strong [ref=f87e349]: "36"
+                - text: has a center shaft
+                - strong [ref=f87e350]: 36A
+                - text: on FIG.1; Now refer to FIG.1 the permanent magnet armature
+                - strong [ref=f87e351]: "108"
+                - text: center axis shaft is mechanically coupled to this shaft
+                - strong [ref=f87e352]: 36A.
+                - text: The rectangular box
+                - strong [ref=f87e353]: "38"
+                - text: displays the contents of the Drawings of FIG. 1, the 4-Phase Generator with eight outputs resides in both of
+                - strong [ref=f87e354]: "38"
+                - text: rectangular boxes illustrations on the drawings of FIG.4.
+              - paragraph [ref=f87e357]:
+                - strong [ref=f87e358]: "[31]"
+                - text: Referring to drawings of FIG.4, the controlled translational force generating system
+                - strong [ref=f87e359]: "10"
+                - text: also includes synchronizing means
+                - strong [ref=f87e360]: "42"
+                - text: in the form of a pair of large timing gears
+                - strong [ref=f87e361]: 44,
+                - text: which are mounted in the same horizontal plane, have the same diameters and peripherally with one another, are connected to lower ends of the respective orbital frames
+                - strong [ref=f87e362]: "14"
+                - text: through lower center axis shaft
+                - strong [ref=f87e363]: 28A
+                - text: . The drawing of FIG.8 The timing gears
+                - strong [ref=f87e364]: "44"
+                - text: are rotated in opposite directions with respect to one another in the same sense as the subsystems
+                - strong [ref=f87e365]: "14"
+                - text: are counter rotatable relative to one another to maintain the subsystems
+                - strong [ref=f87e366]: "14"
+                - text: in a synchronized relation with one another. Although the timing gears
+                - strong [ref=f87e367]: "44"
+                - text: shown in the drawing of FIG.8 are components that provide mechanical synchronization of subsystems
+                - strong [ref=f87e368]: 14,
+                - text: they could be components that provide mechanical and electromagnetic synchronization of the eccentric mass loads
+                - strong [ref=f87e369]: 33,
+                - text: in FIG. 4, and
+                - strong [ref=f87e370]: G, H, I
+                - text: and
+                - strong [ref=f87e371]: J
+                - text: in FIG.6 and FIG.7.
+              - paragraph [ref=f87e374]:
+                - strong [ref=f87e375]: "[32]"
+                - text: In drawing FIG.4 subsystems
+                - strong [ref=f87e376]: "14"
+                - text: represent FIG.2 and FIG.3 of one system going clockwise in rotation and the other rotating counterclockwise, and the purpose of this sequence is to obtain straight direction motion of the system in a direction that is constant, from the effects of the eccentric mass loads.
+              - paragraph [ref=f87e379]:
+                - strong [ref=f87e380]: "[33]"
+                - text: In drawing FIG.4, item
+                - strong [ref=f87e381]: "40"
+                - strong [ref=f87e382]
+                - text: is the Control Panel that connects the wiring to items
+                - strong [ref=f87e383]: 36,
+                - strong [ref=f87e384]
+                - text: item see FIG.1 and for wiring of motors
+                - strong [ref=f87e385]: 38,
+                - strong [ref=f87e386]
+                - text: item
+                - strong [ref=f87e387]: "28"
+                - text: as the motors that rotate their center axis in FIG.2 and FIG.3.
+              - paragraph [ref=f87e390]:
+                - strong [ref=f87e391]: "[34]"
+                - text: For the present disclosure, Eccentric loads mass
+                - strong [ref=f87e392]: G,
+                - strong [ref=f87e393]: H,
+                - strong [ref=f87e394]: I,
+                - text: and
+                - strong [ref=f87e395]: J
+                - text: drawings FIG.6 and FIG.7 display the locations of the eccentric mass loads as they rotate about the center axis of rotation distances from the center axis
+                - strong [ref=f87e396]: E
+                - text: and
+                - strong [ref=f87e397]: F
+                - text: .
+              - paragraph [ref=f87e400]:
+                - strong [ref=f87e401]: "[35]"
+                - text: Referring initially to the drawings, FIG.1 illustrates an internal view of one potential embodiment of a 4-phase generator of one potential embodiment of the present invention by the disclosed architecture. The 4-phase generator of the present invention is configured as an electrical machine. More specifically, the machine
+                - strong [ref=f87e402]: "100"
+                - text: includes a stator wall
+                - strong [ref=f87e403]: "102"
+                - text: and an armature
+                - strong [ref=f87e404]: "108"
+                - text: . The stator wall
+                - strong [ref=f87e405]: "102"
+                - text: features eight outputs of power. As illustrated, the stator wall
+                - strong [ref=f87e406]: "102"
+                - text: has eight stator slots
+                - strong [ref=f87e407]: 106a,
+                - strong [ref=f87e408]: 106b,
+                - strong [ref=f87e409]: 106c,
+                - strong [ref=f87e410]: 106d,
+                - strong [ref=f87e411]: 106e,
+                - strong [ref=f87e412]: 106f,
+                - strong [ref=f87e413]: 106g,
+                - strong [ref=f87e414]: 106h
+                - text: denoted as
+                - strong [ref=f87e415]: “A-A” 106a, 106e; “B-B” 106b, 106f; “C-C” 106c, 106g,
+                - text: and
+                - strong [ref=f87e416]: “D-D” 106d, 106h.
+                - text: The four South stator slots,
+                - strong [ref=f87e417]: 106a, 106b, 106c,
+                - text: and
+                - strong [ref=f87e418]: 106d,
+                - text: on the stator wall
+                - strong [ref=f87e419]: 102,
+                - text: correspond to the other four North stator slots,
+                - strong [ref=f87e420]: 106e, 106f, 106g, and 106h,
+                - text: for a symmetrical polarity on the stator wall
+                - strong [ref=f87e421]: "102."
+              - paragraph [ref=f87e424]:
+                - strong [ref=f87e425]: "[36]"
+                - text: The drawing of FIG. 1 displays the four pole groups configured on stator wall
+                - strong [ref=f87e426]: 102,
+                - text: and each pole group includes a pair of corresponding stator slots on opposing sides of stator wall
+                - strong [ref=f87e427]: "102."
+                - text: As a result, the one pole group is defined by two
+                - strong [ref=f87e428]: “A-A”
+                - text: stator slots, and similarly, other pole groups are defined by corresponding
+                - strong [ref=f87e429]: “B-B”
+                - text: stator slots together,
+                - strong [ref=f87e430]: “C-C”
+                - text: stator slots together, and
+                - strong [ref=f87e431]: “D-D”
+                - text: stator slots together. During use, the rotation of the permanent magnetic armature
+                - strong [ref=f87e432]: "108"
+                - text: causes the four pole groups to alternate in activation between N (North) stator slots and S (South) stator slots. The armatures’ rotating magnetic fields within the stator wall generate an electrical current in the stator wall. This configuration is beneficial because the eight poles are actively coupled in any given configuration, which results in electrical energy being generated with 8 outputs, labeled
+                - strong [ref=f87e433]: 1,2,3,4,5,6,7
+                - text: and
+                - strong [ref=f87e434]: "8"
+                - text: .
+              - generic [ref=f87e436]:
+                - paragraph [ref=f87e437]:
+                  - strong [ref=f87e438]: "[37]"
+                  - text: The drawings of FIG.1. Stator wall
+                  - strong [ref=f87e439]: "102"
+                  - text: is preferably made of magnetic material, and the activation of the pole groups results in the magnetic field of the stator wall. The armature
+                  - strong [ref=f87e440]: "108"
+                  - text: functions as a rotor and includes a plurality of permanent magnetic poles
+                  - strong [ref=f87e441]: "108"
+                  - text: positioned at the center of the stator wall
+                  - strong [ref=f87e442]: "102"
+                  - text: and has opposite 4 North and 4 South Polarities. As further explained below, the Lithium batteries can provide power for the DC motor
+                  - strong [ref=f87e443]: "36"
+                  - text: that rotates the permanent magnet armature. The control panel can modulate the amount of current from the Lithium batteries to the a DC motor
+                  - strong [ref=f87e444]: "36"
+                  - text: in FIG.4 that rotates the 4-phase motor generator for desired revolutions per minute in direct proportions or separate direct current feeds from the control panel modulated manually or controlled by an automation control program for the DC motor that rotates the see FIG. 1 armature
+                  - strong [ref=f87e445]: "108"
+                  - text: with permanent magnetic 4 North Poles and 4 South poles, inside stator wall
+                  - strong [ref=f87e446]: "102."
+                - paragraph [ref=f87e447]:
+                  - strong [ref=f87e448]: "[38]"
+                  - text: In drawing of FIG.1 it should be appreciated that generator
+                  - strong [ref=f87e449]: "100"
+                  - text: of the present invention in a 4-phase generator formed four pole groups alternating between N (North) stator slots and S (South) stator slots, thereby generating electrical energy outputs. In the preferred embodiment, N (North) stator slots
+                  - strong [ref=f87e450]: 1,2,3,4,5,6,7,
+                  - text: and
+                  - strong [ref=f87e451]: "8"
+                  - text: are used for providing 8-phase outputs. As illustrated, the slots
+                  - strong [ref=f87e452]: 106e, 106f, 106g,
+                  - text: and
+                  - strong [ref=f87e453]: 106h
+                  - text: also have their ground (neutral), and
+                  - strong [ref=f87e454]: 106a, 106b, 106c,
+                  - text: and
+                  - strong [ref=f87e455]: 106d
+                  - text: also have their ground (neutral),
+                  - strong [ref=f87e456]: "112"
+                  - text: .
+                - paragraph [ref=f87e457]:
+                  - strong [ref=f87e458]: "[39]"
+                  - text: In drawing FIG.1 for each pair of opposing stator slots, a coil is connected to opposing stator slots wherein the coil extends from outputs
+                  - strong [ref=f87e459]: 1,2,3,4,5,6,7,
+                  - text: and
+                  - strong [ref=f87e460]: "8"
+                  - text: and connects to the terminals at neutral point
+                  - strong [ref=f87e461]: "112."
+                - paragraph [ref=f87e462]:
+                  - strong [ref=f87e463]: "[40]"
+                  - text: In drawing, FIG.2 Phase A is formed by opposing stator slots
+                  - strong [ref=f87e464]: 106a
+                  - strong [ref=f87e465]
+                  - text: and
+                  - strong [ref=f87e466]: 106e
+                  - text: ", Phase B is formed by opposing stator slots"
+                  - strong [ref=f87e467]: 106b
+                  - text: and
+                  - strong [ref=f87e468]: 106f
+                  - text: ", Phase C is formed by opposing stator slots"
+                  - strong [ref=f87e469]: 106c
+                  - text: and
+                  - strong [ref=f87e470]: 106g
+                  - text: ", and Phase D is formed by opposing stator slots"
+                  - strong [ref=f87e471]: 106d
+                  - strong [ref=f87e472]
+                  - text: and
+                  - strong [ref=f87e473]: 106h
+                  - text: .
+                - paragraph [ref=f87e474]:
+                  - text: FIG.1 The voltage of each phase is formed when permanent magnet
+                  - strong [ref=f87e475]: "108"
+                  - text: aligns with the opposing stator slots. By way of example, as illustrated in FIG. 1, the South pole and North pole of the permanent magnet
+                  - strong [ref=f87e476]: "108"
+                  - text: align with the opposing stator slots
+                  - strong [ref=f87e477]: 106e, 106a,
+                  - text: respectively. As a result, the voltage of Phase A is achieved in the illustrated configuration. As the armature permanent magnet
+                  - strong [ref=f87e478]: "108"
+                  - text: rotates and aligns with other sets of opposing stator slots, the voltage and current are generated. It is to be appreciated that magnet
+                  - strong [ref=f87e479]: "108"
+                  - text: is a permanent or rare earth magnet inside of the lamination of the armature
+                  - strong [ref=f87e480]: "108"
+                  - text: .
+                - paragraph [ref=f87e481]:
+                  - strong [ref=f87e482]: "[41]"
+                  - text: In the FIG.4 displays the direct current motors
+                  - strong [ref=f87e483]: 28,
+                  - text: that rotates the center axis shaft in FIG. 5, FIG. 6 and 7. FIG.6 illustrates the eccentric load mass diagram for the functioning of the 4-phase motor and generator device of the present invention by the disclosed architecture. The Eccentric load mass Diagram
+                  - strong [ref=f87e484]: "300"
+                  - text: illustrates a graphical representation of the eccentric mass inside the 4-Phase Armatures rotation inside the Stator Wall in
+                  - strong [ref=f87e485]
+                  - text: FIG.6. The diagram illustrates the relationship between the stator wall and the eccentric load masses mounted on the armatures. The drawing in FIG.6,
+                  - strong [ref=f87e486]: "300"
+                  - text: drawings as divided, illustrates four circles, each corresponding to the armatures in FIG.2 and FIG.3. FIG. 6 The first circle,
+                  - strong [ref=f87e487]: 302,
+                  - text: indicates the starting point of the rotation of the center axis of rotation, which is clockwise in this case. However, the motor can also be wired for counterclockwise rotation per the application if required. In Circle
+                  - strong [ref=f87e488]: 302,
+                  - text: the “A” phase Axial air gap from the stator wall eccentric mass load “
+                  - strong [ref=f87e489]: G”
+                  - text: is minimal, and the distance “
+                  - strong [ref=f87e490]: E1”
+                  - text: from the center axis of rotation.
+                - paragraph [ref=f87e491]:
+                  - strong [ref=f87e492]: "[42]"
+                  - text: In drawing of FIG. 6, the eccentric load mass is indicated by the letter
+                  - strong [ref=f87e493]: “G,”
+                  - text: which is located at a distance
+                  - strong [ref=f87e494]: ”E1″
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e495]: “O”
+                  - text: . The eccentric load mass is indicated by the letter
+                  - strong [ref=f87e496]: “I”
+                  - text: and is located at a distance
+                  - strong [ref=f87e497]: “F1″
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e498]: “O”
+                  - text: . Additionally, circle
+                  - strong [ref=f87e499]: "302"
+                  - text: shows the location of the eccentric load mass, indicated by the letter
+                  - strong [ref=f87e500]: “J,”
+                  - text: and
+                  - strong [ref=f87e501]
+                  - text: “
+                  - strong [ref=f87e502]: H”
+                  - text: is also located in distance “
+                  - strong [ref=f87e503]: E1”
+                  - text: from axis of rotation “
+                  - strong [ref=f87e504]: O”.
+                - paragraph [ref=f87e505]:
+                  - strong [ref=f87e506]: "[43]"
+                  - text: In the drawing of FIG.6 in Circle
+                  - strong [ref=f87e507]: "304"
+                  - text: ", the eccentric load mass"
+                  - strong [ref=f87e508]: “G”
+                  - text: and
+                  - strong [ref=f87e509]: “J”
+                  - text: are both located at a distance
+                  - strong [ref=f87e510]: “E2”
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e511]: “O”,
+                  - text: while the eccentric load mass
+                  - strong [ref=f87e512]: “I”
+                  - text: and
+                  - strong [ref=f87e513]: “H”
+                  - text: are located at a distance
+                  - strong [ref=f87e514]: “F2”
+                  - text: from the center axis of rotation. In Circle
+                  - strong [ref=f87e515]: 306,
+                  - text: the eccentric load mass
+                  - strong [ref=f87e516]: “J”
+                  - text: is located at a certain distance
+                  - strong [ref=f87e517]: “E3”
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e518]: “O”,
+                  - text: while the eccentric load mass
+                  - strong [ref=f87e519]: “H”
+                  - text: is located at a distance
+                  - strong [ref=f87e520]: “F3”
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e521]: “O”, “G”
+                  - text: and “
+                  - strong [ref=f87e522]: I”
+                  - text: are also located in
+                  - strong [ref=f87e523]: E1
+                  - text: from the center axis of rotation “
+                  - strong [ref=f87e524]: O”.
+              - generic [ref=f87e526]:
+                - paragraph [ref=f87e527]:
+                  - strong [ref=f87e528]: "[44]"
+                  - text: In the drawing of FIG.6 In Circle
+                  - strong [ref=f87e529]: 308,
+                  - text: the eccentric load mass
+                  - strong [ref=f87e530]: “I”
+                  - text: and
+                  - strong [ref=f87e531]: “J”
+                  - text: are both located at a distance
+                  - strong [ref=f87e532]: “E4″
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e533]: “O”
+                  - text: ", while the eccentric load mass"
+                  - strong [ref=f87e534]: “H”
+                  - text: and
+                  - strong [ref=f87e535]: “G”
+                  - text: are located at a distance
+                  - strong [ref=f87e536]: “F4”
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e537]: “O”
+                  - text: .
+                - paragraph [ref=f87e538]:
+                  - strong [ref=f87e539]: "[45]"
+                  - text: In the drawing of FIG. 7 illustrates Eccentric load or rotor mass Diagram
+                  - strong [ref=f87e540]: "400"
+                  - text: ", as shown in drawing of FIG. 7, and displays the relationship between the 4-phase stator wall and eccentric load or rotor masses. Diagram"
+                  - strong [ref=f87e541]: "400."
+                  - text: Starting with the top left Circle
+                  - strong [ref=f87e542]: 402,
+                  - text: illustrates eccentric load mass
+                  - strong [ref=f87e543]: “I”
+                  - text: ", which is located at a distance"
+                  - strong [ref=f87e544]: “E5”
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e545]: “O”,
+                  - text: while eccentric load mass
+                  - strong [ref=f87e546]: “G”
+                  - text: is located at a distance
+                  - strong [ref=f87e547]: “F5”
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e548]: “O”
+                  - text: . The eccentric load mass locations of “
+                  - strong [ref=f87e549]: H”
+                  - text: and “
+                  - strong [ref=f87e550]: J”
+                  - text: are also displayed in the “
+                  - strong [ref=f87e551]: E5”
+                  - text: area.
+                - paragraph [ref=f87e552]:
+                  - strong [ref=f87e553]: "[46]"
+                  - text: In the drawing of FIG.7 The Circle
+                  - strong [ref=f87e554]: "404"
+                  - text: ", eccentric load masses"
+                  - strong [ref=f87e555]: “H”
+                  - text: and
+                  - strong [ref=f87e556]: “I”
+                  - text: are at a distance
+                  - strong [ref=f87e557]: “E6”
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e558]: “O”
+                  - text: ", while eccentric load masses"
+                  - strong [ref=f87e559]: “G”
+                  - text: and
+                  - strong [ref=f87e560]: “J”
+                  - text: are at a distance
+                  - strong [ref=f87e561]: “F6”
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e562]: “O”.
+                  - text: The Circle
+                  - strong [ref=f87e563]: "406"
+                  - text: illustrates eccentric load mass
+                  - strong [ref=f87e564]: “H”
+                  - text: ", which is at a distance"
+                  - strong [ref=f87e565]: “E7”
+                  - text: from the center axis of rotation, while eccentric load mass
+                  - strong [ref=f87e566]: “J”
+                  - text: is at a distance
+                  - strong [ref=f87e567]: “F7”
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e568]: “O” “G”
+                  - text: and
+                  - strong [ref=f87e569]: “I”
+                  - text: are in
+                  - strong [ref=f87e570]: “E7”
+                  - text: area
+                  - strong [ref=f87e571]: .
+                  - text: Circle
+                  - strong [ref=f87e572]: "408"
+                  - text: illustrates eccentric load masses
+                  - strong [ref=f87e573]: “G”
+                  - text: and
+                  - strong [ref=f87e574]: “H”
+                  - text: ", which are at a distance area."
+                  - strong [ref=f87e575]: “E8”
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e576]: “O”,
+                  - text: while eccentric load masses
+                  - strong [ref=f87e577]: “J”
+                  - text: and
+                  - strong [ref=f87e578]: “I”
+                  - text: are at a distance
+                  - strong [ref=f87e579]: “F8”
+                  - text: from the center axis of rotation
+                  - strong [ref=f87e580]: “O”
+                  - text: . This cycle now repeats Eccentric load or mass Diagram
+                  - strong [ref=f87e581]: "300"
+                  - text: then Eccentric load mass Diagram
+                  - strong [ref=f87e582]: "400"
+                  - text: and so on. The alternating pattern of the eccentric load masses in the two diagrams
+                  - strong [ref=f87e583]: "300"
+                  - text: and
+                  - strong [ref=f87e584]: "400"
+                  - text: helps the eccentric load mass and maximizes the force of system “
+                  - strong [ref=f87e585]: 10”
+                  - text: to move in a constant direction of the eccentric mass loads greatest distance from center axis
+                  - strong [ref=f87e586]: “0”.
+                - paragraph [ref=f87e587]:
+                  - strong [ref=f87e588]: "[47]"
+                  - text: The drawing of FIG. 5 illustrates the four armatures’ electromagnetic functions inside the stator wall that provide the means for the eccentric load mass to rotate inside the stator wall. This diagram is for the functioning of the 4-phase generator and eccentric load mass systems of the present invention by the disclosed architecture. Diagram
+                  - strong [ref=f87e589]: 500,
+                  - text: as shown in the drawing of FIG.5, displays four armatures’ electrical/magnetic relationships with, for example, the stator wall. As shown, the rotation of the center axis
+                  - strong [ref=f87e590]: “O”
+                  - text: is clockwise. However, it is appreciated that the rotation can be arranged in a counterclockwise orientation. Starting with the top left diagram
+                  - strong [ref=f87e591]: 500,
+                  - text: diagram
+                  - strong [ref=f87e592]: "502"
+                  - text: illustrates the armatures and stator walls magnetic fields relationship of the armatures and stator wall, resulting in the armatures revolving about the center axis of rotation
+                  - strong [ref=f87e593]: “O”
+                  - text: and facing a first direction. The stator and armature of Diagram
+                  - strong [ref=f87e594]: "502"
+                  - text: display the 4-phase stator wall magnetic relationship with the 4-phase armatures, with
+                  - strong [ref=f87e595]: “A”
+                  - text: and
+                  - strong [ref=f87e596]: “C”
+                  - text: phase power first. Thus, Diagram
+                  - strong [ref=f87e597]: "502"
+                  - text: represents a display of the
+                  - strong [ref=f87e598]: “A”
+                  - text: and
+                  - strong [ref=f87e599]: “C”
+                  - text: phase power stator wall and energized armatures. Diagram
+                  - strong [ref=f87e600]: "504"
+                  - text: illustrates the Controls panel providing power to the armatures and stator wall, within the center axis of rotation
+                  - strong [ref=f87e601]: “O”.
+                  - text: The stator and armature of Diagram
+                  - strong [ref=f87e602]: "504"
+                  - text: display the 4-phase stator wall magnetic relationship with the 4-phase armatures with
+                  - strong [ref=f87e603]: “B”
+                  - text: and
+                  - strong [ref=f87e604]: “D”
+                  - text: phase power second. Thus, Diagram
+                  - strong [ref=f87e605]: "504"
+                  - text: represents a display of the
+                  - strong [ref=f87e606]: “B”
+                  - text: and
+                  - strong [ref=f87e607]: “D”
+                  - text: phase power stator wall and energized armatures. The stator and armature of Diagram
+                  - strong [ref=f87e608]: "506"
+                  - text: display the 4-phase stator wall magnetic relationship with the 4-phase armatures with
+                  - strong [ref=f87e609]: “C”
+                  - text: and
+                  - strong [ref=f87e610]: “A”
+                  - text: phase power third. Thus, Diagram
+                  - strong [ref=f87e611]: "506"
+                  - text: represents a display of
+                  - strong [ref=f87e612]: “C”
+                  - text: and
+                  - strong [ref=f87e613]: “A”
+                  - text: phase power stator walls and energized armatures. The stator and armature of Diagram
+                  - strong [ref=f87e614]: "508"
+                  - text: display the 4-phase stator wall magnetic relationship with the 4-phase armatures with
+                  - strong [ref=f87e615]: “D”
+                  - text: and
+                  - strong [ref=f87e616]: “B”
+                  - text: phase power fourth. Thus, Diagram
+                  - strong [ref=f87e617]: "508"
+                  - text: represents a display of the
+                  - strong [ref=f87e618]: “D”
+                  - text: and
+                  - strong [ref=f87e619]: “B”
+                  - text: phase power stator wall and energized armatures. The full revolution cycle repeats from
+                  - strong [ref=f87e620]: "508"
+                  - text: to
+                  - strong [ref=f87e621]: 502,
+                  - text: next to
+                  - strong [ref=f87e622]: 504,
+                  - strong [ref=f87e623]: 506, 508.
+                  - text: resulting in armatures revolving about the center axis of rotation and facing the same direction while revolving about the center axis of rotation. The revolutions per minute of the center axis of rotation shall be increased or decreased to maximize or minimize the effects of the eccentric mass load upon the center axis of rotation for translational force generation to move the system in a direction that is constant.
+                - paragraph [ref=f87e624]:
+                  - strong [ref=f87e625]: "[48]"
+                  - text: In the drawing of FIG.5, diagram 500 represents one system that rotates in a counterclockwise motion of its center axis and a second system that rotates in a clockwise motion of its center axis of rotation. Each of these systems, 502, 504, 506, and 508, can be one in front of the other so that the eccentric load mass is always peaking at the “A” phase to control the effects of the eccentric mass loads upon the center axis of rotation O, resulting in the systems illustrated in the drawing of FIG.6 and moving in the direction of greatest distance of eccentric mass loads J, G, H, and I, defined as E1, E2, E3, E4, E5, E6, E7, and E8, distance from center axis of rotation “O”.
+                - list [ref=f87e626]:
+                  - listitem [ref=f87e627]:
+                    - text: Present systems disclose the eccentric mass on each of the four-phase armatures, moving the systems in the direction of the eccentric mass loads
+                    - strong [ref=f87e628]: G, H, I,
+                    - text: and
+                    - strong [ref=f87e629]: J
+                    - text: out furthest from the center axis of rotation. The top and bottom of each of the four armatures will have a single brush top and a single brush bottom, and conductor segments that go to a control panel where amps and voltage are regulated to the armature’s windings. See the drawing in FIG.4 for details.
+                - paragraph [ref=f87e630]:
+                  - strong [ref=f87e631]: "[49]"
+                  - text: In the drawing of FIG.4, the armature coils can be soldered to the top and bottom of a copper communications ring. The brushes can be mechanically attached to the shaft with dielectric hardware. From the brushes, a conductor segment is wired to a control panel, and the control panel controls the current being able to unload or load the current from the installed coils on each of the four armatures from the Control panel that regulates the voltage and current from the Lithium battery bank or Solar Panels using automation or manual controls for voltage and current to each FIG.1, FIG.2, FIG.3
+                - paragraph [ref=f87e632]:
+                  - strong [ref=f87e633]: "[50]"
+                  - text: The 4-Phase Motor Generator figures, in the drawings of FIG. 6 and FIG. 7, display the location of the eccentric mass loads as they revolve about their center axis of rotation. These eccentric mass loads (labeled
+                  - strong [ref=f87e634]: G, H, I,
+                  - text: and
+                  - strong [ref=f87e635]: J)
+                  - text: are identical load mass, and as they revolve around the center axis of rotation.
+                - paragraph [ref=f87e636]:
+                  - strong [ref=f87e637]: "[51]"
+                  - text: In the drawing of FIG.4, one eccentric mass load system
+                  - strong [ref=f87e638]: ”14″
+                  - text: revolves clockwise, and the other eccentric mass load system
+                  - strong [ref=f87e639]: “14”
+                  - text: revolves counterclockwise about its center axis of rotation. Systems have displayed 4 armatures in one system and 4 armatures in the other eccentric mass load system, making a total of 8 armatures within a pair of stator walls. This results in both of the eccentric mass load systems being a greater distance from the center axis of rotation at the same time (i.e., simultaneously), and the Eccentric mass load systems are closest to the center axis of rotation simultaneously, and out furthest from the center axis of rotation simultaneously resulting in this system moving in a direction that is constant in the Earths gravitational field or in the Higgs Field in Outer Space.
+                - paragraph [ref=f87e640]:
+                  - strong [ref=f87e641]: "[52]"
+                  - text: In contrast, the present disclosure includes an eccentric mass load system having 4 eccentric mass loads revolving clockwise about its center axis of rotation and another 4 eccentric mass loads revolving counterclockwise about its center axis of rotation. The result is a system that moves in a constant direction, in the gravitational field of the Earth or the Higgs Field that exists in outer space. The present disclosure includes 2 eccentric mass load systems, for example, 4 eccentric mass loads revolving clockwise and 4 eccentric mass loads revolving counterclockwise, within their respective stator wall. This result is the movement of the eccentric mass loads or eccentric rotor masses in a constant direction, as the eccentric mass loads
+                  - strong [ref=f87e642]: G, H, I
+                  - text: and
+                  - strong [ref=f87e643]: J
+                  - text: as these eccentric mass loads occupy
+                  - strong [ref=f87e644]: E1, E2, E3, E4, E5, E6, E7
+                  - text: and
+                  - strong [ref=f87e645]: E8
+                  - text: furthest distance from the center axis of rotation, as they revolve about the center axis of rotation
+                  - strong [ref=f87e646]: “0”,
+                  - text: See drawings FIG.6 and FIG.7 for details of operation.
+                - paragraph [ref=f87e647]:
+                  - strong [ref=f87e648]: "[53]"
+                  - text: Certain terms used throughout the following description refer to features or components. As one skilled in art will appreciate, different people may refer to the same feature or component by different names. This document does not intend to distinguish between components or features that differ in name but not in structure or function. As used herein, “4-phase motor and generator device”, “4-phase generator”, “generator”, and “4-phase generator and eccentric mass load systems” are interchangeable and refer to the 4-phase and generator and eccentric mass load systems,
+                  - strong [ref=f87e649]: "100"
+                  - text: of the present invention. See drawings of FIG.1, FIG.2, and FIG.3.
+                - paragraph [ref=f87e650]:
+                  - strong [ref=f87e651]: "[54]"
+                  - text: Notwithstanding the foregoing, the 4-phase generator and eccentric mass load systems in FIG.1, FIG.2, FIG.3, FIG.4, FIG.5, FIG.6, FIG.7 and FIG.8 item of the present invention, can be of any suitable size and configuration as is known in art without affecting the overall concept of the invention if it accomplishes the above-stated objectives. One of the ordinary skills in art will appreciate that the 4-phase generator and eccentric mass load systems. FIG.4 is for illustrative purposes only and many other sizes and shapes of the 4-phase generator and eccentric mass load systems
+                  - strong [ref=f87e652]
+                  - text: are well within the scope of the present disclosure. Although the dimensions of the 4-phase generator with eccentric mass load systems are important design parameters for user convenience, the 4-phase generator and eccentric mass load systems may be of any size that ensures optimal performance during use and/or that suits the user’s needs and/or preferences.
+              - heading "CLAIMS OF THE INVENTION" [level=4] [ref=f87e653]
+              - generic [ref=f87e655]:
+                - paragraph [ref=f87e656]:
+                  - strong [ref=f87e657]: "[55]"
+                  - text: The present invention, in one exemplary embodiment, is a method of operating 4-Phase Generator and eccentric mass load subsystems. A solar powered panel system will provide power for the Lithium battery bank will provide the electric power, to rotate the current to the direct current motor, to provide a method of rotating permanent magnetic armature with four north poles and 4 south poles inside a stator wall, the stator wall having a circular or cylindrical shape, with eight stator slots divided into four pole groups, each pole group has a N (North) stator slot and a S (South) stator slot, wherein four of the stator slots on one side of the stator wall correspond to the other four of the stator slots on an opposing side of the stator wall as described in the drawings. The permeant magnetic armature will generate eight outputs of power from the Stator wall to the control panel.
+                - paragraph [ref=f87e658]:
+                  - strong [ref=f87e659]: "[56]"
+                  - text: This will provide electric power for two systems each containing four armatures, each armature has eight poles two A poles, two B poles, two C poles, two D poles opposite each other. These four armatures are inside an eight-pole stator wall, as a result the stator wall eight stator slots also have two A magnetic slots, two B magnetic slots, two C magnetic slots and two D magnetic slots that receive their power for the Lithium battery bank regulated from the Control panel. These four armatures are attached to a deck that has a center axis that rotates either clockwise or counterclockwise. This center axis is mechanically attached to a direct power motor that rotates the deck either clockwise or counterclockwise, as described in the drawings.
+                - paragraph [ref=f87e660]:
+                  - strong [ref=f87e661]: "[57]"
+                  - text: The armatures inside the stator wall will have an eccentric mass load on each armature that is mechanically attached to each armature, as illustrated in the drawings.
+                - paragraph [ref=f87e662]:
+                  - strong [ref=f87e663]: "[58]"
+                  - text: As described in the drawings, one eccentric mass load system will rotate clockwise, and the other eccentric mass load system will rotate counterclockwise. These eccentric mass load systems will be mounted on decks and a timing gear will keep the synchronized to distribute the eccentric mass load in one direction that is constant as defined in the drawings.
+                - paragraph [ref=f87e664]:
+                  - strong [ref=f87e665]: "[59]"
+                  - text: This application of eccentric load mass systems presents unique technical objectives and challenges, fundamentally altering the dynamics of current angular momentum conservation laws. In systems with eccentric mass load configurations, the distribution of mass around the axis of rotation is non-uniform, leading to deviations from traditional “Conservation Laws Principles”. The angular momentum of this system is intricately tied to the mass, its radial distance from the axis, and the angular velocity. As a result, the angular momentum varies throughout the rotation cycle, peaking at points where the mass is furthest out from the center axis of rotation and diminishing when closer to the center axis of rotation. The result is the eccentric mass load systems of the 4-Phase Motor Generator Device move in a direction that is constant where the mass is furthest out from the center axis of rotation, in the direction of Earth’s gravitational field, and/or in HIGGS Fields in outer space.
+              - heading "ABSTRACT" [level=4] [ref=f87e666]
+              - paragraph [ref=f87e669]: The invention relates to a novel 4-phase motor and generator device with increased efficiency for generating electrical energy. The device features a stator wall with eight stator slots and four pole groups, and an armature of permeant magnetic material with four north poles and four south poles, rotatable within the stator wall. The permanent magnetic armatures rotating the magnetic field within the stator wall, resulting in eight direct currents outputs. Solar powered panel system will provide power for the Lithium battery bank the will provide the power for the direct current motor that rotates the permanent magnetic armature and as the eight pole permeant magnetic armature fields inside the eight-pole stator wall current will be induced into the eight-pole stator wall for direct current output power to a control panel for power distribution to other devices within this patent application as defined in the drawings and claims.
+              - heading "Drawings Name and short description" [level=4] [ref=f87e670]
+              - table [ref=f87e673]:
+                - rowgroup [ref=f87e674]:
+                  - row [ref=f87e675]:
+                    - columnheader "Drawings Name" [ref=f87e676]
+                    - columnheader "Short Description" [ref=f87e677]
+                  - row [ref=f87e678]:
+                    - cell "FIG.1" [ref=f87e679]
+                    - cell "4-Phase Generator 100" [ref=f87e680]
+                  - row [ref=f87e681]:
+                    - cell "FIG.1, FIG.2, FIG.3" [ref=f87e682]
+                    - cell "Stator wall 102" [ref=f87e683]
+                  - row [ref=f87e684]:
+                    - cell "FIG.1, FIG.2, FIG.3" [ref=f87e685]
+                    - cell "Stator slots 106a, 106b, 106c, 106d, 106e, 106f, 106g, 106h" [ref=f87e686]
+                  - row [ref=f87e687]:
+                    - cell "FIG.1" [ref=f87e688]
+                    - cell "Armature Permanent Magnets 108" [ref=f87e689]
+                  - row [ref=f87e690]:
+                    - cell "FIG.1" [ref=f87e691]
+                    - cell "4-Phase Output 1,2,3,4,5,6,7 & 8" [ref=f87e692]
+                  - row [ref=f87e693]:
+                    - cell "FIG.1, FIG.2, FIG.3" [ref=f87e694]
+                    - cell "112 Neutral" [ref=f87e695]
+                  - row [ref=f87e696]:
+                    - cell "FIG.6 and FIG.7" [ref=f87e697]
+                    - cell "Eccentric mass loads G, H, I, J, Distance E and F from the center axis of rotation" [ref=f87e698]
+                  - row [ref=f87e699]:
+                    - cell "FIG.2, FIG.3, FIG.4" [ref=f87e700]
+                    - cell "4-Phase Input 1,2,3,4,5,6,7 & 8" [ref=f87e701]
+                  - row [ref=f87e702]:
+                    - cell "FIG.4" [ref=f87e703]
+                    - cell "Illustrates a dual system, Item 10" [ref=f87e704]
+                  - row [ref=f87e705]:
+                    - cell "FIG.5" [ref=f87e706]
+                    - cell "Armatures A and C’s & Stator Wall" [ref=f87e707]
+                  - row [ref=f87e708]:
+                    - cell "FIG.6 and FIG.7" [ref=f87e709]
+                    - cell "Eccentric Mass Loads G, H, I, & J" [ref=f87e710]
+                  - row [ref=f87e711]:
+                    - cell "FIG.4 and FIG.8" [ref=f87e712]
+                    - cell "Timing Gears to See location" [ref=f87e713]
+            - generic [ref=f87e714]:
+              - figure [ref=f87e719]:
+                - img "Drawings-4-7-2025" [ref=f87e721]
+              - figure [ref=f87e726]:
+                - img "Drawings-4-7-2025-(2)" [ref=f87e728]
+              - figure [ref=f87e733]:
+                - img "Drawings-4-7-2025-(3)" [ref=f87e735]
+            - generic [ref=f87e736]:
+              - figure [ref=f87e741]:
+                - img "Scan_20250518 copy" [ref=f87e743]
+              - figure [ref=f87e748]:
+                - img "Drawings-4-7-2025-(5)" [ref=f87e750]
+              - figure [ref=f87e755]:
+                - img "Drawings-4-7-2025-(6)" [ref=f87e757]
+            - generic [ref=f87e758]:
+              - figure [ref=f87e763]:
+                - img "Drawings-4-7-2025-(7)" [ref=f87e765]
+              - figure [ref=f87e770]:
+                - img "Drawings-4-7-2025-(8)" [ref=f87e772]
+            - generic [ref=f87e782]:
+              - heading "Supersymmetric Rotors – Breaking the Rules of Physics" [level=1] [ref=f87e783]
+              - paragraph [ref=f87e784]:
+                - iframe [ref=f87e785]:
+                  - generic [ref=f88e3]:
+                    - strong [ref=f88e4]: www.youtube.com
+                    - text: unexpectedly closed the connection.
+            - generic [ref=f87e789]:
+              - generic [ref=f87e791]:
+                - heading "Symmetry Versus Asymmetry" [level=2] [ref=f87e792]
+                - paragraph [ref=f87e793]: From left to right Invariance Symmetry that displays distance from center axis, this is a representation of Emmy Noether’s Law Conservation of Angular Momentum as distance “a” being the same distance from the center axis of rotation.
+                - paragraph [ref=f87e794]: The next 2nd drawing in the center of the page on the top is X=X is symmetry, Amplitude and frequency are equal symmetrical operation, below drawing is X>Y where X is a greater distance than Y thus Amplitude and frequency are not equal, and this is a Asymmetrical operation.
+                - paragraph [ref=f87e795]: To the right of the page is Axis of rotation of system and the four armatures display the eccentric mass load of each armature on the right side of the center axis of rotation, and the eccentric mass load that displays the Force arrow and the direction this system travels in a direction that is constant.
+                - heading "Sequence of operation for the electromagnetic 4-Phase Motor Stator Wall and 4 Armatures Operation/Sequence of Operation for Asymmetric Eccentric Mass Loads." [level=3] [ref=f87e796]
+              - generic [ref=f87e797]:
+                - figure [ref=f87e802]:
+                  - img "4phase generator and load (2)-1" [ref=f87e804]
+                - figure [ref=f87e809]:
+                  - img "4phase generator and load (3)-1" [ref=f87e811]
+              - generic [ref=f87e812]:
+                - figure [ref=f87e817]:
+                  - img "Fig-3u" [ref=f87e819]
+                - figure [ref=f87e824]:
+                  - img "Fig-4u" [ref=f87e826]
+              - figure [ref=f87e833]:
+                - img "Fig-5u" [ref=f87e835]
+              - generic [ref=f87e843]:
+                - heading "Symmetry vs Asymmetry -Emmy Noether’s Law" [level=1] [ref=f87e844]
+                - paragraph [ref=f87e845]:
+                  - iframe [ref=f87e846]: "<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SELRES_start\"> </span>"
+      - separator
+      - contentinfo [ref=f87e847]:
+        - paragraph [ref=f87e848]:
+          - text: Super Symmetry is proudly powered by
+          - link "WordPress" [ref=f87e849] [cursor=pointer]:
+            - /url: https://wordpress.org/
+    - generic [ref=f87e853] [cursor=pointer]:
+      - img "en" [ref=f87e854]
+      - text: en

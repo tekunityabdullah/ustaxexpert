@@ -1,0 +1,76 @@
+- generic [active] [ref=f103e1]:
+  - generic [ref=f103e2]:
+    - banner [ref=f103e3]:
+      - navigation [ref=f103e4]:
+        - list [ref=f103e5]:
+          - listitem [ref=f103e6]:
+            - link "Home" [ref=f103e7] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f103e8]:
+            - link "About Us" [ref=f103e9] [cursor=pointer]:
+              - /url: /about-us
+          - listitem [ref=f103e10]:
+            - link "How \"Proto\" Works" [ref=f103e11] [cursor=pointer]:
+              - /url: /how-proto-works
+        - link [ref=f103e12] [cursor=pointer]:
+          - /url: /
+          - img "Super Symmetry" [ref=f103e13]
+        - list [ref=f103e14]:
+          - listitem [ref=f103e15]:
+            - link "Audio Book" [ref=f103e16] [cursor=pointer]:
+              - /url: https://www.amazon.com/Payloads-Electrical-Driving-Eccentric-Rotation/dp/B0GXLZY1R7/ref=tmm_aud_swatch_0
+          - listitem [ref=f103e17]:
+            - link "Book" [ref=f103e18] [cursor=pointer]:
+              - /url: https://www.amazon.com/dp/B0FJVDDLDZ
+          - listitem [ref=f103e19]:
+            - link "Mission & Values" [ref=f103e20] [cursor=pointer]:
+              - /url: /mission-and-values
+          - listitem [ref=f103e21]:
+            - link "FAQs" [ref=f103e22] [cursor=pointer]:
+              - /url: /faqs
+          - listitem [ref=f103e23]:
+            - link "He3 Lunar Mining" [ref=f103e24] [cursor=pointer]:
+              - /url: /he3-lunar-mining
+    - main [ref=f103e25]:
+      - generic [ref=f103e26]:
+        - heading "About Us" [level=1] [ref=f103e27]
+        - generic [ref=f103e28]:
+          - heading "Thomas L Navarro" [level=2] [ref=f103e29]
+          - paragraph [ref=f103e30]: I, Thomas L Navarro would like to assist Karman Plus with moving payloads in space using the systems that move payloads in the earth’s gravitational field, tabletop, surface tension of water, submarine in water, please in this website to observe many systems moving from eccentric mass load about a center axis of rotation. These systems can move payloads in space as the entire universe lives in the Higgs field that gives mass its properties. Karman Plus is setting up in Colorado and plans to start Asteroid mining for Presious metals and alloys, and my new patent systems would be very useful to move payloads in space with electrical energy instead of rocket propulsion.
+          - paragraph [ref=f103e31]: We need funding for work to start so I can set up a meeting with Local Electrical Motor Generator Shops to get an approximation of how much funding and fabrication of Patent No. 18/301,764.
+          - paragraph [ref=f103e32]: "Total Program Cost $35,647.50, Invoice Number: ZG12385, Location of Test Flight, Space Coast Regional Airport-Titusville, FL. This prototype system could just barely climb out of the plum in the earth’s gravitational field. The next Zero Gravity Test Flight will have the prototype system that floats on the surface tension of water video on the website."
+          - img "Thomas L Navarro biography clipping" [ref=f103e34]
+          - heading "Credentials" [level=2] [ref=f103e35]
+          - paragraph [ref=f103e36]:
+            - strong [ref=f103e37]: Zachary Navarro
+            - text: — He’s a Colorado Master Electrician, and we collaborated together to fine-tune the 4-Phase Motor Generator Device Patent.
+          - paragraph [ref=f103e38]:
+            - strong [ref=f103e39]: Tiffany Navarro
+            - text: — Tiffany was extremely helpful in exchanging ideas and collaborating on the 4-Phase Motor Generator Device Patent.
+          - paragraph [ref=f103e40]: Zachary and Tiffany are also Co-Inventors on the 4-Phase Motor Generator Device Patent.
+          - heading "Sage Marlof’s Biography" [level=2] [ref=f103e41]
+          - paragraph [ref=f103e42]: Associate Maintenance Manager at Land O Lakes. April 2024 to present.
+          - paragraph [ref=f103e43]: Maintenance Foremen, May 2016 to April 2024.
+          - paragraph [ref=f103e44]: Student, San Joaquin Valley College 2015 to March 2024.
+          - paragraph [ref=f103e45]: Student, University of Phoenix, Jan 2023–Jan 2015.
+          - paragraph [ref=f103e46]: US Navy 11 years 11 months. Aviation Technician Supervisor, Nov 2003 to Sep 2007. Aviation Electronic Technician Supervisor, Nov 2002 to Sep 2007. Aviation Electronic Technician, Nov 2000 – Nov 2003.
+          - paragraph [ref=f103e47]: Supported the Navy’s Atlantic and Pacific Fleet Force Attack Aircraft and Joint Inter-Agency Corporation. The Key F-14 AWG-9 radar electronic technician for the advanced radar component.
+          - heading "Team" [level=2] [ref=f103e48]
+          - paragraph [ref=f103e49]:
+            - strong [ref=f103e50]: James D Isaacson
+          - paragraph [ref=f103e51]:
+            - strong [ref=f103e52]: Kevin Larson
+            - text: — Master In Refrigeration, Master in Lathe and Bridge Port Machining Operations.
+          - paragraph [ref=f103e53]:
+            - strong [ref=f103e54]: Joseph Alen DiPentino MS
+            - text: — Director of Executive and Corporate Acquisitions, Assistant Director to Thomas L. Navarro, VP Program Management and Project Systems Analysis.
+    - contentinfo [ref=f103e55]:
+      - paragraph [ref=f103e56]:
+        - text: Super Symmetry is proudly powered by
+        - link "WordPress" [ref=f103e57] [cursor=pointer]:
+          - /url: https://wordpress.org/
+    - generic [ref=f103e58]:
+      - generic [ref=f103e59]: 🇺🇸
+      - generic [ref=f103e60]: EN
+  - button "Open Next.js Dev Tools" [ref=f103e68] [cursor=pointer]
+  - alert [ref=f103e72]

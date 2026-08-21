@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { ShieldCheck, Eye, HeartHandshake, Award } from "lucide-react";
 import BreadcrumbHero from "@/components/ui/BreadcrumbHero";
 import Container from "@/components/ui/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
-import IconFeatureCard from "@/components/ui/IconFeatureCard";
+import AnimatedNumber from "@/components/ui/AnimatedNumber";
+import TeamBios from "@/components/about/TeamBios";
+import ResultCategories from "@/components/about/ResultCategories";
 import CtaFinancials from "@/components/home/CtaFinancials";
+import Reveal from "@/components/ui/Reveal";
+import { BASE_PATH } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -20,29 +23,6 @@ const stats = [
   { value: "1000+", label: "Cases Resolved" },
 ];
 
-const values = [
-  {
-    icon: ShieldCheck,
-    title: "Integrity",
-    description: "We give honest, straightforward advice, even when it's not what you want to hear.",
-  },
-  {
-    icon: Eye,
-    title: "Transparency",
-    description: "No hidden fees or surprise outcomes — you always know where your case stands.",
-  },
-  {
-    icon: HeartHandshake,
-    title: "Dedication",
-    description: "Every client gets a personalized strategy built around their unique situation.",
-  },
-  {
-    icon: Award,
-    title: "Excellence",
-    description: "Our team stays current on IRS programs to secure the best possible results.",
-  },
-];
-
 export default function AboutUsPage() {
   return (
     <>
@@ -51,7 +31,7 @@ export default function AboutUsPage() {
       <section className="py-16 lg:py-25">
         <Container>
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
-            <div className="lg:col-span-7">
+            <Reveal direction="left" className="lg:col-span-7">
               <p className="mb-3 text-lg font-semibold text-gold-600">Who We Are</p>
               <h2>A Nationwide Team Committed to Your Financial Peace of Mind</h2>
               <p className="mt-5 text-body">
@@ -68,43 +48,59 @@ export default function AboutUsPage() {
                 every engagement to the specifics of your case, backed by
                 proven strategies and transparent communication from day one.
               </p>
-            </div>
-            <div className="lg:col-span-5">
+            </Reveal>
+            <Reveal direction="right" className="lg:col-span-5">
               <Image
-                src="/images/Group-34813.png"
+                src={`${BASE_PATH}/images/office-scene-close-up.jpg`}
                 alt="U.S. Tax Experts team"
                 width={750}
                 height={750}
                 className="w-full rounded-lg border border-black/5"
               />
-            </div>
+            </Reveal>
           </div>
 
-          <div className="mt-16 grid grid-cols-2 gap-6 border-y border-black/10 py-10 sm:grid-cols-4">
+          <Reveal
+            direction="up"
+            className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-black/10 bg-black/10 sm:grid-cols-4"
+          >
             {stats.map((stat) => (
-              <div key={stat.label} className="text-center">
+              <div key={stat.label} className="bg-white px-4 py-8 text-center">
                 <p className="text-3xl font-extrabold text-navy-900 lg:text-4xl">
-                  {stat.value}
+                  <AnimatedNumber value={stat.value} />
                 </p>
-                <p className="mt-1 text-sm text-muted">{stat.label}</p>
+                <p className="mt-1.5 text-sm text-muted">{stat.label}</p>
               </div>
             ))}
-          </div>
+          </Reveal>
         </Container>
       </section>
 
       <section className="bg-section py-16 lg:py-25">
         <Container>
-          <SectionHeading
-            align="center"
-            title="What We Stand For"
-            subtitle="These principles guide every case we take on, from a first consultation to a final resolution."
-          />
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {values.map((value) => (
-              <IconFeatureCard key={value.title} {...value} />
-            ))}
-          </div>
+          <Reveal direction="up">
+            <SectionHeading
+              align="center"
+              eyebrow="Meet the Team"
+              title="Professional Tax Experts, Certifications, and Experience"
+              subtitle="Every case is handled by a specialist with real IRS resolution experience, backed by our full team of accountants and tax professionals."
+            />
+          </Reveal>
+          <TeamBios />
+        </Container>
+      </section>
+
+      <section className="py-16 lg:py-25">
+        <Container>
+          <Reveal direction="up">
+            <SectionHeading
+              align="center"
+              eyebrow="Track Record"
+              title="The Kinds of Results We Help Clients Achieve"
+              subtitle="Every case is different, but here are the outcomes we most often pursue on behalf of our clients."
+            />
+          </Reveal>
+          <ResultCategories />
         </Container>
       </section>
 

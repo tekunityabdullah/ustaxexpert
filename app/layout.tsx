@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import SiteChrome from "@/components/layout/SiteChrome";
 import { siteConfig } from "@/lib/site-config";
+import { getFaqs } from "@/lib/faqs";
+import { getServices } from "@/lib/services";
+import { buildKnowledgeBase } from "@/lib/chatbot";
 import "./globals.css";
 
 const inter = Inter({
@@ -20,17 +22,18 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [faqs, services] = await Promise.all([getFaqs(), getServices()]);
+  const knowledgeBase = buildKnowledgeBase(faqs, services);
+
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col">
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <SiteChrome knowledgeBase={knowledgeBase}>{children}</SiteChrome>
       </body>
     </html>
   );

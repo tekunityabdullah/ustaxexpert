@@ -1,7 +1,10 @@
 import { ExternalLink, Flag, Network } from "lucide-react";
+import BookConsultationButton from "@/components/ui/BookConsultationButton";
 import CtaButton from "@/components/ui/CtaButton";
 import IconFeatureCard from "@/components/ui/IconFeatureCard";
 import Container from "@/components/ui/Container";
+import Reveal from "@/components/ui/Reveal";
+import { BASE_PATH } from "@/lib/site-config";
 
 const items = [
   {
@@ -28,10 +31,10 @@ export default function CtaFinancials() {
   return (
     <section
       className="bg-cover bg-center bg-no-repeat py-16 lg:py-25"
-      style={{ backgroundImage: "url('/images/Group-348157845.png')" }}
+      style={{ backgroundImage: `url('${BASE_PATH}/images/Group-348157845.png')` }}
     >
       <Container>
-        <div className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
+        <Reveal direction="up" className="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-end">
           <div className="max-w-2xl">
             <h2 className="text-white">Start Your Path to Financial Freedom</h2>
             <p className="mt-4 text-white/90">
@@ -41,12 +44,19 @@ export default function CtaFinancials() {
               peace of mind.
             </p>
           </div>
-          <CtaButton href="/contact-us">Book Consultation</CtaButton>
-        </div>
+          <div className="flex flex-wrap items-center gap-4">
+            <BookConsultationButton>Book Consultation</BookConsultationButton>
+            <CtaButton href="/make-a-payment" variant="outline">
+              Make a Payment
+            </CtaButton>
+          </div>
+        </Reveal>
 
         <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-3">
-          {items.map((item) => (
-            <IconFeatureCard key={item.title} {...item} />
+          {items.map((item, index) => (
+            <Reveal key={item.title} direction="up" delay={index * 0.1}>
+              <IconFeatureCard {...item} />
+            </Reveal>
           ))}
         </div>
       </Container>

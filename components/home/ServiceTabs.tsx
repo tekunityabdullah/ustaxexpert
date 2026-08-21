@@ -2,12 +2,14 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { services } from "@/lib/services";
+import type { Service } from "@/lib/services";
 import CtaButton from "@/components/ui/CtaButton";
 
-export default function ServiceTabs() {
-  const [activeSlug, setActiveSlug] = useState(services[0].slug);
+export default function ServiceTabs({ services }: { services: Service[] }) {
+  const [activeSlug, setActiveSlug] = useState(services[0]?.slug ?? "");
   const activeService = services.find((s) => s.slug === activeSlug) ?? services[0];
+
+  if (!activeService) return null;
 
   return (
     <div>

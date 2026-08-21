@@ -1,0 +1,76 @@
+- generic [ref=f93e3]:
+  - link "Skip to content" [ref=f93e4] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f93e5]:
+    - navigation [ref=f93e7]:
+      - list [ref=f93e10]:
+        - listitem [ref=f93e11]:
+          - link "Home" [ref=f93e12] [cursor=pointer]:
+            - /url: https://supersymmetry.com/
+        - listitem [ref=f93e13]:
+          - link "About Us" [ref=f93e14] [cursor=pointer]:
+            - /url: https://supersymmetry.com/about-us/
+        - listitem [ref=f93e15]:
+          - link "How “Proto” Works" [ref=f93e16] [cursor=pointer]:
+            - /url: https://supersymmetry.com/how-proto-works/
+      - link [ref=f93e18] [cursor=pointer]:
+        - /url: https://supersymmetry.com/
+        - img "Super Symmetry" [ref=f93e19]
+      - list [ref=f93e22]:
+        - listitem [ref=f93e23]:
+          - link "Audio Book" [ref=f93e24] [cursor=pointer]:
+            - /url: https://www.amazon.com/Payloads-Electrical-Driving-Eccentric-Rotation/dp/B0GXLZY1R7/ref=tmm_aud_swatch_0
+        - listitem [ref=f93e25]:
+          - link "Book" [ref=f93e26] [cursor=pointer]:
+            - /url: https://www.amazon.com/dp/B0FJVDDLDZ
+        - listitem [ref=f93e27]:
+          - link "Mission & Values" [ref=f93e28] [cursor=pointer]:
+            - /url: https://supersymmetry.com/mission-and-values/
+        - listitem [ref=f93e29]:
+          - link "FAQs" [ref=f93e30] [cursor=pointer]:
+            - /url: https://supersymmetry.com/faqs/
+        - listitem [ref=f93e31]:
+          - link "He3 Lunar Mining" [ref=f93e32] [cursor=pointer]:
+            - /url: https://supersymmetry.com/he3-lunar-mining/
+  - heading "Symmetry Versus Asymmetry" [level=1] [ref=f93e35]
+  - generic [ref=f93e37]:
+    - generic [ref=f93e38]:
+      - main [ref=f93e40]:
+        - article [ref=f93e41]:
+          - img "Super Symmetry" [ref=f93e43]
+          - heading "Symmetry Versus Asymmetry" [level=1] [ref=f93e45]
+          - generic [ref=f93e51]:
+            - generic [ref=f93e53]:
+              - paragraph [ref=f93e54]: From left to right Invariance Symmetry that displays distance from center axis, this is a representation of Emmy Noether’s Law Conservation of Angular Momentum as distance “a” being the same distance from the center axis of rotation.
+              - paragraph [ref=f93e55]: The next 2nd drawing in the center of the page on the top is X=X is symmetry, Amplitude and frequency are equal symmetrical operation, below drawing is X>Y where X is a greater distance than Y thus Amplitude and frequency are not equal, and this is a Asymmetrical operation.
+              - paragraph [ref=f93e56]: To the right of the page is Axis of rotation of system and the four armatures display the eccentric mass load of each armature on the right side of the center axis of rotation, and the eccentric mass load that displays the Force arrow and the direction this system travels in a direction that is constant.
+              - heading "Sequence of operation for the electromagnetic 4-Phase Motor Stator Wall and 4 Armatures Operation/Sequence of Operation for Asymmetric Eccentric Mass Loads." [level=3] [ref=f93e57]
+            - generic [ref=f93e58]:
+              - figure [ref=f93e63]:
+                - img "4phase generator and load (2)-1" [ref=f93e65]
+              - figure [ref=f93e70]:
+                - img "4phase generator and load (3)-1" [ref=f93e72]
+            - generic [ref=f93e73]:
+              - figure [ref=f93e78]:
+                - img "Fig-3u" [ref=f93e80]
+              - figure [ref=f93e85]:
+                - img "Fig-4u" [ref=f93e87]
+            - figure [ref=f93e94]:
+              - img "Fig-5u" [ref=f93e96]
+            - generic [ref=f93e104]:
+              - heading "Symmetry vs Asymmetry -Emmy Noether’s Law" [level=1] [ref=f93e105]
+              - paragraph [ref=f93e106]:
+                - iframe [ref=f93e107]: "<span data-mce-type=\"bookmark\" style=\"display: inline-block; width: 0px; overflow: hidden; line-height: 0;\" class=\"mce_SELRES_start\"> </span>"
+        - navigation "Posts" [ref=f93e108]:
+          - heading "Post navigation" [level=2] [ref=f93e109]
+          - link "Translational Force Generator →" [ref=f93e111] [cursor=pointer]:
+            - /url: https://supersymmetry.com/services/translational-force-generator/
+      - separator
+      - contentinfo [ref=f93e112]:
+        - paragraph [ref=f93e113]:
+          - text: Super Symmetry is proudly powered by
+          - link "WordPress" [ref=f93e114] [cursor=pointer]:
+            - /url: https://wordpress.org/
+    - generic [ref=f93e118] [cursor=pointer]:
+      - img "en" [ref=f93e119]
+      - text: en
