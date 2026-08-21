@@ -9,6 +9,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: "Our Services", href: "/our-services" },
   { label: "FAQs", href: "/faqs" },
   { label: "Resource Center", href: "/resource-center" },
+  { label: "Contact Us", href: "/contact-us" },
   { label: "Client Hub", href: "/client-hub" },
   { label: "Make a Payment", href: "/make-a-payment" },
 ];

@@ -1,20 +1,20 @@
 import { PrismaClient } from "@prisma/client";
 import { PrismaMariaDb } from "@prisma/adapter-mariadb";
+import { readDbEnv } from "@/lib/db-env";
 
 // Prisma 7 requires a driver adapter — this one talks MySQL/MariaDB wire
-// protocol. Parse the single DATABASE_URL (mysql://user:pass@host:port/db)
-// into the discrete fields the adapter wants.
+// protocol, built from the separate DB_HOST/DB_PORT/DB_USER/DB_PASSWORD/
+// DB_NAME env vars (see .env.example) rather than a single DATABASE_URL.
 function buildAdapter() {
-  const connectionString = process.env.DATABASE_URL;
-  if (!connectionString) return null;
+  const conn = readDbEnv();
+  if (!conn) return null;
 
-  const url = new URL(connectionString);
   return new PrismaMariaDb({
-    host: url.hostname,
-    port: url.port ? Number(url.port) : 3306,
-    user: decodeURIComponent(url.username),
-    password: decodeURIComponent(url.password),
-    database: url.pathname.replace(/^\//, ""),
+    host: conn.host,
+    port: conn.port,
+    user: conn.user,
+    password: conn.password,
+    database: conn.database,
     connectionLimit: 5,
   });
 }
@@ -25,8 +25,8 @@ const globalForPrisma = globalThis as unknown as { prisma?: PrismaClient };
 
 const adapter = buildAdapter();
 
-// `adapter` is only null when DATABASE_URL isn't set yet (e.g. before the
-// admin panel's database has been provisioned). PrismaClient still
+// `adapter` is only null when the DB env vars aren't set yet (e.g. before
+// the admin panel's database has been provisioned). PrismaClient still
 // constructs fine in that case; any actual query will throw a clear error
 // rather than the app failing to build/start.
 export const prisma =

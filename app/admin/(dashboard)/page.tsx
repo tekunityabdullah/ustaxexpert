@@ -3,6 +3,7 @@ import { CreditCard, Clock, Briefcase, Newspaper, TrendingUp } from "lucide-reac
 import type { Prisma } from "@prisma/client";
 import { prisma } from "@/lib/db";
 import RevenueChart, { type RevenueChartPoint } from "@/components/admin/dashboard/RevenueChart";
+import ActivityFeed, { type ActivityItem } from "@/components/admin/dashboard/ActivityFeed";
 
 type RecentActivity = Prisma.ActivityLogGetPayload<{
   include: { adminUser: { select: { name: true } } };
@@ -108,7 +109,7 @@ export default async function AdminDashboardPage() {
       <AdminEmptyState
         icon={CreditCard}
         title="Database not connected"
-        description="Set DATABASE_URL in your server environment and run migrations to start using the dashboard."
+        description="Set the DB_HOST/DB_USER/DB_PASSWORD/DB_NAME env vars and run migrations to start using the dashboard."
       />
     );
   }
@@ -196,20 +197,16 @@ export default async function AdminDashboardPage() {
               description="Admin actions (logins, edits) will show up here."
             />
           ) : (
-            <ul className="space-y-3 rounded-lg border border-black/10 bg-white p-4">
-              {recentActivity.map((item) => (
-                <li key={item.id} className="flex gap-2.5 text-[13px]">
-                  <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-navy-900/30" />
-                  <span className="text-body">
-                    <span className="font-semibold text-heading">
-                      {item.adminUser?.name ?? "Someone"}
-                    </span>{" "}
-                    {item.action} {item.entityType.toLowerCase()}{" "}
-                    <span className="font-medium">&ldquo;{item.entityLabel}&rdquo;</span>
-                  </span>
-                </li>
-              ))}
-            </ul>
+            <ActivityFeed
+              items={recentActivity.map((item) => ({
+                id: item.id,
+                action: item.action,
+                entityType: item.entityType,
+                entityLabel: item.entityLabel,
+                adminUserName: item.adminUser?.name ?? null,
+                createdAt: item.createdAt.toISOString(),
+              }))}
+            />
           )}
         </div>
       </div>

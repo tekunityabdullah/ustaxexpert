@@ -1,4 +1,8 @@
-export const BASE_PATH = "/web/ustaxexperts";
+// The app is deployed at the domain root — no basePath in next.config.ts.
+// Kept as an empty-string constant (rather than deleting it) since it's
+// still used everywhere as `${BASE_PATH}/...` for paths raw fetch()/<a>/CSS
+// url() calls need (next/link and next/image don't need it either way).
+export const BASE_PATH = "";
 
 // Third-party integration points. These read from env vars so the site
 // keeps working with sensible fallbacks until real accounts/keys are

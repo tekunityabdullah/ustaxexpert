@@ -135,7 +135,7 @@ export default async function AdminPaymentsPage(props: PageProps<"/admin/payment
         <AdminEmptyState
           icon={CreditCard}
           title="Database not connected"
-          description="Set DATABASE_URL in your server environment and run migrations."
+          description="Set the DB_HOST/DB_USER/DB_PASSWORD/DB_NAME env vars and run migrations."
         />
       ) : payments.length === 0 ? (
         <AdminEmptyState

@@ -44,7 +44,7 @@ export default async function AdminFaqsPage() {
         <AdminEmptyState
           icon={HelpCircle}
           title="Database not connected"
-          description="Set DATABASE_URL in your server environment and run migrations."
+          description="Set the DB_HOST/DB_USER/DB_PASSWORD/DB_NAME env vars and run migrations."
         />
       ) : faqs.length === 0 ? (
         <AdminEmptyState

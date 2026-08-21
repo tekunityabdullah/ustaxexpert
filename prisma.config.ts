@@ -6,7 +6,8 @@ import { config as loadEnv } from "dotenv";
 import { existsSync } from "node:fs";
 loadEnv({ path: existsSync(".env.local") ? ".env.local" : ".env" });
 
-import { defineConfig, env } from "prisma/config";
+import { defineConfig } from "prisma/config";
+import { buildDatabaseUrl } from "./lib/db-env";
 
 export default defineConfig({
   schema: "prisma/schema.prisma",
@@ -15,6 +16,6 @@ export default defineConfig({
     seed: "tsx prisma/seed.ts",
   },
   datasource: {
-    url: env("DATABASE_URL"),
+    url: buildDatabaseUrl(),
   },
 });

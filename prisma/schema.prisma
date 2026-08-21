@@ -1,6 +1,7 @@
 // Prisma schema — MySQL backend for the admin panel / CMS.
-// Connect by setting DATABASE_URL in your server environment, e.g.:
-//   DATABASE_URL="mysql://user:password@host:3306/database_name"
+// Connect by setting DB_HOST/DB_PORT/DB_USER/DB_PASSWORD/DB_NAME in your
+// server environment (see .env.example) — read via lib/db-env.ts by both
+// the app (lib/db.ts) and the Prisma CLI (prisma.config.ts).
 // Then run: npx prisma migrate deploy (or `migrate dev` locally).
 
 generator client {

@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
   } catch (err) {
     console.error("Admin login DB error:", err);
     return NextResponse.json(
-      { error: "The admin database isn't reachable right now. Check DATABASE_URL on the server." },
+      { error: "The admin database isn't reachable right now. Check the DB_HOST/DB_USER/DB_PASSWORD/DB_NAME env vars on the server." },
       { status: 503 }
     );
   }
