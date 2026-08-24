@@ -233,16 +233,16 @@ export default function AdminShell({
           mobileOpen ? "translate-x-0" : "-translate-x-full"
         } ${collapsed ? "lg:w-19" : "lg:w-64"}`}
       >
-        <div className="flex items-center border-b border-white/10 px-4 py-4">
+        <div className="flex items-center border-b border-white/10 px-4 py-5">
           {/* Mobile: logo + close button — always the full drawer, never the collapsed rail */}
           <div className="flex w-full items-center justify-between lg:hidden">
-            <div className="rounded-md bg-white p-1.5">
+            <div className="rounded-md bg-white px-2.5 py-2 shadow-[0_2px_8px_rgba(0,0,0,0.18)]">
               <Image
                 src={`${BASE_PATH}/images/logo-cropped.png`}
                 alt="U.S. Tax Experts"
                 width={1086}
                 height={291}
-                className="h-6 w-auto"
+                className="h-7 w-auto"
               />
             </div>
             <button

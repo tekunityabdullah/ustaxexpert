@@ -1,21 +1,37 @@
 import { PrismaClient } from "@prisma/client";
-import { PrismaMariaDb } from "@prisma/adapter-mariadb";
-import { readDbEnv } from "@/lib/db-env";
+import { PrismaPg } from "@prisma/adapter-pg";
+import { readDbEnv, buildDatabaseUrl } from "@/lib/db-env";
 
-// Prisma 7 requires a driver adapter — this one talks MySQL/MariaDB wire
-// protocol, built from the separate DB_HOST/DB_PORT/DB_USER/DB_PASSWORD/
-// DB_NAME env vars (see .env.example) rather than a single DATABASE_URL.
+// Prisma 7 requires a driver adapter — this one talks Postgres wire
+// protocol (via node-postgres), built from the separate DB_HOST/DB_PORT/
+// DB_USER/DB_PASSWORD/DB_NAME env vars (see .env.example) rather than a
+// single DATABASE_URL. Backed by Supabase's hosted Postgres.
+//
+// Unlike the previous MariaDB adapter, Prisma 7's Postgres-adapter client
+// throws immediately if PrismaClient is constructed with no adapter at all
+// — it won't let you defer the failure to query time. So this always
+// builds a real PrismaPg adapter; when the DB env vars aren't set yet, it
+// points at a syntactically valid placeholder URL instead of connection
+// details, so construction still succeeds and every call site's existing
+// try/catch around its actual query is what surfaces the "not connected"
+// state (same UX as before, just moved one layer down).
 function buildAdapter() {
   const conn = readDbEnv();
-  if (!conn) return null;
+  if (!conn) return new PrismaPg(buildDatabaseUrl());
 
-  return new PrismaMariaDb({
+  return new PrismaPg({
     host: conn.host,
     port: conn.port,
     user: conn.user,
     password: conn.password,
     database: conn.database,
-    connectionLimit: 5,
+    max: 5,
+    // Supabase requires SSL on its direct-connection port; skip strict cert
+    // validation since Node's default CA bundle doesn't always include it.
+    ssl: { rejectUnauthorized: false },
+    // node-postgres's default connect timeout is too short for Supabase's
+    // pooler on some networks — see buildDatabaseUrl()'s connect_timeout.
+    connectionTimeoutMillis: 20_000,
   });
 }
 
@@ -23,14 +39,7 @@ function buildAdapter() {
 // up a fresh PrismaClient (and a fresh connection pool) on every file save.
 const globalForPrisma = globalThis as unknown as { prisma?: PrismaClient };
 
-const adapter = buildAdapter();
-
-// `adapter` is only null when the DB env vars aren't set yet (e.g. before
-// the admin panel's database has been provisioned). PrismaClient still
-// constructs fine in that case; any actual query will throw a clear error
-// rather than the app failing to build/start.
-export const prisma =
-  globalForPrisma.prisma ?? new PrismaClient(adapter ? { adapter } : undefined);
+export const prisma = globalForPrisma.prisma ?? new PrismaClient({ adapter: buildAdapter() });
 
 if (process.env.NODE_ENV !== "production") {
   globalForPrisma.prisma = prisma;

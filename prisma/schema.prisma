@@ -1,7 +1,8 @@
-// Prisma schema — MySQL backend for the admin panel / CMS.
+// Prisma schema — Postgres (Supabase) backend for the admin panel / CMS.
 // Connect by setting DB_HOST/DB_PORT/DB_USER/DB_PASSWORD/DB_NAME in your
 // server environment (see .env.example) — read via lib/db-env.ts by both
-// the app (lib/db.ts) and the Prisma CLI (prisma.config.ts).
+// the app (lib/db.ts) and the Prisma CLI (prisma.config.ts). For Supabase,
+// use the values from Project Settings → Database.
 // Then run: npx prisma migrate deploy (or `migrate dev` locally).
 
 generator client {
@@ -9,7 +10,7 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
 }
 
 // --- Admin & Auth -----------------------------------------------------
