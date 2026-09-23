@@ -2,16 +2,15 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { prisma } from "@/lib/db";
+import { one, supabase, insert, update, remove, logActivity as writeLog } from "@/lib/db";
+import type { Testimonial } from "@/lib/db-types";
 import { requireAdminSession } from "@/lib/admin-session";
 import { textField, intField, checkboxField } from "@/lib/admin-form";
 import type { ActionState } from "@/lib/admin-form";
 
 async function logActivity(action: string, entityLabel: string) {
   const user = await requireAdminSession();
-  await prisma.activityLog.create({
-    data: { action, entityType: "Testimonial", entityLabel, adminUserId: user.id },
-  });
+  await writeLog(action, "Testimonial", entityLabel, user.id);
 }
 
 function readInput(formData: FormData) {
@@ -38,7 +37,7 @@ export async function createTestimonial(
   const error = validate(input);
   if (error) return { error };
 
-  await prisma.testimonial.create({ data: input });
+  await insert("testimonials", input);
   await logActivity("created", input.name);
   revalidatePath("/admin/testimonials");
   redirect("/admin/testimonials");
@@ -54,10 +53,10 @@ export async function updateTestimonial(
   const error = validate(input);
   if (error) return { error };
 
-  const existing = await prisma.testimonial.findUnique({ where: { id } });
+  const existing = await one<Testimonial>(supabase.from("testimonials").select("*").eq("id", id).maybeSingle());
   if (!existing) return { error: "Testimonial not found." };
 
-  await prisma.testimonial.update({ where: { id }, data: input });
+  await update("testimonials", id, input);
   await logActivity("updated", input.name);
   revalidatePath("/admin/testimonials");
   redirect("/admin/testimonials");
@@ -68,10 +67,10 @@ export async function deleteTestimonial(formData: FormData): Promise<void> {
   const id = textField(formData, "id");
   if (!id) return;
 
-  const existing = await prisma.testimonial.findUnique({ where: { id } });
+  const existing = await one<Testimonial>(supabase.from("testimonials").select("*").eq("id", id).maybeSingle());
   if (!existing) return;
 
-  await prisma.testimonial.delete({ where: { id } });
+  await remove("testimonials", id);
   await logActivity("deleted", existing.name);
   revalidatePath("/admin/testimonials");
 }
@@ -81,10 +80,10 @@ export async function toggleTestimonialPublished(formData: FormData): Promise<vo
   const id = textField(formData, "id");
   if (!id) return;
 
-  const existing = await prisma.testimonial.findUnique({ where: { id } });
+  const existing = await one<Testimonial>(supabase.from("testimonials").select("*").eq("id", id).maybeSingle());
   if (!existing) return;
 
-  await prisma.testimonial.update({ where: { id }, data: { published: !existing.published } });
+  await update("testimonials", id, { published: !existing.published });
   await logActivity(existing.published ? "unpublished" : "published", existing.name);
   revalidatePath("/admin/testimonials");
 }

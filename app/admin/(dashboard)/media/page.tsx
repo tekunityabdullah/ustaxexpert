@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Image as ImageIcon } from "lucide-react";
-import { prisma } from "@/lib/db";
+import { supabase, many } from "@/lib/db";
+import type { Media } from "@/lib/db-types";
 import { AdminCard } from "@/components/admin/ui/Card";
 import { AdminEmptyState } from "@/components/admin/ui/EmptyState";
 import ConfirmSubmitButton from "@/components/admin/ConfirmSubmitButton";
@@ -17,11 +18,11 @@ function formatSize(bytes: number) {
 }
 
 export default async function AdminMediaPage() {
-  let media: Awaited<ReturnType<typeof prisma.media.findMany>> = [];
+  let media: Media[] = [];
   let dbError = false;
 
   try {
-    media = await prisma.media.findMany({ orderBy: { uploadedAt: "desc" } });
+    media = await many<Media>(supabase.from("media").select("*").order("uploadedAt", { ascending: false }));
   } catch {
     dbError = true;
   }
@@ -44,7 +45,7 @@ export default async function AdminMediaPage() {
         <AdminEmptyState
           icon={ImageIcon}
           title="Database not connected"
-          description="Set the DB_HOST/DB_USER/DB_PASSWORD/DB_NAME env vars and run migrations."
+          description="Check SUPABASE_SERVICE_ROLE_KEY in your environment and that the Supabase project is not paused."
         />
       ) : media.length === 0 ? (
         <AdminEmptyState

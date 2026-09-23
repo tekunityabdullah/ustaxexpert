@@ -2,7 +2,8 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { prisma } from "@/lib/db";
+import { one, supabase, insert, update, remove, logActivity as writeLog } from "@/lib/db";
+import type { BlogPost } from "@/lib/db-types";
 import { requireAdminSession } from "@/lib/admin-session";
 import { textField, checkboxField, slugify } from "@/lib/admin-form";
 import type { ActionState } from "@/lib/admin-form";
@@ -12,9 +13,7 @@ const ICONS = ["Mail", "LifeBuoy", "TrendingUp", "Calculator"];
 
 async function logActivity(action: string, entityLabel: string) {
   const user = await requireAdminSession();
-  await prisma.activityLog.create({
-    data: { action, entityType: "BlogPost", entityLabel, adminUserId: user.id },
-  });
+  await writeLog(action, "BlogPost", entityLabel, user.id);
 }
 
 function readInput(formData: FormData) {
@@ -58,10 +57,10 @@ export async function createBlogPost(
   const error = validate(input);
   if (error) return { error };
 
-  const existing = await prisma.blogPost.findUnique({ where: { slug: input.slug } });
+  const existing = await one<BlogPost>(supabase.from("blog_posts").select("*").eq("slug", input.slug).maybeSingle());
   if (existing) return { error: "A post with this slug already exists." };
 
-  await prisma.blogPost.create({ data: { ...input, date: new Date(input.date) } });
+  await insert("blog_posts", { ...input, date: new Date(input.date) });
   await logActivity("created", input.title);
   revalidatePath("/admin/blog");
   redirect("/admin/blog");
@@ -77,13 +76,15 @@ export async function updateBlogPost(
   const error = validate(input);
   if (error) return { error };
 
-  const existing = await prisma.blogPost.findUnique({ where: { id } });
+  const existing = await one<BlogPost>(supabase.from("blog_posts").select("*").eq("id", id).maybeSingle());
   if (!existing) return { error: "Post not found." };
 
-  const slugTaken = await prisma.blogPost.findFirst({ where: { slug: input.slug, NOT: { id } } });
+  const slugTaken = await one<BlogPost>(
+    supabase.from("blog_posts").select("*").eq("slug", input.slug).neq("id", id).limit(1).maybeSingle()
+  );
   if (slugTaken) return { error: "A post with this slug already exists." };
 
-  await prisma.blogPost.update({ where: { id }, data: { ...input, date: new Date(input.date) } });
+  await update("blog_posts", id, { ...input, date: new Date(input.date) });
   await logActivity("updated", input.title);
   revalidatePath("/admin/blog");
   redirect("/admin/blog");
@@ -94,10 +95,10 @@ export async function deleteBlogPost(formData: FormData): Promise<void> {
   const id = textField(formData, "id");
   if (!id) return;
 
-  const existing = await prisma.blogPost.findUnique({ where: { id } });
+  const existing = await one<BlogPost>(supabase.from("blog_posts").select("*").eq("id", id).maybeSingle());
   if (!existing) return;
 
-  await prisma.blogPost.delete({ where: { id } });
+  await remove("blog_posts", id);
   await logActivity("deleted", existing.title);
   revalidatePath("/admin/blog");
 }
@@ -107,10 +108,10 @@ export async function toggleBlogPostPublished(formData: FormData): Promise<void>
   const id = textField(formData, "id");
   if (!id) return;
 
-  const existing = await prisma.blogPost.findUnique({ where: { id } });
+  const existing = await one<BlogPost>(supabase.from("blog_posts").select("*").eq("id", id).maybeSingle());
   if (!existing) return;
 
-  await prisma.blogPost.update({ where: { id }, data: { published: !existing.published } });
+  await update("blog_posts", id, { published: !existing.published });
   await logActivity(existing.published ? "unpublished" : "published", existing.title);
   revalidatePath("/admin/blog");
 }

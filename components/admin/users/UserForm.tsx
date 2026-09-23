@@ -6,7 +6,7 @@ import { Save } from "lucide-react";
 import { AdminButton, AdminButtonLink } from "@/components/admin/ui/Button";
 import { AdminFormField, AdminInput, AdminSelect } from "@/components/admin/ui/Field";
 import { AdminCard } from "@/components/admin/ui/Card";
-import type { AdminUser } from "@prisma/client";
+import type { AdminUser } from "@/lib/db-types";
 import type { ActionState } from "@/lib/admin-form";
 
 const ROLES = ["SUPER_ADMIN", "ADMIN", "EDITOR"];

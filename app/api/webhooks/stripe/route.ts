@@ -1,14 +1,14 @@
 import { NextResponse, type NextRequest } from "next/server";
 import Stripe from "stripe";
-import { prisma } from "@/lib/db";
-import type { PaymentStatus } from "@prisma/client";
+import { supabase, one, insert, update, logActivity } from "@/lib/db";
+import type { Payment, PaymentStatus } from "@/lib/db-types";
 
 // Stripe webhook receiver — this is the ONLY source of truth for the
 // Payments admin module. The client never reports "I paid"; Stripe tells us
 // directly, with a verified signature, once money has actually moved.
 //
 // Configure in the Stripe Dashboard → Developers → Webhooks:
-//   Endpoint URL: https://your-domain.com/web/ustaxexperts/api/webhooks/stripe
+//   Endpoint URL: https://your-domain.com/api/webhooks/stripe
 //   Events: checkout.session.completed, checkout.session.expired,
 //           checkout.session.async_payment_failed, charge.refunded
 // Copy the resulting signing secret into STRIPE_WEBHOOK_SECRET.
@@ -19,37 +19,46 @@ function toPaymentStatus(session: Stripe.Checkout.Session): PaymentStatus {
   return "PENDING";
 }
 
-async function upsertFromSession(stripe: Stripe, session: Stripe.Checkout.Session) {
+async function upsertFromSession(session: Stripe.Checkout.Session) {
   const status = toPaymentStatus(session);
   const paymentIntentId =
     typeof session.payment_intent === "string" ? session.payment_intent : null;
 
-  const payment = await prisma.payment.upsert({
-    where: { stripeSessionId: session.id },
-    create: {
+  const existing = await one<Payment>(
+    supabase.from("payments").select("*").eq("stripeSessionId", session.id).maybeSingle()
+  );
+
+  let payment: Payment;
+  if (existing) {
+    await update("payments", existing.id, { stripePaymentIntentId: paymentIntentId, status });
+    payment = { ...existing, stripePaymentIntentId: paymentIntentId, status };
+  } else {
+    // The checkout route only stores the service *slug* in metadata; look up
+    // the human-readable title so the admin Payments list doesn't show a slug.
+    const slug = session.metadata?.service ?? "unknown";
+    const service = await one<{ title: string }>(
+      supabase.from("services").select("title").eq("slug", slug).maybeSingle()
+    ).catch(() => null);
+
+    payment = await insert<Payment>("payments", {
       stripeSessionId: session.id,
       stripePaymentIntentId: paymentIntentId,
       customerName: session.metadata?.customerName ?? session.customer_details?.name ?? "Unknown",
       customerEmail: session.customer_details?.email ?? session.customer_email ?? "unknown@example.com",
-      serviceSlug: session.metadata?.service ?? "unknown",
-      serviceTitle: session.metadata?.service ?? "Unknown Service",
+      serviceSlug: slug,
+      serviceTitle: service?.title ?? slug,
       amount: session.amount_total ?? 0,
       currency: session.currency ?? "usd",
       status,
-    },
-    update: {
-      stripePaymentIntentId: paymentIntentId,
-      status,
-    },
-  });
+    });
+  }
 
-  await prisma.activityLog.create({
-    data: {
-      action: status === "PAID" ? "received a payment from" : "recorded a pending payment from",
-      entityType: "Payment",
-      entityLabel: `${payment.customerName} — ${payment.serviceTitle}`,
-    },
-  });
+  await logActivity(
+    status === "PAID" ? "received a payment from" : "recorded a pending payment from",
+    "Payment",
+    `${payment.customerName} — ${payment.serviceTitle}`,
+    null
+  );
 
   return payment;
 }
@@ -85,7 +94,7 @@ export async function POST(request: NextRequest) {
       case "checkout.session.async_payment_failed":
       case "checkout.session.expired": {
         const session = event.data.object as Stripe.Checkout.Session;
-        await upsertFromSession(stripe, session);
+        await upsertFromSession(session);
         break;
       }
       case "charge.refunded": {
@@ -93,21 +102,22 @@ export async function POST(request: NextRequest) {
         const paymentIntentId =
           typeof charge.payment_intent === "string" ? charge.payment_intent : null;
         if (paymentIntentId) {
-          const existing = await prisma.payment.findFirst({
-            where: { stripePaymentIntentId: paymentIntentId },
-          });
+          const existing = await one<Payment>(
+            supabase
+              .from("payments")
+              .select("*")
+              .eq("stripePaymentIntentId", paymentIntentId)
+              .limit(1)
+              .maybeSingle()
+          );
           if (existing) {
-            await prisma.payment.update({
-              where: { id: existing.id },
-              data: { status: "REFUNDED" },
-            });
-            await prisma.activityLog.create({
-              data: {
-                action: "refunded a payment from",
-                entityType: "Payment",
-                entityLabel: `${existing.customerName} — ${existing.serviceTitle}`,
-              },
-            });
+            await update("payments", existing.id, { status: "REFUNDED" });
+            await logActivity(
+              "refunded a payment from",
+              "Payment",
+              `${existing.customerName} — ${existing.serviceTitle}`,
+              null
+            );
           }
         }
         break;

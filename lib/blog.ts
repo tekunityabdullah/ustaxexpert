@@ -1,6 +1,6 @@
 import { BASE_PATH } from "@/lib/site-config";
-import { prisma } from "@/lib/db";
-import type { BlogPost as PrismaBlogPost } from "@prisma/client";
+import { supabase, many, one } from "@/lib/db";
+import type { BlogPost as BlogPostRow } from "@/lib/db-types";
 
 // A content block is either a plain paragraph, or a subheading + paragraph
 // pair (used for posts sourced from the live site's structured articles).
@@ -205,7 +205,7 @@ export function getBlogPostBySlugStatic(slug: string): BlogPost | undefined {
 
 const VALID_ICONS = ["Mail", "LifeBuoy", "TrendingUp", "Calculator"] as const;
 
-function toBlogPost(row: PrismaBlogPost): BlogPost {
+function toBlogPost(row: BlogPostRow): BlogPost {
   const icon = (VALID_ICONS as readonly string[]).includes(row.icon)
     ? (row.icon as BlogPost["icon"])
     : "Mail";
@@ -227,10 +227,9 @@ function toBlogPost(row: PrismaBlogPost): BlogPost {
  * only if the database itself is unreachable. */
 export async function getBlogPosts(): Promise<BlogPost[]> {
   try {
-    const rows = await prisma.blogPost.findMany({
-      where: { published: true },
-      orderBy: { date: "desc" },
-    });
+    const rows = await many<BlogPostRow>(
+      supabase.from("blog_posts").select("*").eq("published", true).order("date", { ascending: false })
+    );
     return rows.map(toBlogPost);
   } catch {
     return blogPosts;
@@ -239,7 +238,7 @@ export async function getBlogPosts(): Promise<BlogPost[]> {
 
 export async function getBlogPostBySlug(slug: string): Promise<BlogPost | undefined> {
   try {
-    const row = await prisma.blogPost.findUnique({ where: { slug } });
+    const row = await one<BlogPostRow>(supabase.from("blog_posts").select("*").eq("slug", slug).maybeSingle());
     return row && row.published ? toBlogPost(row) : undefined;
   } catch {
     return getBlogPostBySlugStatic(slug);

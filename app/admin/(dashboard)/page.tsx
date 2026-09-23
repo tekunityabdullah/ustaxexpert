@@ -1,13 +1,18 @@
 import Link from "next/link";
 import { CreditCard, Clock, Briefcase, Newspaper, TrendingUp } from "lucide-react";
-import type { Prisma } from "@prisma/client";
-import { prisma } from "@/lib/db";
+import { supabase, many, countOf } from "@/lib/db";
+import type { Payment } from "@/lib/db-types";
 import RevenueChart, { type RevenueChartPoint } from "@/components/admin/dashboard/RevenueChart";
 import ActivityFeed, { type ActivityItem } from "@/components/admin/dashboard/ActivityFeed";
 
-type RecentActivity = Prisma.ActivityLogGetPayload<{
-  include: { adminUser: { select: { name: true } } };
-}>;
+type RecentActivity = {
+  id: string;
+  action: string;
+  entityType: string;
+  entityLabel: string;
+  createdAt: Date;
+  adminUser: { name: string } | null;
+};
 import { AdminCard, AdminStat } from "@/components/admin/ui/Card";
 import { AdminBadge, paymentStatusTone } from "@/components/admin/ui/Badge";
 import { AdminEmptyState } from "@/components/admin/ui/EmptyState";
@@ -57,41 +62,44 @@ export default async function AdminDashboardPage() {
   trendStart.setDate(trendStart.getDate() - (TREND_DAYS - 1));
 
   let stats;
-  let recentPayments: Awaited<ReturnType<typeof prisma.payment.findMany>> = [];
+  let recentPayments: Payment[] = [];
   let recentActivity: RecentActivity[] = [];
   let revenueTrend: RevenueChartPoint[] = [];
   let dbError = false;
 
   try {
-    const [
-      revenueAgg,
-      paidThisMonth,
-      pendingCount,
-      servicesCount,
-      postsCount,
-      payments,
-      activity,
-      trendPayments,
-    ] = await Promise.all([
-      prisma.payment.aggregate({ where: { status: "PAID" }, _sum: { amount: true } }),
-      prisma.payment.count({ where: { status: "PAID", createdAt: { gte: startOfMonth } } }),
-      prisma.payment.count({ where: { status: "PENDING" } }),
-      prisma.service.count({ where: { published: true } }),
-      prisma.blogPost.count({ where: { published: true } }),
-      prisma.payment.findMany({ orderBy: { createdAt: "desc" }, take: 6 }),
-      prisma.activityLog.findMany({
-        orderBy: { createdAt: "desc" },
-        take: 8,
-        include: { adminUser: { select: { name: true } } },
-      }),
-      prisma.payment.findMany({
-        where: { status: "PAID", createdAt: { gte: trendStart } },
-        select: { amount: true, createdAt: true },
-      }),
-    ]);
+    const [paidAmounts, paidThisMonth, pendingCount, servicesCount, postsCount, payments, activity, trendPayments] =
+      await Promise.all([
+        many<{ amount: number }>(supabase.from("payments").select("amount").eq("status", "PAID")),
+        countOf(
+          supabase
+            .from("payments")
+            .select("*", { count: "exact", head: true })
+            .eq("status", "PAID")
+            .gte("createdAt", startOfMonth.toISOString())
+        ),
+        countOf(supabase.from("payments").select("*", { count: "exact", head: true }).eq("status", "PENDING")),
+        countOf(supabase.from("services").select("*", { count: "exact", head: true }).eq("published", true)),
+        countOf(supabase.from("blog_posts").select("*", { count: "exact", head: true }).eq("published", true)),
+        many<Payment>(supabase.from("payments").select("*").order("createdAt", { ascending: false }).limit(6)),
+        many<RecentActivity>(
+          supabase
+            .from("activity_log")
+            .select("*, adminUser:admin_users(name)")
+            .order("createdAt", { ascending: false })
+            .limit(8)
+        ),
+        many<{ amount: number; createdAt: Date }>(
+          supabase
+            .from("payments")
+            .select("amount, createdAt")
+            .eq("status", "PAID")
+            .gte("createdAt", trendStart.toISOString())
+        ),
+      ]);
 
     stats = {
-      totalRevenue: revenueAgg._sum.amount ?? 0,
+      totalRevenue: paidAmounts.reduce((sum, p) => sum + p.amount, 0),
       paidThisMonth,
       pendingCount,
       servicesCount,
@@ -109,7 +117,7 @@ export default async function AdminDashboardPage() {
       <AdminEmptyState
         icon={CreditCard}
         title="Database not connected"
-        description="Set the DB_HOST/DB_USER/DB_PASSWORD/DB_NAME env vars and run migrations to start using the dashboard."
+        description="Check SUPABASE_SERVICE_ROLE_KEY in your environment and that the Supabase project is not paused to start using the dashboard."
       />
     );
   }

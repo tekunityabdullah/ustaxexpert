@@ -1,7 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { prisma } from "@/lib/db";
+import { upsert, logActivity as writeLog } from "@/lib/db";
 import { requireAdminSession } from "@/lib/admin-session";
 import { textField, parsePipeLines } from "@/lib/admin-form";
 import type { ActionState } from "@/lib/admin-form";
@@ -23,15 +23,9 @@ export async function updateSettings(
   if (!description) return { error: "Description is required." };
   if (!address) return { error: "Address is required." };
 
-  await prisma.siteSettings.upsert({
-    where: { id: 1 },
-    update: { name, tagline, description, address, phones, social },
-    create: { id: 1, name, tagline, description, address, phones, social },
-  });
+  await upsert("site_settings", { id: 1, name, tagline, description, address, phones, social }, "id");
 
-  await prisma.activityLog.create({
-    data: { action: "updated", entityType: "SiteSettings", entityLabel: "Site Settings", adminUserId: user.id },
-  });
+  await writeLog("updated", "SiteSettings", "Site Settings", user.id);
 
   revalidatePath("/admin/settings");
   return { success: true };

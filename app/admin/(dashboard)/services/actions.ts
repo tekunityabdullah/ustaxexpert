@@ -2,16 +2,15 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { prisma } from "@/lib/db";
+import { one, supabase, insert, update, remove, logActivity as writeLog } from "@/lib/db";
+import type { Service } from "@/lib/db-types";
 import { requireAdminSession } from "@/lib/admin-session";
 import { textField, linesToArray, intField, checkboxField, slugify } from "@/lib/admin-form";
 import type { ActionState } from "@/lib/admin-form";
 
 async function logActivity(action: string, entityLabel: string) {
   const user = await requireAdminSession();
-  await prisma.activityLog.create({
-    data: { action, entityType: "Service", entityLabel, adminUserId: user.id },
-  });
+  await writeLog(action, "Service", entityLabel, user.id);
 }
 
 function readServiceInput(formData: FormData) {
@@ -58,10 +57,10 @@ export async function createService(
   const error = validate(input);
   if (error) return { error };
 
-  const existing = await prisma.service.findUnique({ where: { slug: input.slug } });
+  const existing = await one<Service>(supabase.from("services").select("*").eq("slug", input.slug).maybeSingle());
   if (existing) return { error: "A service with this slug already exists." };
 
-  await prisma.service.create({ data: input });
+  await insert("services", input);
   await logActivity("created", input.title);
   revalidatePath("/admin/services");
   redirect("/admin/services");
@@ -77,15 +76,15 @@ export async function updateService(
   const error = validate(input);
   if (error) return { error };
 
-  const existing = await prisma.service.findUnique({ where: { id } });
+  const existing = await one<Service>(supabase.from("services").select("*").eq("id", id).maybeSingle());
   if (!existing) return { error: "Service not found." };
 
-  const slugTaken = await prisma.service.findFirst({
-    where: { slug: input.slug, NOT: { id } },
-  });
+  const slugTaken = await one<Service>(
+    supabase.from("services").select("*").eq("slug", input.slug).neq("id", id).limit(1).maybeSingle()
+  );
   if (slugTaken) return { error: "A service with this slug already exists." };
 
-  await prisma.service.update({ where: { id }, data: input });
+  await update("services", id, input);
   await logActivity("updated", input.title);
   revalidatePath("/admin/services");
   redirect("/admin/services");
@@ -96,10 +95,10 @@ export async function deleteService(formData: FormData): Promise<void> {
   const id = textField(formData, "id");
   if (!id) return;
 
-  const existing = await prisma.service.findUnique({ where: { id } });
+  const existing = await one<Service>(supabase.from("services").select("*").eq("id", id).maybeSingle());
   if (!existing) return;
 
-  await prisma.service.delete({ where: { id } });
+  await remove("services", id);
   await logActivity("deleted", existing.title);
   revalidatePath("/admin/services");
 }
@@ -109,10 +108,10 @@ export async function toggleServicePublished(formData: FormData): Promise<void> 
   const id = textField(formData, "id");
   if (!id) return;
 
-  const existing = await prisma.service.findUnique({ where: { id } });
+  const existing = await one<Service>(supabase.from("services").select("*").eq("id", id).maybeSingle());
   if (!existing) return;
 
-  await prisma.service.update({ where: { id }, data: { published: !existing.published } });
+  await update("services", id, { published: !existing.published });
   await logActivity(existing.published ? "unpublished" : "published", existing.title);
   revalidatePath("/admin/services");
 }

@@ -1,8 +1,8 @@
 import "server-only";
 import { cookies } from "next/headers";
 import { ADMIN_SESSION_COOKIE, verifySessionToken } from "@/lib/auth";
-import { prisma } from "@/lib/db";
-import type { AdminUser } from "@prisma/client";
+import { supabase, one } from "@/lib/db";
+import type { AdminUser } from "@/lib/db-types";
 
 /**
  * Full, DB-backed session check (confirms the account still exists and is
@@ -18,7 +18,9 @@ export async function getAdminSession(): Promise<AdminUser | null> {
   if (!payload) return null;
 
   try {
-    const user = await prisma.adminUser.findUnique({ where: { id: payload.sub } });
+    const user = await one<AdminUser>(
+      supabase.from("admin_users").select("*").eq("id", payload.sub).maybeSingle()
+    );
     return user && user.active ? user : null;
   } catch {
     return null;

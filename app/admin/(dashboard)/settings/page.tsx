@@ -1,13 +1,14 @@
-import { prisma } from "@/lib/db";
+import { supabase, one } from "@/lib/db";
+import type { SiteSettings } from "@/lib/db-types";
 import SettingsForm from "@/components/admin/settings/SettingsForm";
 import { updateSettings } from "./actions";
 
 export const metadata = { title: "Settings" };
 
 export default async function AdminSettingsPage() {
-  let settings = null;
+  let settings: SiteSettings | null = null;
   try {
-    settings = await prisma.siteSettings.findUnique({ where: { id: 1 } });
+    settings = await one<SiteSettings>(supabase.from("site_settings").select("*").eq("id", 1).maybeSingle());
   } catch {
     // Handled by the empty defaultValue fallbacks in the form below.
   }

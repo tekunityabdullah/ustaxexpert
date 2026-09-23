@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, User, Mail, Briefcase, Hash, Calendar, CreditCard } from "lucide-react";
-import { prisma } from "@/lib/db";
+import { supabase, one } from "@/lib/db";
+import type { Payment } from "@/lib/db-types";
 import { AdminCard } from "@/components/admin/ui/Card";
 import { AdminBadge, paymentStatusTone } from "@/components/admin/ui/Badge";
 
@@ -43,9 +44,9 @@ function DetailRow({
 export default async function AdminPaymentDetailPage(props: PageProps<"/admin/payments/[id]">) {
   const { id } = await props.params;
 
-  let payment;
+  let payment: Payment | null;
   try {
-    payment = await prisma.payment.findUnique({ where: { id } });
+    payment = await one<Payment>(supabase.from("payments").select("*").eq("id", id).maybeSingle());
   } catch {
     notFound();
   }

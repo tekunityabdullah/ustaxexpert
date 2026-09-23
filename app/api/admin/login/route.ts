@@ -1,5 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { prisma } from "@/lib/db";
+import { supabase, one, update, insert } from "@/lib/db";
+import type { AdminUser } from "@/lib/db-types";
 import { ADMIN_SESSION_COOKIE, createSessionToken, verifyPassword } from "@/lib/auth";
 
 const GENERIC_ERROR = "Invalid email or password.";
@@ -20,13 +21,15 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: GENERIC_ERROR }, { status: 401 });
   }
 
-  let user;
+  let user: AdminUser | null;
   try {
-    user = await prisma.adminUser.findUnique({ where: { email } });
+    user = await one<AdminUser>(
+      supabase.from("admin_users").select("*").eq("email", email).maybeSingle()
+    );
   } catch (err) {
     console.error("Admin login DB error:", err);
     return NextResponse.json(
-      { error: "The admin database isn't reachable right now. Check the DB_HOST/DB_USER/DB_PASSWORD/DB_NAME env vars on the server." },
+      { error: "The admin database isn't reachable right now. Check NEXT_PUBLIC_SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY on the server, and that the Supabase project is not paused." },
       { status: 503 }
     );
   }
@@ -47,17 +50,18 @@ export async function POST(request: NextRequest) {
     role: user.role,
   });
 
-  await prisma.$transaction([
-    prisma.adminUser.update({ where: { id: user.id }, data: { lastLoginAt: new Date() } }),
-    prisma.activityLog.create({
-      data: {
-        action: "logged in",
-        entityType: "AdminUser",
-        entityLabel: user.name,
-        adminUserId: user.id,
-      },
-    }),
-  ]);
+  // Best-effort bookkeeping — a failure here must not block a valid login.
+  try {
+    await update("admin_users", user.id, { lastLoginAt: new Date().toISOString() });
+    await insert("activity_log", {
+      action: "logged in",
+      entityType: "AdminUser",
+      entityLabel: user.name,
+      adminUserId: user.id,
+    });
+  } catch (err) {
+    console.error("Admin login bookkeeping error:", err);
+  }
 
   const response = NextResponse.json({
     ok: true,

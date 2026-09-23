@@ -6,7 +6,7 @@ import { Save } from "lucide-react";
 import { AdminButton, AdminButtonLink } from "@/components/admin/ui/Button";
 import { AdminFormField, AdminInput, AdminTextarea } from "@/components/admin/ui/Field";
 import { AdminCard } from "@/components/admin/ui/Card";
-import type { Testimonial } from "@prisma/client";
+import type { Testimonial } from "@/lib/db-types";
 import type { ActionState } from "@/lib/admin-form";
 
 function SubmitButton({ label }: { label: string }) {

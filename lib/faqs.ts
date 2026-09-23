@@ -1,5 +1,5 @@
-import { prisma } from "@/lib/db";
-import type { Faq as PrismaFaq } from "@prisma/client";
+import { supabase, many } from "@/lib/db";
+import type { Faq as FaqRow } from "@/lib/db-types";
 
 export type FaqCategory =
   | "Getting Started"
@@ -119,7 +119,7 @@ export const faqCategories: FaqCategory[] = [
   "Working With Us",
 ];
 
-function toFaq(row: PrismaFaq): Faq {
+function toFaq(row: FaqRow): Faq {
   return {
     question: row.question,
     answer: row.answer,
@@ -131,10 +131,9 @@ function toFaq(row: PrismaFaq): Faq {
  * only if the database itself is unreachable. */
 export async function getFaqs(): Promise<Faq[]> {
   try {
-    const rows = await prisma.faq.findMany({
-      where: { published: true },
-      orderBy: { order: "asc" },
-    });
+    const rows = await many<FaqRow>(
+      supabase.from("faqs").select("*").eq("published", true).order("order", { ascending: true })
+    );
     return rows.map(toFaq);
   } catch {
     return faqs;

@@ -2,16 +2,15 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { prisma } from "@/lib/db";
+import { one, supabase, insert, update, remove, logActivity as writeLog } from "@/lib/db";
+import type { Faq } from "@/lib/db-types";
 import { requireAdminSession } from "@/lib/admin-session";
 import { textField, intField, checkboxField } from "@/lib/admin-form";
 import type { ActionState } from "@/lib/admin-form";
 
 async function logActivity(action: string, entityLabel: string) {
   const user = await requireAdminSession();
-  await prisma.activityLog.create({
-    data: { action, entityType: "FAQ", entityLabel, adminUserId: user.id },
-  });
+  await writeLog(action, "FAQ", entityLabel, user.id);
 }
 
 function readFaqInput(formData: FormData) {
@@ -37,7 +36,7 @@ export async function createFaq(_prevState: ActionState, formData: FormData): Pr
   const error = validate(input);
   if (error) return { error };
 
-  await prisma.faq.create({ data: input });
+  await insert("faqs", input);
   await logActivity("created", input.question);
   revalidatePath("/admin/faqs");
   redirect("/admin/faqs");
@@ -53,10 +52,10 @@ export async function updateFaq(
   const error = validate(input);
   if (error) return { error };
 
-  const existing = await prisma.faq.findUnique({ where: { id } });
+  const existing = await one<Faq>(supabase.from("faqs").select("*").eq("id", id).maybeSingle());
   if (!existing) return { error: "FAQ not found." };
 
-  await prisma.faq.update({ where: { id }, data: input });
+  await update("faqs", id, input);
   await logActivity("updated", input.question);
   revalidatePath("/admin/faqs");
   redirect("/admin/faqs");
@@ -67,10 +66,10 @@ export async function deleteFaq(formData: FormData): Promise<void> {
   const id = textField(formData, "id");
   if (!id) return;
 
-  const existing = await prisma.faq.findUnique({ where: { id } });
+  const existing = await one<Faq>(supabase.from("faqs").select("*").eq("id", id).maybeSingle());
   if (!existing) return;
 
-  await prisma.faq.delete({ where: { id } });
+  await remove("faqs", id);
   await logActivity("deleted", existing.question);
   revalidatePath("/admin/faqs");
 }
@@ -80,10 +79,10 @@ export async function toggleFaqPublished(formData: FormData): Promise<void> {
   const id = textField(formData, "id");
   if (!id) return;
 
-  const existing = await prisma.faq.findUnique({ where: { id } });
+  const existing = await one<Faq>(supabase.from("faqs").select("*").eq("id", id).maybeSingle());
   if (!existing) return;
 
-  await prisma.faq.update({ where: { id }, data: { published: !existing.published } });
+  await update("faqs", id, { published: !existing.published });
   await logActivity(existing.published ? "unpublished" : "published", existing.question);
   revalidatePath("/admin/faqs");
 }

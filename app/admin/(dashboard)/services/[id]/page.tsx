@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
-import { prisma } from "@/lib/db";
+import { supabase, one } from "@/lib/db";
+import type { Service } from "@/lib/db-types";
 import ServiceForm from "@/components/admin/services/ServiceForm";
 import { updateService } from "@/app/admin/(dashboard)/services/actions";
 
@@ -9,7 +10,7 @@ export const metadata = { title: "Edit Service" };
 
 export default async function EditServicePage(props: PageProps<"/admin/services/[id]">) {
   const { id } = await props.params;
-  const service = await prisma.service.findUnique({ where: { id } });
+  const service = await one<Service>(supabase.from("services").select("*").eq("id", id).maybeSingle());
   if (!service) notFound();
 
   const action = updateService.bind(null, service.id);

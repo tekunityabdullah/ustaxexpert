@@ -1,46 +1,134 @@
-import { PrismaClient } from "@prisma/client";
-import { PrismaPg } from "@prisma/adapter-pg";
-import { readDbEnv, buildDatabaseUrl } from "@/lib/db-env";
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
-// Prisma 7 requires a driver adapter — this one talks Postgres wire
-// protocol (via node-postgres), built from the separate DB_HOST/DB_PORT/
-// DB_USER/DB_PASSWORD/DB_NAME env vars (see .env.example) rather than a
-// single DATABASE_URL. Backed by Supabase's hosted Postgres.
-//
-// Unlike the previous MariaDB adapter, Prisma 7's Postgres-adapter client
-// throws immediately if PrismaClient is constructed with no adapter at all
-// — it won't let you defer the failure to query time. So this always
-// builds a real PrismaPg adapter; when the DB env vars aren't set yet, it
-// points at a syntactically valid placeholder URL instead of connection
-// details, so construction still succeeds and every call site's existing
-// try/catch around its actual query is what surfaces the "not connected"
-// state (same UX as before, just moved one layer down).
-function buildAdapter() {
-  const conn = readDbEnv();
-  if (!conn) return new PrismaPg(buildDatabaseUrl());
+// Pure Supabase (PostgREST over HTTPS) — no ORM, no direct Postgres
+// connection, no database password. This server-side client uses the
+// service-role key, which bypasses Row Level Security (RLS is enabled on
+// every table with no policies, so the public anon key can't read or write
+// anything). NEVER expose SUPABASE_SERVICE_ROLE_KEY to the browser: it has
+// no NEXT_PUBLIC_ prefix and must only be imported from server code.
 
-  return new PrismaPg({
-    host: conn.host,
-    port: conn.port,
-    user: conn.user,
-    password: conn.password,
-    database: conn.database,
-    max: 5,
-    // Supabase requires SSL on its direct-connection port; skip strict cert
-    // validation since Node's default CA bundle doesn't always include it.
-    ssl: { rejectUnauthorized: false },
-    // node-postgres's default connect timeout is too short for Supabase's
-    // pooler on some networks — see buildDatabaseUrl()'s connect_timeout.
-    connectionTimeoutMillis: 20_000,
+const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+export const dbConfigured = Boolean(url && serviceKey);
+
+const globalForSupabase = globalThis as unknown as { supabase?: SupabaseClient };
+
+// When the env vars aren't set yet the client still constructs (placeholder
+// values) and every query returns an error, which `many`/`one`/etc. below
+// turn into a thrown Error — so each page's existing try/catch shows its
+// "database not connected" state instead of the app crashing at import.
+export const supabase: SupabaseClient =
+  globalForSupabase.supabase ??
+  createClient(url || "http://localhost:54321", serviceKey || "not-configured", {
+    auth: { persistSession: false, autoRefreshToken: false },
   });
-}
-
-// Standard Next.js dev-mode singleton: without this, hot reload would spin
-// up a fresh PrismaClient (and a fresh connection pool) on every file save.
-const globalForPrisma = globalThis as unknown as { prisma?: PrismaClient };
-
-export const prisma = globalForPrisma.prisma ?? new PrismaClient({ adapter: buildAdapter() });
 
 if (process.env.NODE_ENV !== "production") {
-  globalForPrisma.prisma = prisma;
+  globalForSupabase.supabase = supabase;
+}
+
+// PostgREST returns timestamps as ISO strings; app code expects Dates.
+const DATE_KEYS = new Set(["createdAt", "updatedAt", "lastLoginAt", "date", "uploadedAt"]);
+
+export function revive<T>(row: unknown): T {
+  if (row === null || typeof row !== "object") return row as T;
+  const out: Record<string, unknown> = { ...(row as Record<string, unknown>) };
+  for (const key of Object.keys(out)) {
+    const value = out[key];
+    if (DATE_KEYS.has(key) && typeof value === "string") {
+      out[key] = new Date(value);
+    } else if (value && typeof value === "object" && !Array.isArray(value) && !(value instanceof Date)) {
+      // Embedded relations (e.g. adminUser: { name }) — revive nested rows too.
+      if (key === "adminUser") out[key] = revive(value);
+    }
+  }
+  return out as T;
+}
+
+type Result = PromiseLike<{ data: unknown; error: { message: string } | null }>;
+
+function check<R extends { error: { message: string } | null }>(res: R): R {
+  if (res.error) throw new Error(res.error.message);
+  return res;
+}
+
+/** Run a select and return every row (throws on any database error). */
+export async function many<T>(query: Result): Promise<T[]> {
+  const { data } = check(await query);
+  return ((data as unknown[] | null) ?? []).map((row) => revive<T>(row));
+}
+
+/** Run a select for at most one row (use with `.limit(1)` / `.maybeSingle()`). */
+export async function one<T>(query: Result): Promise<T | null> {
+  const { data } = check(await query);
+  if (data === null || data === undefined) return null;
+  const row = Array.isArray(data) ? data[0] : data;
+  return row ? revive<T>(row) : null;
+}
+
+/** Run a `select("*", { count: "exact", head: true })` and return the count. */
+export async function countOf(
+  query: PromiseLike<{ count: number | null; error: { message: string } | null }>
+): Promise<number> {
+  const res = check(await query);
+  return res.count ?? 0;
+}
+
+const TABLES_WITH_UPDATED_AT = new Set([
+  "admin_users",
+  "payments",
+  "services",
+  "blog_posts",
+  "faqs",
+  "testimonials",
+  "site_settings",
+]);
+
+/** Tables use TEXT ids and NOT NULL "updatedAt" with no DB default, so the app supplies both. */
+export async function insert<T>(table: string, data: Record<string, unknown>): Promise<T> {
+  const row: Record<string, unknown> = { ...data };
+  if (row.id === undefined) row.id = crypto.randomUUID();
+  if (TABLES_WITH_UPDATED_AT.has(table)) row.updatedAt = new Date().toISOString();
+  const { data: created } = check(await supabase.from(table).insert(row).select().single());
+  return revive<T>(created);
+}
+
+export async function update(
+  table: string,
+  id: string | number,
+  data: Record<string, unknown>
+): Promise<void> {
+  const row: Record<string, unknown> = { ...data };
+  if (TABLES_WITH_UPDATED_AT.has(table)) row.updatedAt = new Date().toISOString();
+  check(await supabase.from(table).update(row).eq("id", id));
+}
+
+export async function remove(table: string, id: string | number): Promise<void> {
+  check(await supabase.from(table).delete().eq("id", id));
+}
+
+/** Insert-or-update on a unique column. Callers must pass an explicit `id` (never generated here, so an existing row's id is never clobbered). */
+export async function upsert(
+  table: string,
+  data: Record<string, unknown>,
+  onConflict: string
+): Promise<void> {
+  const row: Record<string, unknown> = { ...data };
+  if (TABLES_WITH_UPDATED_AT.has(table)) row.updatedAt = new Date().toISOString();
+  check(await supabase.from(table).upsert(row, { onConflict }));
+}
+
+/** Append an entry to the admin activity feed. Never throws — logging must not break a request. */
+export async function logActivity(
+  action: string,
+  entityType: string,
+  entityLabel: string,
+  adminUserId: string | null
+): Promise<void> {
+  try {
+    await insert("activity_log", { action, entityType, entityLabel, adminUserId });
+  } catch (err) {
+    console.error("Failed to write activity log:", err);
+  }
 }

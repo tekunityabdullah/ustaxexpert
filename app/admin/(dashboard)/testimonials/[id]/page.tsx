@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
-import { prisma } from "@/lib/db";
+import { supabase, one } from "@/lib/db";
+import type { Testimonial } from "@/lib/db-types";
 import TestimonialForm from "@/components/admin/testimonials/TestimonialForm";
 import { updateTestimonial } from "@/app/admin/(dashboard)/testimonials/actions";
 
@@ -9,7 +10,9 @@ export const metadata = { title: "Edit Testimonial" };
 
 export default async function EditTestimonialPage(props: PageProps<"/admin/testimonials/[id]">) {
   const { id } = await props.params;
-  const testimonial = await prisma.testimonial.findUnique({ where: { id } });
+  const testimonial = await one<Testimonial>(
+    supabase.from("testimonials").select("*").eq("id", id).maybeSingle()
+  );
   if (!testimonial) notFound();
 
   const action = updateTestimonial.bind(null, testimonial.id);

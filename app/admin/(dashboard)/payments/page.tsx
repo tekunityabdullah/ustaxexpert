@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { CreditCard, Search } from "lucide-react";
-import type { Prisma } from "@prisma/client";
-import { prisma } from "@/lib/db";
+import { supabase, revive } from "@/lib/db";
+import type { Payment, PaymentStatus } from "@/lib/db-types";
 import {
   AdminTable,
   AdminTableHead,
@@ -20,10 +20,10 @@ export const metadata = { title: "Payments" };
 const PAGE_SIZE = 15;
 const STATUSES = ["PENDING", "PAID", "FAILED", "REFUNDED"] as const;
 const SORTS = {
-  newest: { createdAt: "desc" } as Prisma.PaymentOrderByWithRelationInput,
-  oldest: { createdAt: "asc" } as Prisma.PaymentOrderByWithRelationInput,
-  amount_desc: { amount: "desc" } as Prisma.PaymentOrderByWithRelationInput,
-  amount_asc: { amount: "asc" } as Prisma.PaymentOrderByWithRelationInput,
+  newest: { column: "createdAt", ascending: false },
+  oldest: { column: "createdAt", ascending: true },
+  amount_desc: { column: "amount", ascending: false },
+  amount_asc: { column: "amount", ascending: true },
 };
 
 function formatMoney(cents: number, currency = "usd") {
@@ -47,20 +47,6 @@ export default async function AdminPaymentsPage(props: PageProps<"/admin/payment
   const sortKey = typeof sp.sort === "string" && sp.sort in SORTS ? sp.sort : "newest";
   const page = Math.max(1, Number(sp.page) || 1);
 
-  const where: Prisma.PaymentWhereInput = {
-    ...(status ? { status: status as (typeof STATUSES)[number] } : {}),
-    ...(q
-      ? {
-          OR: [
-            { customerName: { contains: q } },
-            { customerEmail: { contains: q } },
-            { serviceTitle: { contains: q } },
-            { stripeSessionId: { contains: q } },
-          ],
-        }
-      : {}),
-  };
-
   function buildHref(overrides: Record<string, string | number>) {
     const params = new URLSearchParams();
     if (q) params.set("q", q);
@@ -75,20 +61,31 @@ export default async function AdminPaymentsPage(props: PageProps<"/admin/payment
     return `/admin/payments${qs ? `?${qs}` : ""}`;
   }
 
-  let payments: Awaited<ReturnType<typeof prisma.payment.findMany>> = [];
+  let payments: Payment[] = [];
   let total = 0;
   let dbError = false;
 
   try {
-    [payments, total] = await Promise.all([
-      prisma.payment.findMany({
-        where,
-        orderBy: SORTS[sortKey as keyof typeof SORTS],
-        skip: (page - 1) * PAGE_SIZE,
-        take: PAGE_SIZE,
-      }),
-      prisma.payment.count({ where }),
-    ]);
+    const sort = SORTS[sortKey as keyof typeof SORTS];
+    let query = supabase.from("payments").select("*", { count: "exact" });
+    if (status) query = query.eq("status", status as PaymentStatus);
+    if (q) {
+      // Strip characters that would break PostgREST's or() filter syntax.
+      const term = q.replace(/[,()"%*\\]/g, " ").trim();
+      if (term) {
+        query = query.or(
+          ["customerName", "customerEmail", "serviceTitle", "stripeSessionId"]
+            .map((col) => `${col}.ilike.%${term}%`)
+            .join(",")
+        );
+      }
+    }
+    const { data, count, error } = await query
+      .order(sort.column, { ascending: sort.ascending })
+      .range((page - 1) * PAGE_SIZE, page * PAGE_SIZE - 1);
+    if (error) throw new Error(error.message);
+    payments = (data ?? []).map((row) => revive<Payment>(row));
+    total = count ?? 0;
   } catch {
     dbError = true;
   }
@@ -135,7 +132,7 @@ export default async function AdminPaymentsPage(props: PageProps<"/admin/payment
         <AdminEmptyState
           icon={CreditCard}
           title="Database not connected"
-          description="Set the DB_HOST/DB_USER/DB_PASSWORD/DB_NAME env vars and run migrations."
+          description="Check SUPABASE_SERVICE_ROLE_KEY in your environment and that the Supabase project is not paused."
         />
       ) : payments.length === 0 ? (
         <AdminEmptyState

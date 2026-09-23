@@ -8,7 +8,7 @@ import { AdminFormField, AdminInput, AdminTextarea } from "@/components/admin/ui
 import { AdminCard } from "@/components/admin/ui/Card";
 import { serializePipeLines } from "@/lib/admin-form";
 import type { ActionState } from "@/lib/admin-form";
-import type { SiteSettings } from "@prisma/client";
+import type { SiteSettings } from "@/lib/db-types";
 
 function SubmitButton() {
   const { pending } = useFormStatus();

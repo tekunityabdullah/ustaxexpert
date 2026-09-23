@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Users, Plus, Pencil } from "lucide-react";
-import { prisma } from "@/lib/db";
+import { supabase, many } from "@/lib/db";
+import type { AdminUser } from "@/lib/db-types";
 import { getAdminSession } from "@/lib/admin-session";
 import {
   AdminTable,
@@ -24,12 +25,14 @@ function formatDate(date: Date | null) {
 }
 
 export default async function AdminUsersPage() {
-  let users: Awaited<ReturnType<typeof prisma.adminUser.findMany>> = [];
+  let users: AdminUser[] = [];
   let dbError = false;
   const currentUser = await getAdminSession();
 
   try {
-    users = await prisma.adminUser.findMany({ orderBy: { createdAt: "asc" } });
+    users = await many<AdminUser>(
+      supabase.from("admin_users").select("*").order("createdAt", { ascending: true })
+    );
   } catch {
     dbError = true;
   }
@@ -51,7 +54,7 @@ export default async function AdminUsersPage() {
         <AdminEmptyState
           icon={Users}
           title="Database not connected"
-          description="Set the DB_HOST/DB_USER/DB_PASSWORD/DB_NAME env vars and run migrations."
+          description="Check SUPABASE_SERVICE_ROLE_KEY in your environment and that the Supabase project is not paused."
         />
       ) : (
         <AdminTable>

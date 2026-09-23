@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
-import { prisma } from "@/lib/db";
+import { supabase, one } from "@/lib/db";
+import type { AdminUser } from "@/lib/db-types";
 import { getAdminSession } from "@/lib/admin-session";
 import UserForm from "@/components/admin/users/UserForm";
 import { updateUser } from "@/app/admin/(dashboard)/users/actions";
@@ -11,7 +12,7 @@ export const metadata = { title: "Edit Admin User" };
 export default async function EditUserPage(props: PageProps<"/admin/users/[id]">) {
   const { id } = await props.params;
   const [user, currentUser] = await Promise.all([
-    prisma.adminUser.findUnique({ where: { id } }),
+    one<AdminUser>(supabase.from("admin_users").select("*").eq("id", id).maybeSingle()),
     getAdminSession(),
   ]);
   if (!user) notFound();

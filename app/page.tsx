@@ -1,5 +1,6 @@
 import Hero from "@/components/home/Hero";
 import AboutIntro from "@/components/home/AboutIntro";
+import IntroVideo from "@/components/home/IntroVideo";
 import ServiceTabs from "@/components/home/ServiceTabs";
 import HoverVideoSplit from "@/components/home/HoverVideoSplit";
 import TrustSignals from "@/components/home/TrustSignals";
@@ -17,6 +18,7 @@ export default async function Home() {
   return (
     <>
       <Hero />
+      <IntroVideo />
       <AboutIntro />
 
       <section className="py-16 lg:py-25">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { MessageSquareQuote, Plus, Pencil } from "lucide-react";
-import { prisma } from "@/lib/db";
+import { supabase, many } from "@/lib/db";
+import type { Testimonial } from "@/lib/db-types";
 import {
   AdminTable,
   AdminTableHead,
@@ -18,11 +19,13 @@ import { deleteTestimonial, toggleTestimonialPublished } from "./actions";
 export const metadata = { title: "Testimonials" };
 
 export default async function AdminTestimonialsPage() {
-  let testimonials: Awaited<ReturnType<typeof prisma.testimonial.findMany>> = [];
+  let testimonials: Testimonial[] = [];
   let dbError = false;
 
   try {
-    testimonials = await prisma.testimonial.findMany({ orderBy: { order: "asc" } });
+    testimonials = await many<Testimonial>(
+      supabase.from("testimonials").select("*").order("order", { ascending: true })
+    );
   } catch {
     dbError = true;
   }
@@ -44,7 +47,7 @@ export default async function AdminTestimonialsPage() {
         <AdminEmptyState
           icon={MessageSquareQuote}
           title="Database not connected"
-          description="Set the DB_HOST/DB_USER/DB_PASSWORD/DB_NAME env vars and run migrations."
+          description="Check SUPABASE_SERVICE_ROLE_KEY in your environment and that the Supabase project is not paused."
         />
       ) : testimonials.length === 0 ? (
         <AdminEmptyState

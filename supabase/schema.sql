@@ -1,3 +1,7 @@
+-- Database schema for the U.S. Tax Experts CMS (Postgres / Supabase).
+-- Already applied to the live project. To rebuild from scratch, run this in
+-- the Supabase SQL Editor, then run: npm run db:seed
+
 -- CreateSchema
 CREATE SCHEMA IF NOT EXISTS "public";
 
@@ -190,3 +194,15 @@ ALTER TABLE "activity_log" ADD CONSTRAINT "activity_log_adminUserId_fkey" FOREIG
 -- AddForeignKey
 ALTER TABLE "media" ADD CONSTRAINT "media_uploadedById_fkey" FOREIGN KEY ("uploadedById") REFERENCES "admin_users"("id") ON DELETE SET NULL ON UPDATE CASCADE;
 
+
+-- Lock the public REST API: RLS on with no policies means the anon key can
+-- read/write nothing. The server uses the service-role key, which bypasses RLS.
+ALTER TABLE public.admin_users ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.activity_log ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.payments ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.services ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.blog_posts ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.faqs ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.testimonials ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.media ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.site_settings ENABLE ROW LEVEL SECURITY;

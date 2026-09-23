@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Briefcase, Plus, Pencil } from "lucide-react";
-import { prisma } from "@/lib/db";
+import { supabase, many } from "@/lib/db";
+import type { Service } from "@/lib/db-types";
 import {
   AdminTable,
   AdminTableHead,
@@ -18,11 +19,11 @@ import { deleteService, toggleServicePublished } from "./actions";
 export const metadata = { title: "Services" };
 
 export default async function AdminServicesPage() {
-  let services: Awaited<ReturnType<typeof prisma.service.findMany>> = [];
+  let services: Service[] = [];
   let dbError = false;
 
   try {
-    services = await prisma.service.findMany({ orderBy: { order: "asc" } });
+    services = await many<Service>(supabase.from("services").select("*").order("order", { ascending: true }));
   } catch {
     dbError = true;
   }
@@ -44,7 +45,7 @@ export default async function AdminServicesPage() {
         <AdminEmptyState
           icon={Briefcase}
           title="Database not connected"
-          description="Set the DB_HOST/DB_USER/DB_PASSWORD/DB_NAME env vars and run migrations."
+          description="Check SUPABASE_SERVICE_ROLE_KEY in your environment and that the Supabase project is not paused."
         />
       ) : services.length === 0 ? (
         <AdminEmptyState

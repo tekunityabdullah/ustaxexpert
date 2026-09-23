@@ -7,7 +7,7 @@ import { AdminButton, AdminButtonLink } from "@/components/admin/ui/Button";
 import { AdminFormField, AdminInput, AdminTextarea, AdminSelect } from "@/components/admin/ui/Field";
 import { AdminCard } from "@/components/admin/ui/Card";
 import RichTextEditor from "@/components/admin/blog/RichTextEditor";
-import type { BlogPost } from "@prisma/client";
+import type { BlogPost } from "@/lib/db-types";
 import type { ActionState } from "@/lib/admin-form";
 import { isLegacyBlockContent, blockArrayToHtml } from "@/lib/blog-content";
 

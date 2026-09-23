@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { HelpCircle, Plus, Pencil } from "lucide-react";
-import { prisma } from "@/lib/db";
+import { supabase, many } from "@/lib/db";
+import type { Faq } from "@/lib/db-types";
 import {
   AdminTable,
   AdminTableHead,
@@ -18,11 +19,11 @@ import { deleteFaq, toggleFaqPublished } from "./actions";
 export const metadata = { title: "FAQs" };
 
 export default async function AdminFaqsPage() {
-  let faqs: Awaited<ReturnType<typeof prisma.faq.findMany>> = [];
+  let faqs: Faq[] = [];
   let dbError = false;
 
   try {
-    faqs = await prisma.faq.findMany({ orderBy: { order: "asc" } });
+    faqs = await many<Faq>(supabase.from("faqs").select("*").order("order", { ascending: true }));
   } catch {
     dbError = true;
   }
@@ -44,7 +45,7 @@ export default async function AdminFaqsPage() {
         <AdminEmptyState
           icon={HelpCircle}
           title="Database not connected"
-          description="Set the DB_HOST/DB_USER/DB_PASSWORD/DB_NAME env vars and run migrations."
+          description="Check SUPABASE_SERVICE_ROLE_KEY in your environment and that the Supabase project is not paused."
         />
       ) : faqs.length === 0 ? (
         <AdminEmptyState

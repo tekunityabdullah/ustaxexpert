@@ -6,7 +6,7 @@ import { Save } from "lucide-react";
 import { AdminButton, AdminButtonLink } from "@/components/admin/ui/Button";
 import { AdminFormField, AdminInput, AdminTextarea, AdminSelect } from "@/components/admin/ui/Field";
 import { AdminCard } from "@/components/admin/ui/Card";
-import type { Faq } from "@prisma/client";
+import type { Faq } from "@/lib/db-types";
 import type { ActionState } from "@/lib/admin-form";
 
 const CATEGORIES = ["Getting Started", "Tax Debt Relief", "Accounting & Planning", "Working With Us"];

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Newspaper, Plus, Pencil } from "lucide-react";
-import { prisma } from "@/lib/db";
+import { supabase, many } from "@/lib/db";
+import type { BlogPost } from "@/lib/db-types";
 import {
   AdminTable,
   AdminTableHead,
@@ -22,11 +23,11 @@ function formatDate(date: Date) {
 }
 
 export default async function AdminBlogPage() {
-  let posts: Awaited<ReturnType<typeof prisma.blogPost.findMany>> = [];
+  let posts: BlogPost[] = [];
   let dbError = false;
 
   try {
-    posts = await prisma.blogPost.findMany({ orderBy: { date: "desc" } });
+    posts = await many<BlogPost>(supabase.from("blog_posts").select("*").order("date", { ascending: false }));
   } catch {
     dbError = true;
   }
@@ -48,7 +49,7 @@ export default async function AdminBlogPage() {
         <AdminEmptyState
           icon={Newspaper}
           title="Database not connected"
-          description="Set the DB_HOST/DB_USER/DB_PASSWORD/DB_NAME env vars and run migrations."
+          description="Check SUPABASE_SERVICE_ROLE_KEY in your environment and that the Supabase project is not paused."
         />
       ) : posts.length === 0 ? (
         <AdminEmptyState

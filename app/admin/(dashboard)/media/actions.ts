@@ -1,7 +1,8 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { prisma } from "@/lib/db";
+import { supabase, one, insert, remove, logActivity as writeLog } from "@/lib/db";
+import type { Media } from "@/lib/db-types";
 import { requireAdminSession } from "@/lib/admin-session";
 import { textField } from "@/lib/admin-form";
 import type { ActionState } from "@/lib/admin-form";
@@ -23,19 +24,15 @@ export async function uploadMedia(_prevState: ActionState, formData: FormData): 
 
   const { url } = await saveUploadedFile(file);
 
-  await prisma.media.create({
-    data: {
-      filename: file.name,
-      url,
-      mimeType: file.type,
-      size: file.size,
-      uploadedById: user.id,
-    },
+  await insert("media", {
+    filename: file.name,
+    url,
+    mimeType: file.type,
+    size: file.size,
+    uploadedById: user.id,
   });
 
-  await prisma.activityLog.create({
-    data: { action: "uploaded", entityType: "Media", entityLabel: file.name, adminUserId: user.id },
-  });
+  await writeLog("uploaded", "Media", file.name, user.id);
 
   revalidatePath("/admin/media");
   return undefined;
@@ -46,15 +43,13 @@ export async function deleteMedia(formData: FormData): Promise<void> {
   const id = textField(formData, "id");
   if (!id) return;
 
-  const existing = await prisma.media.findUnique({ where: { id } });
+  const existing = await one<Media>(supabase.from("media").select("*").eq("id", id).maybeSingle());
   if (!existing) return;
 
-  await prisma.media.delete({ where: { id } });
+  await remove("media", id);
   await deleteUploadedFile(existing.url);
 
-  await prisma.activityLog.create({
-    data: { action: "deleted", entityType: "Media", entityLabel: existing.filename, adminUserId: user.id },
-  });
+  await writeLog("deleted", "Media", existing.filename, user.id);
 
   revalidatePath("/admin/media");
 }

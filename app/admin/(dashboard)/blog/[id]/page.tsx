@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
-import { prisma } from "@/lib/db";
+import { supabase, one } from "@/lib/db";
+import type { BlogPost } from "@/lib/db-types";
 import BlogPostForm from "@/components/admin/blog/BlogPostForm";
 import { updateBlogPost } from "@/app/admin/(dashboard)/blog/actions";
 
@@ -9,7 +10,7 @@ export const metadata = { title: "Edit Blog Post" };
 
 export default async function EditBlogPostPage(props: PageProps<"/admin/blog/[id]">) {
   const { id } = await props.params;
-  const post = await prisma.blogPost.findUnique({ where: { id } });
+  const post = await one<BlogPost>(supabase.from("blog_posts").select("*").eq("id", id).maybeSingle());
   if (!post) notFound();
 
   const action = updateBlogPost.bind(null, post.id);

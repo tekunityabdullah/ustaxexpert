@@ -2,7 +2,8 @@
 
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-import { prisma } from "@/lib/db";
+import { supabase, one, insert, update, remove, logActivity as writeLog } from "@/lib/db";
+import type { AdminUser } from "@/lib/db-types";
 import { requireAdminSession } from "@/lib/admin-session";
 import { hashPassword } from "@/lib/auth";
 import { textField, checkboxField } from "@/lib/admin-form";
@@ -17,9 +18,7 @@ function readRole(formData: FormData): Role {
 }
 
 async function logActivity(actorId: string, action: string, entityLabel: string) {
-  await prisma.activityLog.create({
-    data: { action, entityType: "AdminUser", entityLabel, adminUserId: actorId },
-  });
+  await writeLog(action, "AdminUser", entityLabel, actorId);
 }
 
 export async function createUser(_prevState: ActionState, formData: FormData): Promise<ActionState> {
@@ -34,11 +33,11 @@ export async function createUser(_prevState: ActionState, formData: FormData): P
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return { error: "Please enter a valid email address." };
   if (password.length < 8) return { error: "Password must be at least 8 characters." };
 
-  const existing = await prisma.adminUser.findUnique({ where: { email } });
+  const existing = await one<AdminUser>(supabase.from("admin_users").select("*").eq("email", email).maybeSingle());
   if (existing) return { error: "An admin user with this email already exists." };
 
   const passwordHash = await hashPassword(password);
-  await prisma.adminUser.create({ data: { name, email, passwordHash, role } });
+  await insert("admin_users", { name, email, passwordHash, role });
   await logActivity(actor.id, "created", `${name} (${email})`);
 
   revalidatePath("/admin/users");
@@ -57,7 +56,7 @@ export async function updateUser(
 
   if (!name) return { error: "Name is required." };
 
-  const existing = await prisma.adminUser.findUnique({ where: { id } });
+  const existing = await one<AdminUser>(supabase.from("admin_users").select("*").eq("id", id).maybeSingle());
   if (!existing) return { error: "User not found." };
 
   const isSelf = existing.id === actor.id;
@@ -73,14 +72,11 @@ export async function updateUser(
     return { error: "Password must be at least 8 characters, or leave it blank to keep the current one." };
   }
 
-  await prisma.adminUser.update({
-    where: { id },
-    data: {
-      name,
-      role,
-      active,
-      ...(password ? { passwordHash: await hashPassword(password) } : {}),
-    },
+  await update("admin_users", id, {
+    name,
+    role,
+    active,
+    ...(password ? { passwordHash: await hashPassword(password) } : {}),
   });
   await logActivity(actor.id, "updated", `${name} (${existing.email})`);
 
@@ -93,10 +89,10 @@ export async function deleteUser(formData: FormData): Promise<void> {
   const id = textField(formData, "id");
   if (!id || id === actor.id) return; // can't delete your own account
 
-  const existing = await prisma.adminUser.findUnique({ where: { id } });
+  const existing = await one<AdminUser>(supabase.from("admin_users").select("*").eq("id", id).maybeSingle());
   if (!existing) return;
 
-  await prisma.adminUser.delete({ where: { id } });
+  await remove("admin_users", id);
   await logActivity(actor.id, "deleted", `${existing.name} (${existing.email})`);
   revalidatePath("/admin/users");
 }

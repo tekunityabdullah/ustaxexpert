@@ -1,5 +1,5 @@
-import { prisma } from "@/lib/db";
-import type { Testimonial as PrismaTestimonial } from "@prisma/client";
+import { supabase, many } from "@/lib/db";
+import type { Testimonial as TestimonialRow } from "@/lib/db-types";
 
 export type Testimonial = {
   name: string;
@@ -39,7 +39,7 @@ export const testimonials: Testimonial[] = [
   },
 ];
 
-function toTestimonial(row: PrismaTestimonial): Testimonial {
+function toTestimonial(row: TestimonialRow): Testimonial {
   return { name: row.name, quote: row.quote };
 }
 
@@ -47,10 +47,9 @@ function toTestimonial(row: PrismaTestimonial): Testimonial {
  * above only if the database itself is unreachable. */
 export async function getTestimonials(): Promise<Testimonial[]> {
   try {
-    const rows = await prisma.testimonial.findMany({
-      where: { published: true },
-      orderBy: { order: "asc" },
-    });
+    const rows = await many<TestimonialRow>(
+      supabase.from("testimonials").select("*").eq("published", true).order("order", { ascending: true })
+    );
     return rows.map(toTestimonial);
   } catch {
     return testimonials;

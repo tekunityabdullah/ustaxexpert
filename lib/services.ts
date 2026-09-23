@@ -1,6 +1,6 @@
 import { BASE_PATH } from "@/lib/site-config";
-import { prisma } from "@/lib/db";
-import type { Service as PrismaService } from "@prisma/client";
+import { supabase, many, one } from "@/lib/db";
+import type { Service as ServiceRow } from "@/lib/db-types";
 
 export type Service = {
   slug: string;
@@ -183,7 +183,7 @@ export function getServiceBySlugStatic(slug: string): Service | undefined {
   return services.find((service) => service.slug === slug);
 }
 
-function toService(row: PrismaService): Service {
+function toService(row: ServiceRow): Service {
   return {
     slug: row.slug,
     title: row.title,
@@ -205,10 +205,9 @@ function toService(row: PrismaService): Service {
  * site degrades gracefully rather than breaking. */
 export async function getServices(): Promise<Service[]> {
   try {
-    const rows = await prisma.service.findMany({
-      where: { published: true },
-      orderBy: { order: "asc" },
-    });
+    const rows = await many<ServiceRow>(
+      supabase.from("services").select("*").eq("published", true).order("order", { ascending: true })
+    );
     return rows.map(toService);
   } catch {
     return services;
@@ -217,7 +216,7 @@ export async function getServices(): Promise<Service[]> {
 
 export async function getServiceBySlug(slug: string): Promise<Service | undefined> {
   try {
-    const row = await prisma.service.findUnique({ where: { slug } });
+    const row = await one<ServiceRow>(supabase.from("services").select("*").eq("slug", slug).maybeSingle());
     return row && row.published ? toService(row) : undefined;
   } catch {
     return getServiceBySlugStatic(slug);
