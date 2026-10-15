@@ -76,7 +76,7 @@ export default function PaymentForm({ services }: { services: Service[] }) {
     }
   }
 
-  const tollFree = siteConfig.phones.find((p) => p.type === "Toll-Free") ?? siteConfig.phones[0];
+  const tollFree = siteConfig.phones[0];
 
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-5">

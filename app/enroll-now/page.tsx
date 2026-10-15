@@ -10,7 +10,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Enroll Now",
   description:
-    "Start your enrollment with U.S. Tax Experts and get a free, no-obligation review of your tax or accounting situation.",
+    "Start your enrollment with U.S. Tax & Accounting and get a free, no-obligation review of your tax or accounting situation.",
 };
 
 export default function EnrollNowPage() {

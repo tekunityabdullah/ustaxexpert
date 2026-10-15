@@ -7,7 +7,7 @@ import CtaButton from "@/components/ui/CtaButton";
 
 export const metadata: Metadata = {
   title: "Payment Received",
-  description: "Thank you for your payment to U.S. Tax Experts.",
+  description: "Thank you for your payment to U.S. Tax & Accounting.",
 };
 
 export default async function PaymentSuccessPage(

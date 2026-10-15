@@ -30,7 +30,7 @@ export default function TeamBios() {
               </span>
               <div>
                 <h4 className="text-[15px]">{member.role}</h4>
-                <p className="text-xs text-muted">U.S. Tax Experts</p>
+                <p className="text-xs text-muted">U.S. Tax & Accounting</p>
               </div>
             </div>
           </div>

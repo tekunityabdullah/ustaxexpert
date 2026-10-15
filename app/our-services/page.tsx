@@ -10,7 +10,7 @@ import Reveal from "@/components/ui/Reveal";
 export const metadata: Metadata = {
   title: "Our Services",
   description:
-    "Explore U.S. Tax Experts' full range of services: tax planning & preparation, bookkeeping, accounting, tax settlement, and tax debt relief.",
+    "Explore U.S. Tax & Accounting's full range of services: tax planning & preparation, bookkeeping, accounting, tax settlement, and tax debt relief.",
 };
 
 export default async function OurServicesPage() {

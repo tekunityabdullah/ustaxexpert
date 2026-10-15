@@ -21,15 +21,15 @@ export default function Footer() {
             <div>
               <div className="mb-5 inline-block rounded-md bg-white p-2">
                 <Image
-                  src={`${BASE_PATH}/images/logo-cropped.png`}
-                  alt="U.S. Tax Experts"
-                  width={1086}
-                  height={291}
-                  className="h-14 w-auto"
+                  src={`${BASE_PATH}/images/logo-ustax.jpg`}
+                  alt="U.S. Tax & Accounting"
+                  width={1600}
+                  height={800}
+                  className="h-16 w-auto"
                 />
               </div>
               <p className="text-[15px] leading-6 text-white/85">
-                At U.S. Tax Experts, we help manage your Tax &amp; Accounting
+                At U.S. Tax & Accounting, we help manage your Tax &amp; Accounting
                 needs, and resolve IRS Tax debt, including tax liens and
                 levies. We provide trusted, personalized tax solutions and
                 strategies, nationwide, helping our clients save millions of
@@ -100,7 +100,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <Container>
           <div className="flex flex-col items-center gap-3 py-5 text-[15px] text-white/80 md:flex-row md:justify-between">
-            <p>2026 &copy; All Rights Reserved By U.S. Tax Experts</p>
+            <p>2026 &copy; All Rights Reserved By U.S. Tax & Accounting</p>
             <p className="flex items-center gap-2 text-[13px] text-white/70">
               <ShieldCheck size={15} className="shrink-0 text-gold-300" />
               Your information is protected with bank-level encryption

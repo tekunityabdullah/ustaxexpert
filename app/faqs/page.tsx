@@ -10,7 +10,7 @@ import Reveal from "@/components/ui/Reveal";
 export const metadata: Metadata = {
   title: "FAQs",
   description:
-    "Answers to common questions about IRS tax debt relief, consultations, timelines, and how U.S. Tax Experts works with clients nationwide.",
+    "Answers to common questions about IRS tax debt relief, consultations, timelines, and how U.S. Tax & Accounting works with clients nationwide.",
 };
 
 export default async function FaqsPage() {

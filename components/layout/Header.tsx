@@ -36,12 +36,12 @@ export default function Header() {
       <Container wide className="flex items-center justify-between gap-4 py-4">
         <Link href="/" className="shrink-0">
           <Image
-            src={`${BASE_PATH}/images/logo-cropped.png`}
-            alt={"U.S. Tax Experts"}
-            width={1086}
-            height={291}
+            src={`${BASE_PATH}/images/logo-ustax.jpg`}
+            alt={"U.S. Tax & Accounting"}
+            width={1600}
+            height={800}
             priority
-            className="w-48 h-auto lg:w-56"
+            className="w-40 h-auto lg:w-52"
           />
         </Link>
 
@@ -57,14 +57,14 @@ export default function Header() {
                 href={link.href}
                 className={`group relative whitespace-nowrap py-2 text-[15px] font-semibold uppercase tracking-wide transition-colors ${
                   isActive
-                    ? "text-[#FFEB3B]"
-                    : "text-navy-ink hover:text-[#FFEB3B]"
+                    ? "text-gold-600"
+                    : "text-navy-ink hover:text-gold-600"
                 }`}
               >
                 {link.label}
                 <span
                   aria-hidden
-                  className={`absolute inset-x-0 -bottom-0.5 h-0.5 origin-center scale-x-0 bg-[#FFEB3B] transition-transform duration-300 ease-out group-hover:scale-x-100 ${
+                  className={`absolute inset-x-0 -bottom-0.5 h-0.5 origin-center scale-x-0 bg-gold-400 transition-transform duration-300 ease-out group-hover:scale-x-100 ${
                     isActive ? "scale-x-100" : ""
                   }`}
                 />
@@ -75,7 +75,7 @@ export default function Header() {
 
         <div className="hidden items-center gap-2 lg:flex">
           <CtaButton
-            href="https://ustaxexperts.smartvault.com"
+            href="https://ustax1.sharefile.com/r-r31126db2647843aa88094c9edfff4793"
             variant="outline-navy"
             size="sm"
           >

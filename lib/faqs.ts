@@ -15,7 +15,7 @@ export type Faq = {
 
 export const faqs: Faq[] = [
   {
-    question: "Who does U.S. Tax Experts help?",
+    question: "Who does U.S. Tax & Accounting help?",
     answer:
       "We specialize in assisting individuals and businesses across all 50 states who owe more than $10,000 in IRS tax debt, as well as those seeking accounting, bookkeeping, and tax preparation services.",
     category: "Getting Started",
@@ -51,15 +51,15 @@ export const faqs: Faq[] = [
     category: "Accounting & Planning",
   },
   {
-    question: "How can I get started with U.S. Tax Experts?",
+    question: "How can I get started with U.S. Tax & Accounting?",
     answer:
-      "Simply call us at 1 (800) 316-4033 or 1 (832) 390-2347, or fill out the contact form on our website. We'll schedule a free consultation to review your situation and outline your best options.",
+      "Simply call us at 1 (888) 540-USTA (8782), or fill out the contact form on our website. We'll schedule a free consultation to review your situation and outline your best options.",
     category: "Getting Started",
   },
   {
     question: "How much does a consultation cost?",
     answer:
-      "Your first consultation with U.S. Tax Experts is completely free. We'll review your situation, explain your options, and outline a recommended path forward before you commit to anything.",
+      "Your first consultation with U.S. Tax & Accounting is completely free. We'll review your situation, explain your options, and outline a recommended path forward before you commit to anything.",
     category: "Getting Started",
   },
   {

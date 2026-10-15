@@ -13,7 +13,7 @@ import { BASE_PATH } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about U.S. Tax Experts, a nationwide team dedicated to resolving IRS tax debt and providing trusted accounting, bookkeeping, and tax planning services.",
+    "Learn about U.S. Tax & Accounting, a nationwide team dedicated to resolving IRS tax debt and providing trusted accounting, bookkeeping, and tax planning services.",
 };
 
 const stats = [
@@ -35,7 +35,7 @@ export default function AboutUsPage() {
               <p className="mb-3 text-lg font-semibold text-gold-600">Who We Are</p>
               <h2>A Nationwide Team Committed to Your Financial Peace of Mind</h2>
               <p className="mt-5 text-body">
-                U.S. Tax Experts was founded on a simple belief: every taxpayer
+                U.S. Tax & Accounting was founded on a simple belief: every taxpayer
                 deserves a clear path out of IRS debt and confidence in their
                 financial future. We bring together experienced tax
                 professionals, accountants, and enrolled agents who work
@@ -52,7 +52,7 @@ export default function AboutUsPage() {
             <Reveal direction="right" className="lg:col-span-5">
               <Image
                 src={`${BASE_PATH}/images/office-scene-close-up.jpg`}
-                alt="U.S. Tax Experts team"
+                alt="U.S. Tax & Accounting team"
                 width={750}
                 height={750}
                 className="w-full rounded-lg border border-black/5"

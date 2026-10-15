@@ -13,7 +13,7 @@ import { getServices } from "@/lib/services";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Get in touch with U.S. Tax Experts for a free consultation on IRS tax debt relief, tax planning, bookkeeping, or accounting services.",
+    "Get in touch with U.S. Tax & Accounting for a free consultation on IRS tax debt relief, tax planning, bookkeeping, or accounting services.",
 };
 
 export default async function ContactUsPage() {
@@ -113,7 +113,7 @@ export default async function ContactUsPage() {
                 style={{ border: 0 }}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="U.S. Tax Experts location on Google Maps"
+                title="U.S. Tax & Accounting location on Google Maps"
               />
             </div>
             <div className="mt-6 text-center">

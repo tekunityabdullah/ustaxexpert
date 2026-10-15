@@ -1,34 +1,32 @@
 @import "tailwindcss";
 
+/* Brand palette — from the U.S. Tax & Accounting brand guide. */
 :root {
-  /* Brand: blue scale — #0716f9 is the exact logo blue, used at full
-     strength throughout. Other steps are tints/shades of it for hierarchy
-     (large surfaces, hover states). */
-  --color-navy-900: #0716f9; /* logo blue — primary surfaces & text */
-  --color-navy-800: #2c39fa; /* lighter tint — TopBar, tab/hover fills */
-  --color-navy-700: #4550fa; /* lighter still — hover states */
-  --color-navy-600: #0612c7; /* darker shade — hover overlays */
-  --color-navy-ink: #0716f9; /* logo blue — CTA button text on gold */
+  /* Navy scale: Navy Blue #0A2D62 is the primary brand color; Midnight
+     Blue #0F1B35 is the secondary (dark panels, top bar). */
+  --color-navy-900: #0a2d62; /* Navy Blue — primary surfaces & headings */
+  --color-navy-800: #0f1b35; /* Midnight Blue — top bar, dark panels */
+  --color-navy-700: #1b3f7e; /* lighter navy — hover states */
+  --color-navy-600: #071c42; /* deeper navy — pressed / overlays */
+  --color-navy-ink: #0a2d62; /* text on champagne buttons */
 
-  /* Brand: gold/yellow scale — #ffff01 is the exact logo yellow, used at
-     full strength for the gradient peak. Darker steps exist because pure
-     #ffff01 has ~1:1 contrast on white and can't be used as legible text;
-     gold-600 is the darkest, WCAG-AA-safe step for text/icons on white. */
-  --color-gold-600: #8a6d00; /* text-safe deep gold (~4.9:1 on white) */
-  --color-gold-500: #c79a00; /* CTA gradient stop, borders */
-  --color-gold-400: #e6b800; /* mid accents */
-  --color-gold-300: #ffe066; /* bright — text/icons on dark navy */
-  --color-gold-200: #ffff01; /* logo yellow — gradient peak */
+  /* Gold scale: Champagne Gold #D4AF37 is the accent. Deeper steps exist
+     because pure champagne has too little contrast for text on white. */
+  --color-gold-600: #8a6a12; /* text-safe deep gold (~5:1 on white) */
+  --color-gold-500: #b8922a; /* gradient end, borders */
+  --color-gold-400: #d4af37; /* Champagne Gold — accent */
+  --color-gold-300: #e8cc72; /* bright gold — text/icons on dark navy */
+  --color-gold-200: #f3e3a8; /* palest gold — highlights */
 
-  /* Accents (repointed to the two logo colors instead of orange/green) */
-  --color-accent-orange: #8a6d00; /* nav active state — deep gold, matches gold-600 */
-  --color-accent-green: #ffff01; /* hover highlight on dark navy — logo yellow */
+  /* Accents mapped onto the gold scale */
+  --color-accent-orange: #8a6a12;
+  --color-accent-green: #e8cc72;
 
-  /* Neutrals */
-  --color-section: #f5f5f5;
+  /* Neutrals: White #F7F8FA is the page background; Charcoal #222222 text */
+  --color-section: #f7f8fa;
   --color-muted: #666666;
-  --color-heading: #111827;
-  --color-body: #4a5568;
+  --color-heading: #222222;
+  --color-body: #444444;
 }
 
 @theme inline {
@@ -52,12 +50,13 @@
   --color-heading: var(--color-heading);
   --color-body: var(--color-body);
 
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-lato);
+  --font-heading: var(--font-montserrat);
 }
 
 @utility bg-gold-gradient {
-  background-image: none;
-  background-color: #ffeb3b;
+  background-image: linear-gradient(135deg, #e8cc72 0%, #d4af37 100%);
+  background-color: #d4af37;
 }
 
 @layer base {
@@ -74,6 +73,7 @@
   h5,
   h6 {
     color: var(--color-heading);
+    font-family: var(--font-heading), sans-serif;
     font-weight: 700;
   }
 

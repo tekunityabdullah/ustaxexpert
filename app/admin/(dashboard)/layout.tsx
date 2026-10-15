@@ -5,7 +5,7 @@ import AdminShell from "@/components/admin/AdminShell";
 export const metadata = {
   title: {
     default: "Admin",
-    template: "%s | Admin — U.S. Tax Experts",
+    template: "%s | Admin — U.S. Tax & Accounting",
   },
   robots: { index: false, follow: false },
 };

@@ -10,7 +10,7 @@ import Reveal from "@/components/ui/Reveal";
 export const metadata: Metadata = {
   title: "Resource Center",
   description:
-    "Tax tips, IRS deadlines, and updates from the U.S. Tax Experts team to help you stay ahead of your tax and accounting obligations.",
+    "Tax tips, IRS deadlines, and updates from the U.S. Tax & Accounting team to help you stay ahead of your tax and accounting obligations.",
 };
 
 export default async function ResourceCenterPage() {

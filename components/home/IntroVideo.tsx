@@ -41,7 +41,7 @@ export default function IntroVideo() {
           <SectionHeading
             align="center"
             eyebrow="Meet Us"
-            title="Get to Know U.S. Tax Experts"
+            title="Get to Know U.S. Tax & Accounting"
             subtitle="Watch a short introduction to who we are, how we work, and how we help clients resolve IRS tax debt and stay on top of their taxes and accounting."
           />
         </Reveal>

@@ -29,7 +29,7 @@ export const services: Service[] = [
     excerpt:
       "Maximize savings and minimize liabilities with proactive, year-round tax planning.",
     description: [
-      "At U.S. Tax Experts, Tax Planning & Preparation is about more than just filing returns. It's about maximizing savings and minimizing liabilities. We take a proactive approach by analyzing your financial picture year-round.",
+      "At U.S. Tax & Accounting, Tax Planning & Preparation is about more than just filing returns. It's about maximizing savings and minimizing liabilities. We take a proactive approach by analyzing your financial picture year-round.",
       "Our strategies help you take advantage of deductions, credits, and tax breaks to legally lower your tax burden. We prepare accurate returns for individuals and businesses, ensuring compliance with ever-changing tax laws.",
       "With our expert guidance, you'll avoid IRS red flags while keeping more of what you earn.",
     ],

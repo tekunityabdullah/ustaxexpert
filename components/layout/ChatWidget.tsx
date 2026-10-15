@@ -14,12 +14,12 @@ type Message = {
 };
 
 const GREETING =
-  "Hi there — I'm the U.S. Tax Experts assistant. Ask me anything about our services, pricing, or getting started, or pick a question below.";
+  "Hi there — I'm the U.S. Tax & Accounting assistant. Ask me anything about our services, pricing, or getting started, or pick a question below.";
 
 const FALLBACK =
   "I don't have an exact answer for that yet. Call our toll-free line or send us a message and a specialist will follow up personally.";
 
-const tollFree = siteConfig.phones.find((p) => p.type === "Toll-Free") ?? siteConfig.phones[0];
+const tollFree = siteConfig.phones[0];
 
 function Avatar({ role }: { role: "bot" | "user" }) {
   return (
@@ -137,7 +137,7 @@ export default function ChatWidget({ knowledgeBase }: { knowledgeBase: ChatEntry
       {open && (
         <div
           role="dialog"
-          aria-label="Chat with U.S. Tax Experts"
+          aria-label="Chat with U.S. Tax & Accounting"
           className="mb-4 flex h-[calc(100vh-140px)] max-h-170 w-[calc(100vw-2.5rem)] flex-col overflow-hidden rounded-3xl border border-black/10 bg-white shadow-[0_24px_60px_rgba(0,0,0,0.22)] sm:w-100"
         >
           <div className="flex shrink-0 items-center justify-between border-b border-white/10 bg-navy-900 px-5 py-5">
@@ -146,7 +146,7 @@ export default function ChatWidget({ knowledgeBase }: { knowledgeBase: ChatEntry
                 <Bot size={20} />
               </span>
               <div>
-                <h6 className="text-[15px] font-bold tracking-tight text-white">U.S. Tax Experts Assistant</h6>
+                <h6 className="text-[15px] font-bold tracking-tight text-white">U.S. Tax & Accounting Assistant</h6>
                 <p className="text-xs text-white/60">Online now &middot; Replies instantly</p>
               </div>
             </div>

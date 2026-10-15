@@ -8,9 +8,9 @@ export type ChatEntry = {
   keywords: string[];
 };
 
-const tollFree =
-  siteConfig.phones.find((p) => p.type === "Toll-Free") ?? siteConfig.phones[0];
-const main = siteConfig.phones.find((p) => p.type === "Main") ?? siteConfig.phones[0];
+// Single main number for the brand; kept as named values so the answers below read clearly.
+const tollFree = siteConfig.phones[0];
+const main = siteConfig.phones[0];
 
 // Extra synonyms per service so casual phrasing ("garnishment", "IRS debt",
 // "book keeping") still lands on the right service entry.
@@ -36,7 +36,7 @@ function buildQuickIntents(services: Service[]): ChatEntry[] {
     },
     {
       question: "What are your phone numbers?",
-      answer: `You can reach us at ${main.label} (Main) or ${tollFree.label} (Toll-Free).`,
+      answer: `You can reach us at ${siteConfig.phones.map((p) => p.label).join(" or ")}.`,
       keywords: ["phone", "number", "call", "telephone", "reach", "contact"],
     },
     {

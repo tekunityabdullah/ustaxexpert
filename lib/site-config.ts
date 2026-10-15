@@ -24,15 +24,14 @@ export const integrations = {
 } as const;
 
 export const siteConfig = {
-  name: "U.S. Tax Experts",
+  name: "U.S. Tax & Accounting",
   tagline: "Your Top Source for IRS Tax Debt Relief",
   description:
-    "U.S. Tax Experts helps individuals and businesses nationwide resolve IRS tax debt, and provides tax planning, bookkeeping, accounting, and tax settlement services.",
+    "U.S. Tax & Accounting helps individuals and businesses nationwide resolve IRS tax debt, and provides tax planning, bookkeeping, accounting, and tax settlement services.",
   url: "https://www.ustaxexperts.com",
-  address: "2800 Post Oak Blvd, Houston, TX 70056",
+  address: "2800 Post Oak Blvd, Houston, TX 77056",
   phones: [
-    { label: "1 (800) 316-4033", href: "tel:+18003164033", type: "Main" },
-    { label: "1 (832) 390-2347", href: "tel:+18323902347", type: "Toll-Free" },
+    { label: "1 (888) 540-USTA (8782)", href: "tel:+18885408782", type: "Main" },
   ],
   social: [
     { label: "Facebook", href: "#", icon: "facebook" },

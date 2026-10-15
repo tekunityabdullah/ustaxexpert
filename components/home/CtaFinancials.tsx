@@ -39,7 +39,7 @@ export default function CtaFinancials() {
             <h2 className="text-white">Start Your Path to Financial Freedom</h2>
             <p className="mt-4 text-white/90">
               Take control of your taxes today with the trusted guidance of
-              U.S. Tax Experts. Our team is ready to provide personalized
+              U.S. Tax & Accounting. Our team is ready to provide personalized
               solutions, protect your assets, and help you achieve long-term
               peace of mind.
             </p>

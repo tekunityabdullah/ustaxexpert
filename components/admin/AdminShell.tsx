@@ -238,11 +238,11 @@ export default function AdminShell({
           <div className="flex w-full items-center justify-between lg:hidden">
             <div className="rounded-md bg-white px-2.5 py-2 shadow-[0_2px_8px_rgba(0,0,0,0.18)]">
               <Image
-                src={`${BASE_PATH}/images/logo-cropped.png`}
-                alt="U.S. Tax Experts"
-                width={1086}
-                height={291}
-                className="h-7 w-auto"
+                src={`${BASE_PATH}/images/logo-ustax.jpg`}
+                alt="U.S. Tax & Accounting"
+                width={1600}
+                height={800}
+                className="h-10 w-auto"
               />
             </div>
             <button
@@ -260,11 +260,11 @@ export default function AdminShell({
             <div className="hidden w-full items-center justify-between lg:flex">
               <div className="rounded-md bg-white p-1.5">
                 <Image
-                  src={`${BASE_PATH}/images/logo-cropped.png`}
-                  alt="U.S. Tax Experts"
-                  width={1086}
-                  height={291}
-                  className="h-6 w-auto"
+                  src={`${BASE_PATH}/images/logo-ustax.jpg`}
+                  alt="U.S. Tax & Accounting"
+                  width={1600}
+                  height={800}
+                  className="h-10 w-auto"
                 />
               </div>
               <button

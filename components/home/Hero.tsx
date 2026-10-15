@@ -20,7 +20,7 @@ export default function Hero() {
             Your Top Source for IRS Tax Debt Relief!
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-white/85">
-            At U.S. Tax Experts, we help manage your Tax &amp; Accounting
+            At U.S. Tax & Accounting, we help manage your Tax &amp; Accounting
             needs, and resolve IRS Tax debt, including tax liens and levies. We
             provide trusted, personalized tax solutions, and strategies,
             nationwide, helping our clients save millions of dollars.

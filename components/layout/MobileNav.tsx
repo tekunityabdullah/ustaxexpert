@@ -56,11 +56,11 @@ export default function MobileNav({
       >
         <Link href="/" onClick={onClose} className="inline-block w-fit shrink-0">
           <Image
-            src={`${BASE_PATH}/images/logo-cropped.png`}
-            alt="U.S. Tax Experts"
-            width={1086}
-            height={291}
-            className="h-10 w-auto"
+            src={`${BASE_PATH}/images/logo-ustax.jpg`}
+            alt="U.S. Tax & Accounting"
+            width={1600}
+            height={800}
+            className="h-14 w-auto"
           />
         </Link>
 
@@ -81,7 +81,7 @@ export default function MobileNav({
                 </span>
                 <span
                   className={`text-lg font-bold tracking-tight transition-colors ${
-                    isActive ? "text-[#FFEB3B]" : "text-navy-ink group-hover:text-[#FFEB3B]"
+                    isActive ? "text-gold-600" : "text-navy-ink group-hover:text-gold-600"
                   }`}
                 >
                   {link.label}
@@ -93,7 +93,7 @@ export default function MobileNav({
 
         <div className="mt-6 flex flex-col gap-3 border-t border-black/10 pt-6">
           <CtaButton
-            href="https://ustaxexperts.smartvault.com"
+            href="https://ustax1.sharefile.com/r-r31126db2647843aa88094c9edfff4793"
             variant="outline-navy"
             className="w-full"
           >

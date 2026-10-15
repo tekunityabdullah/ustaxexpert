@@ -48,7 +48,7 @@ export default function HoverVideoSplit() {
         <div className="w-1/2">
           <VideoBox
             src={`${BASE_PATH}/videos/7507758-uhd_3840_2160_25fps-2-1.mp4`}
-            overlayClassName="bg-[rgba(7,22,249,0.4)]"
+            overlayClassName="bg-[rgba(10,45,98,0.4)]"
           />
         </div>
         <div className="w-1/2">

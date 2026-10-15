@@ -41,11 +41,11 @@ export default async function AdminLoginPage() {
         <div className="mb-7 flex justify-center">
           <div className="rounded-md bg-white p-2 shadow-[0_8px_24px_rgba(0,0,0,0.25)]">
             <Image
-              src={`${BASE_PATH}/images/logo-cropped.png`}
-              alt="U.S. Tax Experts"
-              width={1086}
-              height={291}
-              className="h-9 w-auto"
+              src={`${BASE_PATH}/images/logo-ustax.jpg`}
+              alt="U.S. Tax & Accounting"
+              width={1600}
+              height={800}
+              className="h-12 w-auto"
             />
           </div>
         </div>

@@ -57,7 +57,7 @@ export default function AboutIntro() {
           <Reveal direction="right" className="lg:col-span-4">
             <Image
               src={`${BASE_PATH}/images/download-15.jpg`}
-              alt="U.S. Tax Experts team"
+              alt="U.S. Tax & Accounting team"
               width={750}
               height={750}
               className="w-full rounded-lg border border-black/5"

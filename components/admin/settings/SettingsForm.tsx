@@ -66,7 +66,7 @@ export default function SettingsForm({
         <AdminFormField
           label="Phone Numbers"
           htmlFor="phones"
-          hint='One per line: Label | tel:+1XXXXXXXXXX | Type — e.g. "1 (800) 316-4033 | tel:+18003164033 | Main"'
+          hint='One per line: Label | tel:+1XXXXXXXXXX | Type — e.g. "1 (888) 540-USTA (8782) | tel:+18885408782 | Main"'
         >
           <AdminTextarea
             id="phones"

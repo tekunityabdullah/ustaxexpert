@@ -9,7 +9,7 @@ import { getServices } from "@/lib/services";
 export const metadata: Metadata = {
   title: "Make a Payment",
   description:
-    "Make a secure online payment to U.S. Tax Experts for tax debt relief, tax settlement, accounting, bookkeeping, or tax planning services.",
+    "Make a secure online payment to U.S. Tax & Accounting for tax debt relief, tax settlement, accounting, bookkeeping, or tax planning services.",
 };
 
 export default async function MakeAPaymentPage() {

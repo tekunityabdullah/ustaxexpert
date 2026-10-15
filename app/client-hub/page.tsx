@@ -9,7 +9,7 @@ import CtaFinancials from "@/components/home/CtaFinancials";
 export const metadata: Metadata = {
   title: "Client Hub",
   description:
-    "Your secure portal for document uploads, case status updates, and direct communication with your U.S. Tax Experts specialist.",
+    "Your secure portal for document uploads, case status updates, and direct communication with your U.S. Tax & Accounting specialist.",
 };
 
 export default function ClientHubPage() {
@@ -32,7 +32,7 @@ export default function ClientHubPage() {
               your specialist to get set up.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <CtaButton href="https://ustaxexperts.smartvault.com">Client Login</CtaButton>
+              <CtaButton href="https://ustax1.sharefile.com/r-r31126db2647843aa88094c9edfff4793">Client Login</CtaButton>
               <CtaButton href="/contact-us" variant="outline-navy">
                 Request Access
               </CtaButton>

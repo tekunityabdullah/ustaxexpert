@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How U.S. Tax Experts collects, uses, stores, and protects your personal and financial information.",
+    "How U.S. Tax & Accounting collects, uses, stores, and protects your personal and financial information.",
 };
 
 // NOTE: This is a standard-form privacy policy template covering the data
@@ -28,7 +28,7 @@ export default function PrivacyPolicyPage() {
             <p className="text-sm text-muted">Last updated: {lastUpdated}</p>
 
             <p className="mt-6 text-body">
-              U.S. Tax Experts (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or
+              U.S. Tax & Accounting (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or
               &ldquo;our&rdquo;) respects your privacy and is committed to
               protecting the personal and financial information you share
               with us. This Privacy Policy explains what information we

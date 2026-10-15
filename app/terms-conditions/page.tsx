@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Terms & Conditions",
   description:
-    "The terms of use governing your access to and use of the U.S. Tax Experts website.",
+    "The terms of use governing your access to and use of the U.S. Tax & Accounting website.",
 };
 
 // NOTE: Standard-form website terms of use template. It has not been
@@ -28,7 +28,7 @@ export default function TermsConditionsPage() {
 
             <p className="mt-6 text-body">
               These Terms &amp; Conditions (&ldquo;Terms&rdquo;) govern your
-              use of the U.S. Tax Experts website (the &ldquo;Site&rdquo;).
+              use of the U.S. Tax & Accounting website (the &ldquo;Site&rdquo;).
               By accessing or using the Site, you agree to these Terms. If
               you do not agree, please do not use the Site.
             </p>
@@ -47,7 +47,7 @@ export default function TermsConditionsPage() {
               Browsing this Site, submitting a contact or enrollment form,
               or scheduling a consultation does not, by itself, create a
               representation or engagement relationship between you and
-              U.S. Tax Experts. An engagement begins only once a signed
+              U.S. Tax & Accounting. An engagement begins only once a signed
               engagement letter or service agreement is in place.
             </p>
 
@@ -80,7 +80,7 @@ export default function TermsConditionsPage() {
             <h3 className="mt-10 mb-3">Intellectual Property</h3>
             <p className="text-body">
               All text, graphics, logos, and other content on this Site are
-              the property of U.S. Tax Experts or its licensors and may not
+              the property of U.S. Tax & Accounting or its licensors and may not
               be copied or reused without permission.
             </p>
 

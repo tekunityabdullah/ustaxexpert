@@ -29,7 +29,7 @@ const sizes = {
 };
 
 const variants = {
-  solid: "bg-gold-gradient text-navy-ink shadow-[0_8px_20px_rgba(199,154,0,0.25)] hover:shadow-[0_8px_20px_rgba(199,154,0,0.4)]",
+  solid: "bg-gold-gradient text-navy-ink shadow-[0_8px_20px_rgba(184,146,42,0.25)] hover:shadow-[0_8px_20px_rgba(184,146,42,0.4)]",
   outline:
     "border border-white/70 text-white hover:bg-white hover:text-navy-900",
   "outline-navy":
